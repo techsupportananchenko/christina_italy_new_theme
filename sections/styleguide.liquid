@@ -1,0 +1,172 @@
+{{- 'style-guide.css' | asset_url | stylesheet_tag -}}
+
+<div class="style-guide">
+  <!-- Palette Section -->
+  <section class="palette">
+    <h2 class="h2">🎨 Palette</h2>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="color" style="background-color: #BAB8BD;"></div>
+        <p>#BAB8BD</p>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background-color: #D7D8DA;"></div>
+        <p>#D7D8DA</p>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background-color: #5D666F;"></div>
+        <p>#5D666F</p>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background-color: #FFFFFF; border: 1px solid #E0E0E0;"></div>
+        <p>#FFFFFF</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Typography Section -->
+  <section class="typography">
+    <h2 class="h2">✍️ Typography</h2>
+    <div class="font-sample">
+      <div class="font-label">Font Family</div>
+      <div class="font-name">NarkissClassicMF</div>
+      <p class="sample-text">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+  </section>
+
+  <section class="text-styles">
+    <h2 class="h2">🖋 Text Styles</h2>
+
+    <div class="text-block">
+      <div class="text-meta">
+        <strong>H1</strong>
+        <ul>
+          <li>font-size: 55px</li>
+          <li>line-height: 60px</li>
+          <li>letter-spacing: 2%</li>
+        </ul>
+      </div>
+      <p class="h1">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+
+    <div class="text-block">
+      <div class="text-meta">
+        <strong>H2</strong>
+        <ul>
+          <li>font-size: 45px</li>
+          <li>line-height: 50px</li>
+          <li>letter-spacing: 2%</li>
+        </ul>
+      </div>
+      <p class="h2">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+
+    <div class="text-block">
+      <div class="text-meta">
+        <strong>H3</strong>
+        <ul>
+          <li>font-size: 35px</li>
+          <li>line-height: 40px</li>
+          <li>letter-spacing: 2%</li>
+        </ul>
+      </div>
+      <p class="h3">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+
+    <div class="text-block">
+      <div class="text-meta">
+        <strong>H4</strong>
+        <ul>
+          <li>font-size: 30px</li>
+          <li>line-height: 35px</li>
+          <li>letter-spacing: 2%</li>
+        </ul>
+      </div>
+      <p class="h4">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+
+    <div class="text-block">
+      <div class="text-meta">
+        <strong>H5</strong>
+        <ul>
+          <li>font-size: 24px</li>
+          <li>line-height: 32px</li>
+          <li>letter-spacing: 2%</li>
+        </ul>
+      </div>
+      <p class="h5">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+
+    <div class="text-block">
+      <div class="text-meta">
+        <strong>Headline</strong>
+        <ul>
+          <li>font-size: 22px</li>
+          <li>line-height: 28px</li>
+          <li>letter-spacing: 2%</li>
+        </ul>
+      </div>
+      <p class="headline">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+
+    <div class="text-block">
+      <div class="text-meta">
+        <strong>Body Text</strong>
+        <ul>
+          <li>font-size: 18px</li>
+          <li>line-height: 28px</li>
+          <li>letter-spacing: 2%</li>
+        </ul>
+      </div>
+      <p class="body-text">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+
+    <div class="text-block">
+      <div class="text-meta">
+        <strong>Body Text (Large)</strong>
+        <ul>
+          <li>font-size: 16px</li>
+          <li>line-height: 24px</li>
+          <li>letter-spacing: 2%</li>
+        </ul>
+      </div>
+      <p class="body-text-large">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+
+    <div class="text-block">
+      <div class="text-meta">
+        <strong>Body Text (Small)</strong>
+        <ul>
+          <li>font-size: 14px</li>
+          <li>line-height: 20px</li>
+          <li>letter-spacing: 2%</li>
+        </ul>
+      </div>
+      <p class="body-text-small">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+  </section>
+
+  <div class="styleguide-product">
+    <h2 class="h2">Product Card</h2>
+    {%- render 'product-card', product_card_product: section.settings.product -%}
+  </div>
+
+  <h2 class="h2">Buttons</h2>
+
+  <a class="button outline" href="/" role="button" title="קנה עכשיו"><span>קנה עכשיו</span></a>
+  <a class="button " href="/" role="button" title="קנה עכשיו"><span>קנה עכשיו</span></a>
+  <a href="/" class="collection-card__link text-button" title="read more">קנה עכשיו</a>
+</div>
+
+{% schema %}
+  {
+  "name": "Styleguide",
+  "settings": [
+  ],
+  "presets": [
+    {
+      "name": "Styleguide"
+    }
+  ]
+}
+{% endschema %}

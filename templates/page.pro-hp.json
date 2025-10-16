@@ -1,0 +1,313 @@
+{
+  "sections": {
+    "slideshow_r4JRfw": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_4f4WNG": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ILLUSTRIOUS_DESKTOP_BANNER_eb628ba7-0466-42e7-98ae-47dbe88a9d15.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/ILLUSTRIOUS_MOBILE_BANNER.jpg",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "ILLUSTRIOUS",
+            "heading_size": "h1-large",
+            "content": "טיפול הבהרה אפקטיבי גם לימי הקיץ, בקליניקה ובבית",
+            "description_size": "medium",
+            "content_position": "bottom-left",
+            "text_alignment": "right",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "הזמיני עכשיו",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_4f4WNG"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-400",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "text_with_icons_YApnLJ": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_MW3KXX": {
+          "type": "icon",
+          "settings": {
+            "icon": "box",
+            "heading": "הזמנות אונליין",
+            "text": "<p>הזמנה פשוטה ומהירה, ללא מינימום <\/p>"
+          }
+        },
+        "icon_WMTDrA": {
+          "type": "icon",
+          "settings": {
+            "icon": "price_tag",
+            "heading": "10% צבירה",
+            "text": "<p>מכל הזמנה, למימוש בהזמנות הבאות<\/p>"
+          }
+        },
+        "icon_f9ncHw": {
+          "type": "icon",
+          "settings": {
+            "icon": "heart",
+            "heading": "ייעוץ וליווי",
+            "text": "<p>צוות מקצועי ושירות לקוחות לכל שאלה <\/p>"
+          }
+        },
+        "icon_gYPjki": {
+          "type": "icon",
+          "settings": {
+            "icon": "lock",
+            "heading": "מוצרים מקצועיים",
+            "text": "<p>גישה לרשומות בלבד להזמנת מוצרים מקצועיים<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_MW3KXX",
+        "icon_WMTDrA",
+        "icon_f9ncHw",
+        "icon_gYPjki"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "text_alignment": "right",
+        "icon_position": "right",
+        "icon_size": "large",
+        "heading_size": "large",
+        "mobile_swipe": true,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_heading": "#535458",
+        "color_text": "#535458",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "promotional_banner_LmtHAn": {
+      "type": "promotional-banner",
+      "blocks": {
+        "subheading_gjDNaU": {
+          "type": "subheading",
+          "settings": {
+            "text": "מתרגשות לשתף"
+          }
+        },
+        "heading_YTpdkK": {
+          "type": "heading",
+          "settings": {
+            "text": "מאגר ההדרכות המקצועי של כריסטינה",
+            "heading_size": "h2"
+          }
+        },
+        "text_VCTWEG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>הרשמי למאגר הידע המקצועי של כריסטינה וקבלי גישה לתכנים מתחדשים על פרוטוקולי טיפול, איבחון מדויק והתאמת מוצרים<\/p>"
+          }
+        },
+        "button_xGpMDN": {
+          "type": "button",
+          "settings": {
+            "button_text": "להרשמה לפורטל",
+            "button_link": "",
+            "button_outline": false
+          }
+        },
+        "button_md8wGV": {
+          "type": "button",
+          "settings": {
+            "button_text": "לקבוצת הוואטסאפ",
+            "button_link": "",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_gjDNaU",
+        "heading_YTpdkK",
+        "text_VCTWEG",
+        "button_xGpMDN",
+        "button_md8wGV"
+      ],
+      "name": "Promotional banner",
+      "settings": {
+        "section_width": "full-width-row",
+        "image": "shopify:\/\/shop_images\/0E1A1743_2.jpg",
+        "image_height": "adapt",
+        "image_width": "split",
+        "frame_border": true,
+        "content_position": "text-right",
+        "split_layout": "image_first",
+        "color_bg": "#ffffff",
+        "color_text": "#535458",
+        "overlay_color": "#ffffff",
+        "border_color": "#d7d8da",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "multicolumn_7LCebt": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_LJcNYD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Comodex_4_c0f7664b-a216-4f17-be0c-53ded0da2fc7.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "COMODEX",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_jrqtPK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FY_4_36d385fc-345c-403f-859f-a479ca2f3174.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "FOREVER YOUNG",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_aJV88L": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BIOPHTYO_8cc085bf-bab9-4e97-a76b-ec160f435e67.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "BIO PHYTO",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_FVRKbf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NUANCE.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "NUANCE",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_jMNxcB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RDM_72c47d4b-e7d2-495a-ac6a-22b75520f455.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "ROSE DE MER",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_jP9QXT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UNSTRESS_6fdfdfdf-a719-4755-aa05-fbe2ae53414d.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "UNSTRESS",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_LMK6D3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ILLUSTRIOUS_4_57c1f94c-f40a-43d3-b133-54d4309b68e1.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "ILLUSTRIOUS",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "column_LJcNYD",
+        "column_jrqtPK",
+        "column_aJV88L",
+        "column_FVRKbf",
+        "column_jMNxcB",
+        "column_jP9QXT",
+        "column_LMK6D3"
+      ],
+      "name": "Multicolumn",
+      "settings": {
+        "heading": "סדרות הטיפול המקצועיות שלנו",
+        "heading_left": false,
+        "description": "<p>מענה לכל מצב עור עם פרוטוקול מדויק לתוצאות עקביות. <br\/>לקטלוג מקצועי מלא<\/p>",
+        "full_width": true,
+        "display_type": "carousel",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "text_alignment": "center",
+        "heading_size": "h6",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "center_mobile": "left",
+        "use_metaobjects": false
+      }
+    }
+  },
+  "order": [
+    "slideshow_r4JRfw",
+    "text_with_icons_YApnLJ",
+    "promotional_banner_LmtHAn",
+    "multicolumn_7LCebt"
+  ]
+}

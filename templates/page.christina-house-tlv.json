@@ -1,0 +1,734 @@
+{
+  "sections": {
+    "background_video_YWWktQ": {
+      "type": "background-video",
+      "name": "Background video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-400",
+        "full_width": true,
+        "subheading": "",
+        "heading": "CHRISTINA HOUSE TLV",
+        "text": "📍שדרות רוטשילד 49 תל אביב",
+        "lightbox_button": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1662373200967c613c": {
+      "type": "rich-text",
+      "blocks": {
+        "23c05a65-fd58-4945-b22a-3ebcf7903e48": {
+          "type": "heading",
+          "settings": {
+            "text": "כשמומחיות מקצועית פוגשת תוצאות מוכחות",
+            "size": "h2"
+          }
+        },
+        "05722c02-ce4f-461f-a041-3e159cddb760": {
+          "type": "text",
+          "settings": {
+            "text": "<p>בית כריסטינה TLV הוא היעד האולטימטיבי לטיפולי עור מבוססי תוצאה. <br\/>בהובלת קוסמטיקאיות מנוסות, כל טיפול מותאם אישית למצב העור שלך ומשלב ידע מקצועי עמוק עם רכיבים פעילים מתקדמים ושיטות העבודה המובילות בתעשייה.<\/p>",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        },
+        "text_tqqrzg": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        },
+        "text_button_y8eL7w": {
+          "type": "text-button",
+          "settings": {
+            "link_label": "לתיאום טיפול",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "23c05a65-fd58-4945-b22a-3ebcf7903e48",
+        "05722c02-ce4f-461f-a041-3e159cddb760",
+        "text_tqqrzg",
+        "text_button_y8eL7w"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#5d666f",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "media_grid_zMYdMU": {
+      "type": "media-grid",
+      "blocks": {
+        "media_JmjLz8": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0157.jpg",
+            "slide_link": "",
+            "use_video": true,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "טיפול מלא",
+            "heading_size": "h4",
+            "text": "טיפולים מותאמים לכל מצבי העור כולל שימוש בחומרים פעילים",
+            "button_text": "לתיאום טיפול מלא",
+            "button_link": "",
+            "content_position": "bottom-left",
+            "text_alignment": "right",
+            "badge_text": "450-650 ש\"ח",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#939393",
+            "color_text": "#ffffff",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_bLMXCw": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_9689_1_019fb469-0f6e-41b3-8e09-ba8b6ff855b4.jpg",
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "סקין בוסט",
+            "heading_size": "h4",
+            "text": "טיפול פנים ממוקד של 45 דקות",
+            "button_text": "לתיאום טיפול",
+            "button_link": "",
+            "content_position": "top-left",
+            "text_alignment": "right",
+            "badge_text": "250 ש\"ח",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#939393",
+            "color_text": "#ffffff",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_NhAtte": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_9692_2_4bed4248-3d8d-473c-a6e0-0200115eb457.jpg",
+            "slide_link": "",
+            "use_video": true,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "סקין בר",
+            "heading_size": "h4",
+            "text": "טיפול קצר ואפקטיבי לזוהר מיידי",
+            "button_text": "לתיאום טיפול",
+            "button_link": "",
+            "content_position": "top-left",
+            "text_alignment": "right",
+            "badge_text": "129 ש\"ח",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#939393",
+            "color_text": "#535458",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_JmjLz8",
+        "media_bLMXCw",
+        "media_NhAtte"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "section_width": "full-width-row",
+        "desktop_height": 400,
+        "mobile_height": 295,
+        "column_spacing": "medium",
+        "mobile_swipe": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "5bad47dd-05dc-464b-9171-7b1563b93a84": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Unlock your shine - be more attractive",
+            "heading_size": "h2"
+          }
+        },
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>People said making clothes inside out was not proper. I disagreed, because clothes that are inside out are as beautiful as a cathedral. Delete the negative; accentuate the positive! I am especially grateful that I have been able to keep my own style over the decades, in spite of the many changes that have taken place in the world of fashion and in its business.<\/p><p>✹ It's hard to balance everything.<br\/>✹ They have expression, modesty, sex appeal, simplicity.<br\/>✹ In order to be irreplaceable one must always be different.<\/p>",
+            "description_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-1",
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_border": false,
+        "image": "shopify:\/\/shop_images\/rita_mask_brash_1_dc925fcb-3c9b-4f22-8219-79e23f83210e.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-row-full",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#fff5e9",
+        "color_text": "#1e4e1c",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "rich_text_yHELJh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mQJhNU": {
+          "type": "heading",
+          "settings": {
+            "text": "יעד בינלאומי לטיפוח העור",
+            "size": "h1"
+          }
+        },
+        "text_d3REh3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>בתי כריסטינה פועלים ברחבי העולם – מטוקיו ואוסקה ועד מונקו, קאן ותל אביב – כל אחד מהם מביא לידי ביטוי את המוניטין, המקצועיות והיוקרה של המותג הבינלאומי שלנו: טיפולים מתקדמים, מומחיות מקצועית ותוצאות ברורות לעין.<br\/>יחד, הם מגדירים את הסטנדרט הגלובלי החדש בטיפוח העור המקצועי.<\/p>",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        },
+        "text_rpWV4A": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mQJhNU",
+        "text_d3REh3",
+        "text_rpWV4A"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#5d666f",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "media_grid_3ebgm4": {
+      "type": "media-grid",
+      "blocks": {
+        "media_Q6B9EA": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0157.jpg",
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "טיפול מלא",
+            "heading_size": "h4",
+            "text": "טיפולים מותאמים לכל מצבי העור כולל שימוש בחומרים פעילים",
+            "button_text": "תיאום טיפול מלא",
+            "button_link": "",
+            "content_position": "bottom-left",
+            "text_alignment": "right",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_n9Vgnn": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_ed7KwL": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_Q6B9EA",
+        "media_n9Vgnn",
+        "media_ed7KwL"
+      ],
+      "disabled": true,
+      "name": "Media grid",
+      "settings": {
+        "section_width": "full-width-row",
+        "desktop_height": 300,
+        "mobile_height": 210,
+        "column_spacing": "medium",
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "background_video_tGpx4k": {
+      "type": "background-video",
+      "name": "Background video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-400",
+        "full_width": true,
+        "subheading": "",
+        "heading": "",
+        "text": "",
+        "lightbox_button": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "video_HxqTD4": {
+      "type": "video",
+      "disabled": true,
+      "name": "Video",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "section_width": "full-width-row-full",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "aspect_ratio": "16-9",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "media_grid_b6U4Vg": {
+      "type": "media-grid",
+      "blocks": {
+        "media_kEUQkx": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_wz6wE7": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_9qUi89": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_QxTHeN": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_XQx8pD": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_TykVQ3": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_3CkpxJ": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_kEUQkx",
+        "media_wz6wE7",
+        "media_9qUi89",
+        "media_QxTHeN",
+        "media_XQx8pD",
+        "media_TykVQ3",
+        "media_3CkpxJ"
+      ],
+      "disabled": true,
+      "name": "Media grid",
+      "settings": {
+        "section_width": "full-width-row",
+        "desktop_height": 300,
+        "mobile_height": 300,
+        "column_spacing": "small",
+        "mobile_swipe": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "scrolling_images_yW4KCk": {
+      "type": "scrolling-images",
+      "blocks": {
+        "image_XLYxd4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CH_-_TOKYO.jpg",
+            "link": "",
+            "heading": "טוקיו, יפן",
+            "text": ""
+          }
+        },
+        "image_KHmTYQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CH_-_Cannes.jpg",
+            "link": "",
+            "heading": "קאן, צרפת",
+            "text": ""
+          }
+        },
+        "image_MeeTPL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Christina_Kassel_14.jpg",
+            "link": "",
+            "heading": "Heading",
+            "text": ""
+          }
+        },
+        "image_Hmjzw7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC_7899.jpg",
+            "link": "",
+            "heading": "Heading",
+            "text": ""
+          }
+        },
+        "image_CXxfAe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CH_-_Paris.jpg",
+            "link": "",
+            "heading": "פריז, צרפת",
+            "text": ""
+          }
+        },
+        "image_a6wAKM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CH_-_OSAKA.jpg",
+            "link": "",
+            "heading": "אוסקה, יפן",
+            "text": "<p>Add description text here.<\/p>"
+          }
+        },
+        "image_W4AJeG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CH_-_Monaco.jpg",
+            "link": "",
+            "heading": "מונקו",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_XLYxd4",
+        "image_KHmTYQ",
+        "image_MeeTPL",
+        "image_Hmjzw7",
+        "image_CXxfAe",
+        "image_a6wAKM",
+        "image_W4AJeG"
+      ],
+      "disabled": true,
+      "name": "Scrolling images",
+      "settings": {
+        "image_ratio": "square",
+        "column_spacing": "small",
+        "image_alignment": "top",
+        "direction": "left",
+        "speed": "30s",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_overlay_zcntJd": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_7f3PUa": {
+          "type": "heading",
+          "settings": {
+            "text": "מחפשת מתנה מפנקת?",
+            "heading_size": "h1"
+          }
+        },
+        "text_TkFENN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>מטיפול GLOW מרענן לטיפול מלא - הזמיני טיפול פנים מושלם למי שאת אוהבת<\/p>",
+            "description_size": "medium"
+          }
+        },
+        "button_nkANMF": {
+          "type": "button",
+          "settings": {
+            "button_text": "קני עכשיו",
+            "button_link": "shopify:\/\/products\/gift-card-christina",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7f3PUa",
+        "text_TkFENN",
+        "button_nkANMF"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_width": "grid",
+        "image": "shopify:\/\/shop_images\/Gift_Card.jpg",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "content_width": "small",
+        "content_position": "bottom-left",
+        "text_alignment": "right",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "background_video_YWWktQ",
+    "1662373200967c613c",
+    "media_grid_zMYdMU",
+    "5bad47dd-05dc-464b-9171-7b1563b93a84",
+    "rich_text_yHELJh",
+    "media_grid_3ebgm4",
+    "background_video_tGpx4k",
+    "video_HxqTD4",
+    "media_grid_b6U4Vg",
+    "scrolling_images_yW4KCk",
+    "image_with_text_overlay_zcntJd"
+  ]
+}

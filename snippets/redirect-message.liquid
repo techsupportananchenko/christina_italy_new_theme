@@ -1,0 +1,41 @@
+<style>
+    :root {
+        --redirect-bg-color: {{ settings.redirect_bg_color | default: "#fff" }};
+        --redirect-color: {{ settings.redirect_color | default: "#000" }};
+        --redirect_link_color: {{ settings.redirect_link_color | default: "#000" }};
+        --redirect_link_hover_color: {{ settings.redirect_link_hover_color | default: "#000" }};
+        --redirect_popup_yes_color: {{ settings.redirect_popup_yes_color }};
+        --redirect_popup_yes_text_color: {{ settings.redirect_popup_yes_text_color }};
+        --redirect_popup_no_color: {{ settings.redirect_popup_no_color }};
+        --redirect_popup_no_text_color: {{ settings.redirect_popup_no_text_color }};
+        --redirect_bg: url('{{ settings.redirect_background | image_url: width: 1000 }}');
+    }
+    {% if settings.redirect_popup_text_size %}
+    #location-redirect-popup p {
+        font-size: {{ settings.redirect_popup_text_size }}px;
+    }
+    {% endif %}
+</style>
+{% unless settings.redirect_popup %}
+  <div id="location-redirect-message">
+    <div id="message">
+      <div class="redirect-header-div">
+        {{ settings.redirect_from_message }} <span class="current-country"></span>. {{ settings.redirect_to_message }} <span class="new-store"></span>? <a class="redirect-me" href="#">{{ settings.redirect_approve }}</a> or <a class="close-redirect-btn" href="#">{{ settings.redirect_decline }}</a>
+      </div>
+    </div>
+  </div>
+{% else %}
+  <div style="display:none">
+    <div id="location-redirect-popup">
+      {% if settings.redirect_popup_logo %}<div class="buttons-container"><img src="{{ 'redirect_popup_logo.jpg' | asset_url }}" /></div>{% endif %}
+      <div class="location-redirect-wrapper">
+        <p class="">{{ settings.redirect_popup_from_message }} <span class="current-country"></span>.</p>
+        <p class="">{{settings.redirect_popup_text}}</p>
+      </div>
+      <div class="buttons-container">
+        <a class="close-redirect-btn button-no" href="">{{ settings.redirect_popup_no }}</a>
+        <a class="redirect-me button-yes" href="">{{ settings.redirect_popup_yes }}</a>
+      </div>
+    </div>
+  </div>
+{% endunless %}

@@ -1,0 +1,370 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_overlay_GynnCN": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_3GdirU": {
+          "type": "subheading",
+          "settings": {
+            "text": "OUR FABRICS"
+          }
+        },
+        "heading_tLCyCU": {
+          "type": "heading",
+          "settings": {
+            "text": "Unveiling the Power of Softness",
+            "heading_size": "h1-large"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_3GdirU",
+        "heading_tLCyCU"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image_parallax": true,
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-450",
+        "content_width": "large",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "rich_text_Mm9P4k": {
+      "type": "rich-text",
+      "blocks": {
+        "image_bwPYRg": {
+          "type": "image",
+          "settings": {
+            "retina": true
+          }
+        },
+        "heading_M8gmbM": {
+          "type": "heading",
+          "settings": {
+            "text": "Cotton, linen, wool, silk, and leather are derived from natural sources. Each has unique properties.",
+            "size": "h3"
+          }
+        },
+        "text_B6pMFX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Organic cotton, bamboo fabrics, and recycled materials are becoming more popular as the fashion industry embraces eco-conscious choices. Integrated technology, like fabrics that can change color, monitor body metrics, or self-clean, is an exciting frontier in fashion.<\/p>",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "image_bwPYRg",
+        "heading_M8gmbM",
+        "text_B6pMFX"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "spacer_NEhb7w": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 15,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "progress_bars_rjCBWA": {
+      "type": "progress-bars",
+      "blocks": {
+        "progress_7dnzMN": {
+          "type": "progress",
+          "settings": {
+            "heading": "Softness Scale",
+            "final_position": 80,
+            "label_left": "Soft",
+            "label_right": "Heavenly soft",
+            "color_bar": "linear-gradient(90deg, rgba(21, 21, 21, 1), rgba(21, 21, 21, 1) 100%)"
+          }
+        },
+        "progress_Uhg9Qn": {
+          "type": "progress",
+          "settings": {
+            "heading": "Fabric Weight",
+            "final_position": 20,
+            "label_left": "Lightest",
+            "label_right": "Heaviest",
+            "color_bar": "linear-gradient(90deg, rgba(21, 21, 21, 1), rgba(21, 21, 21, 1) 100%)"
+          }
+        },
+        "progress_7hrHCj": {
+          "type": "progress",
+          "settings": {
+            "heading": "Cotton",
+            "final_position": 57,
+            "label_left": "Min",
+            "label_right": "Max",
+            "color_bar": "linear-gradient(90deg, rgba(21, 21, 21, 1), rgba(21, 21, 21, 1) 100%)"
+          }
+        },
+        "progress_KmTWih": {
+          "type": "progress",
+          "settings": {
+            "heading": "Quality",
+            "final_position": 93,
+            "label_left": "1 star",
+            "label_right": "5 star",
+            "color_bar": "linear-gradient(90deg, rgba(21, 21, 21, 1), rgba(21, 21, 21, 1) 100%)"
+          }
+        },
+        "progress_inBbtp": {
+          "type": "progress",
+          "settings": {
+            "heading": "Comfort",
+            "final_position": 78,
+            "label_left": "Uncomfortable",
+            "label_right": "Comfortable",
+            "color_bar": "linear-gradient(90deg, rgba(21, 21, 21, 1), rgba(21, 21, 21, 1) 100%)"
+          }
+        },
+        "progress_FaRjzr": {
+          "type": "progress",
+          "settings": {
+            "heading": "Value",
+            "final_position": 80,
+            "label_left": "Poor",
+            "label_right": "Excellent",
+            "color_bar": "linear-gradient(90deg, rgba(21, 21, 21, 1), rgba(21, 21, 21, 1) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "progress_7dnzMN",
+        "progress_Uhg9Qn",
+        "progress_7hrHCj",
+        "progress_KmTWih",
+        "progress_inBbtp",
+        "progress_FaRjzr"
+      ],
+      "settings": {
+        "columns_desktop": 3,
+        "full_width": false,
+        "color_bg": "#efefef",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_hotspots_m88hzy": {
+      "type": "image-hotspots",
+      "blocks": {
+        "hotspot_MFz8Va": {
+          "type": "hotspot",
+          "settings": {
+            "heading": "Linen",
+            "description": "Lightweight, breathable, often used for summer garments.",
+            "x_position": 20,
+            "y_position": 20,
+            "x_position_mobile": 20,
+            "y_position_mobile": 20
+          }
+        },
+        "hotspot_ppE7zr": {
+          "type": "hotspot",
+          "settings": {
+            "heading": "Silk",
+            "description": "Luxurious, smooth, often used for formal or high-end designs.",
+            "x_position": 54,
+            "y_position": 60,
+            "x_position_mobile": 48,
+            "y_position_mobile": 50
+          }
+        },
+        "hotspot_9PKyL6": {
+          "type": "hotspot",
+          "settings": {
+            "heading": "Cotton",
+            "description": "Breathable, soft, versatile, ideal for casual and everyday wear.",
+            "x_position": 85,
+            "y_position": 28,
+            "x_position_mobile": 78,
+            "y_position_mobile": 78
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_MFz8Va",
+        "hotspot_ppE7zr",
+        "hotspot_9PKyL6"
+      ],
+      "settings": {
+        "full_width": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "rich_text_kL9dJX": {
+      "type": "rich-text",
+      "blocks": {
+        "image_Q7rFqd": {
+          "type": "image",
+          "settings": {
+            "retina": true
+          }
+        },
+        "heading_rkw8Q6": {
+          "type": "heading",
+          "settings": {
+            "text": "Organic cotton, bamboo fabrics, and recycled materials are becoming more popular as the fashion industry embraces eco-conscious choices.",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "image_Q7rFqd",
+        "heading_rkw8Q6"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "spacer_JcAge9": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 15,
+        "spacer_desktop": 35,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "multicolumn_QtpyCL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_aaVNxX": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Smart Fabrics",
+            "text": "<p>Integrated technology, like fabrics that can change color, monitor body metrics, or self-clean, is an exciting frontier in fashion.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_bA43th": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Sustainability",
+            "text": "<p>Organic cotton, bamboo fabrics, and recycled materials are becoming more popular as the fashion industry embraces eco-conscious choices.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cKb6UT": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Texture Play",
+            "text": "<p>Designers often combine fabrics to create visual contrast or tactile experiences—like silk with wool for winter collections.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G9NxGB": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Customization",
+            "text": "<p>3D printing and laser cutting allow for more precise patterns and styles, making it possible to \"fashion\" fabrics into unique shapes or textures.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aaVNxX",
+        "column_bA43th",
+        "column_cKb6UT",
+        "column_G9NxGB"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": false,
+        "display_type": "grid",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "text_alignment": "left",
+        "heading_size": "h6",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "product_slider_RYdfLh": {
+      "type": "product-slider",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "layout": "image_first",
+        "subheading": "",
+        "heading": "",
+        "product_list": [
+          "chaqueta-fleece-zip-up-oatmeal-peacoat",
+          "tote-bag-variant-image-set",
+          "fresia-hemp-dress-navy",
+          "manfred-wallet-toffee",
+          "tote-bag-black"
+        ],
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_GynnCN",
+    "rich_text_Mm9P4k",
+    "spacer_NEhb7w",
+    "progress_bars_rjCBWA",
+    "image_hotspots_m88hzy",
+    "rich_text_kL9dJX",
+    "spacer_JcAge9",
+    "multicolumn_QtpyCL",
+    "product_slider_RYdfLh"
+  ]
+}

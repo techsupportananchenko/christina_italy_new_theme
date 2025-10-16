@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "collection_aA67Kg": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_eCNzix": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_Tw3cGR": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_kExDHP": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_4ncK4G": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_HGAceD": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_aA67Kg",
+        "collection_eCNzix",
+        "collection_Tw3cGR",
+        "collection_kExDHP",
+        "collection_4ncK4G",
+        "collection_HGAceD"
+      ],
+      "settings": {
+        "heading": "SHOP BY CATEGORY",
+        "heading_left": false,
+        "description": "<p>Add a short description for your collections<\/p>",
+        "full_width": true,
+        "sort": "date",
+        "image_ratio": "portrait",
+        "style": "style1",
+        "columns_desktop": 3,
+        "collection_list_pagination_num": 12,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,143 @@
+.video-text-section {
+  display: grid;
+  grid-template-columns: 0.7fr 1.37fr;
+  align-items: center;
+}
+
+.custom-video .video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 140%;
+  overflow: hidden;
+}
+
+.w-full {
+  max-width: 1390px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 2px solid var(--color-border);
+}
+
+.video-text-section__text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.video-text-container {
+  padding: 50px;
+  max-width: 700px;
+}
+
+.video-text-container .text-sm {
+  font-size: 24px;
+}
+
+.video-text-container .h2 {
+  font-size: 40px;
+}
+
+.description-text {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .video-text-container .text-sm {
+    font-size: 30px;
+  }
+  .video-text-container .h2 {
+    font-size: 50px;
+  }
+  .description-text {
+    font-size: 22px;
+  }
+}
+
+.custom-video .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-video .video-controls {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+}
+
+.custom-video .play-pause-btn {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-video .play-pause-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}
+
+.custom-video .play-pause-btn i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+
+.custom-video .play-pause-btn {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-video .play-pause-btn.hidden {
+  display: none;
+}
+
+.custom-video .video-container video {
+  background-color: #000;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .custom-video {
+    padding: 0 5px;
+  }
+
+  .custom-video .video-text-section {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-video .video-container {
+    min-height: 300px;
+  }
+
+  .video-text-container {
+    padding: 30px 10px;
+  }
+}
+
+.inline-block.button {
+  margin-top: 20px;
+}
+
+.inline-block.button:hover {
+  opacity: 0.7;
+}

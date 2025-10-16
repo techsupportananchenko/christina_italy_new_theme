@@ -1,0 +1,297 @@
+{{ 'collections-tab.css' | asset_url | stylesheet_tag }}
+
+<style>
+  :root #shopify-section-{{section.id}} {
+    --padding-top: {{section.settings.padding_top}}px;
+    --padding-bottom: {{section.settings.padding_bottom}}px;
+    --padding-top-mobile: {{section.settings.padding_top_mobile}}px;
+    --padding-bottom-mobile: {{section.settings.padding_bottom_mobile}}px;
+    --text-align: {{section.settings.text_align}};
+    --tabs-align: {{section.settings.tabs_align}};
+    --link-align: {{section.settings.link_align}};
+  }
+</style>
+
+<div class="collection-tabs-wrapper">
+  {% if section.settings.heading != blank %}
+    <h2 class="collection-tabs-heading h3">{{ section.settings.heading }}</h2>
+  {% endif %}
+  {% if section.settings.subheading != blank %}
+    <div class="collection-tabs-subheading">{{ section.settings.subheading }}</div>
+  {% endif %}
+
+  <div class="collection-tabs__header">
+    <ul class="collection-tabs__nav">
+      {% for block in section.blocks %}
+        <li class="collection-tab-button{% if forloop.first %} active{% endif %}" data-tab="{{ block.id }}">
+          {{ block.settings.heading }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% if section.settings.link != blank or section.settings.link_url != blank %}
+    <div class="text-button__wrapper">
+      <a class="text-button linked-to-tab active" href="{{ section.settings.link_url }}">{{ section.settings.link }}</a>
+    </div>
+  {% endif %}
+
+  <div class="collection-tabs__content">
+    {% for block in section.blocks %}
+      <div class="collection-tab-content{% if forloop.first %} active{% endif %}" id="{{ block.id }}">
+        <div class="swiper collection-swiper" data-tab-id="{{ block.id }}">
+          <div class="swiper-wrapper">
+            {% for collection in block.settings.collection_list %}
+              {% assign metaobject_list = collection.metafields.custom.custom_title.value %}
+              {% assign custom_title = blank %}
+              {% assign custom_image = blank %}
+
+              {% if metaobject_list %}
+                {% assign metaobject = metaobject_list | first %}
+                {% if metaobject %}
+                  {% assign custom_title = metaobject.custom_title %}
+                  {% assign custom_image = metaobject.custom_image %}
+                {% endif %}
+              {% endif %}
+
+              <div class="swiper-slide">
+                <div class="collection-tabs-card">
+                  <a href="{{ collection.url }}" class="collection-tabs-card__link">
+                    {% if custom_image != blank %}
+                      {{ custom_image | image_url: width: 500 | image_tag }}
+                    {% else %}
+                      {% if collection.image != blank %}
+                        {{ collection.image | image_url: width: 500 | image_tag }}
+                      {% else %}
+                        <div class="thb-placeholder">
+                          {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+                        </div>
+                      {% endif %}
+                    {% endif %}
+                  </a>
+
+                  <a href="{{ collection.url }}">
+                    <h3 class="text-button">
+                      {% if custom_title != blank %}
+                        {{ custom_title }}
+                      {% else %}
+                        {{ collection.title }}
+                      {% endif %}
+                    </h3>
+                  </a>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.collection-tab-button');
+    const contents = document.querySelectorAll('.collection-tab-content');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-tab');
+
+        buttons.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        btn.classList.add('active');
+        document.getElementById(targetId).classList.add('active');
+
+        // Manually update Swiper after tab is shown
+        const swiperEl = document.querySelector(`#${targetId} .swiper`);
+        swiperEl?.swiper?.update();
+      });
+    });
+
+    // Initialize all Swipers inside tab contents
+    document.querySelectorAll('.collection-swiper').forEach(swiperEl => {
+      new Swiper(swiperEl, {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: false,
+        pagination: {
+          el: swiperEl.querySelector('.swiper-pagination'),
+          clickable: true
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.5
+          },
+          1024: {
+            slidesPerView: 3.5
+          },
+          1280: {
+            slidesPerView: 4
+          }
+        }
+      });
+    });
+  });
+</script>
+
+
+{% schema %}
+{
+  "name": "Collections Tabs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "SHOP BY COLLECTION"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "link",
+      "label": "Link Text",
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "URL",
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Middle"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "select",
+      "id": "tabs_align",
+      "label": "Tab title alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Middle"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "flex-end"
+    },
+    {
+      "type": "select",
+      "id": "link_align",
+      "label": "Link alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Middle"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "flex-end"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Top Spacing Mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Bottom Spacing Mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Tab title",
+          "default": "Tab"
+        },
+        {
+          "type": "collection_list",
+          "id": "collection_list",
+          "label": "Collections",
+          "limit": 8
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collections Tabs",
+      "blocks": [
+        { "type": "tab" },
+        { "type": "tab" }
+      ]
+    }
+  ]
+}
+{% endschema %}

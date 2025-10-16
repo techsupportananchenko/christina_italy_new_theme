@@ -1,0 +1,255 @@
+<nav id="mobile-menu" class="mobile-menu-drawer" role="dialog" tabindex="-1">
+	<div class="mobile-menu-drawer--inner">
+		{%- liquid
+			assign selected_menu = header_settings.menu
+			if customer and customer.tags contains settings.b2b_tag and header_settings.wholesale_menu
+				assign selected_menu = header_settings.wholesale_menu
+			endif
+		-%}
+		{%- if selected_menu -%}
+    <ul class="mobile-menu">
+			{%- for link in selected_menu.links -%}
+			  {%- liquid
+					assign parent_index = forloop.index
+					assign has_sub_menu = false
+					assign has_mega_menu = false
+					assign has_menu_badge = false
+
+					assign mega_menu_block_index = false
+					assign mega_menu_block_index_sidebar = false
+					assign mega_menu_block_index_promotions = false
+
+					assign mega_menu_blocks = blocks | where: "type", "megamenu"
+					assign mega_menu_blocks_sidebar = blocks | where: "type", "megamenu_sidebar"
+					assign mega_menu_blocks_promotions = blocks | where: "type", "megamenu_promotions"
+
+
+					assign menu_badge_index = false
+					assign menu_badge_blocks = blocks | where: "type", "menu_badge"
+
+
+					if link.links.size > 0
+						assign has_sub_menu = true
+					endif
+					for block in mega_menu_blocks
+						assign position = block.settings.position | plus: 0
+			    	if position == parent_index
+							assign has_mega_menu = true
+							assign mega_menu_block_index = forloop.index0
+						endif
+					endfor
+
+					for block in mega_menu_blocks_sidebar
+						assign position_sidebar = block.settings.position | plus: 0
+						if position_sidebar == parent_index
+							assign has_mega_menu = true
+							assign mega_menu_block_index_sidebar = forloop.index0
+						endif
+					endfor
+
+					for block in mega_menu_blocks_promotions
+						assign position_promotions = block.settings.position | plus: 0
+						if position_promotions == parent_index
+							assign has_mega_menu = true
+							assign mega_menu_block_index_promotions = forloop.index0
+						endif
+					endfor
+
+					for block in menu_badge_blocks
+						assign badge_position = block.settings.badge_position | plus: 0
+			    	if badge_position == parent_index
+							assign has_menu_badge = true
+							assign menu_badge_index = forloop.index0
+						endif
+					endfor
+				-%}
+			  <li>
+					{%- if has_sub_menu == true or has_mega_menu == true -%}
+						{%- liquid
+							assign mega_menu_block = mega_menu_blocks[mega_menu_block_index]
+							assign mega_menu_block_promotions = mega_menu_blocks_promotions[mega_menu_block_index_promotions]
+						-%}
+						<details class="link-container">
+							<summary class="parent-link">{{ link.title }}{%- if has_menu_badge -%}
+								{%- assign menu_badge_block = menu_badge_blocks[menu_badge_index] -%}
+								<span class="menu-item-badge" style="--menu-badge-bg: {{ menu_badge_block.settings.color_bg }};--menu-badge-text: {{ menu_badge_block.settings.color_text }};">{{ menu_badge_block.settings.text }}</span>
+							{%- endif -%}<span class="link-forward">{%- render 'svg-icons' with 'thb-mobile-menu-forward' -%}</span></summary>
+							<ul class="sub-menu">
+								<li class="parent-link-back">
+									<button class="parent-link-back--button"><span>{%- render 'svg-icons' with 'thb-mobile-menu-back' -%}</span> {{ link.title }}</button>
+								</li>
+				        {%- for l in link.links -%}
+									{%- liquid
+										assign has_sub_menu = false
+								  	if l.links.size > 0
+								    	assign has_sub_menu = true
+										endif
+
+										assign mega_menu_block_sidebar = mega_menu_blocks_sidebar[mega_menu_block_index_sidebar]
+									-%}
+									<li>
+										{%- if has_mega_menu and mega_menu_block_sidebar -%}
+											{%- if l.links.size > 0 -%}
+											<details class="link-container">
+												<summary class="parent-link">{{- l.title }}<span class="link-forward">{%- render 'svg-icons' with 'thb-mobile-menu-forward' -%}</span></summary>
+												<ul class="sub-menu" tabindex="-1">
+													<li class="parent-link-back">
+														<button class="parent-link-back--button"><span>{%- render 'svg-icons' with 'thb-mobile-menu-back' -%}</span> {{ l.title }}</button>
+													</li>
+													<ul class="mega-menu-sidebar--content">
+													{%- for sub_link in l.links -%}
+														<li>
+															{%- if sub_link.type == 'collection_link' and sub_link.object.featured_image -%}
+																{%- if mega_menu_block_sidebar.settings.content_collection_image -%}
+																<a href="{{ sub_link.url }}" class="mega-menu-sidebar--content-container">
+																	<div class="mega-menu-sidebar--content-image">
+																	{%- render 'responsive-image', image: sub_link.object.featured_image, sizes: '237x237', priority: 'low' -%}
+																	</div>
+																	<span class="text-button">{{- sub_link.title -}}</span>
+																</a>
+																{%- else -%}
+																<a href="{{ sub_link.url }}" class="thb-full-menu--link">{{- sub_link.title -}}</a>
+																{%- endif -%}
+															{%- elsif sub_link.type == 'product_link' -%}
+																{%- render 'product-card-simple', product_card_product: sub_link.object, show_product_image: mega_menu_block_sidebar.settings.content_product_image -%}
+															{%- endif -%}
+														</li>
+													{%- endfor -%}
+													</ul>
+												</ul>
+											</details>
+											{%- else -%}
+												<a href="{{ l.url }}" title="{{ l.title | escape }}" class="link-container">{{- l.title }}</a>
+											{%- endif -%}
+										{%- elsif has_sub_menu -%}
+										<details class="link-container">
+											<summary class="parent-link">
+												{{- l.title }}
+												{%- if has_menu_badge -%}
+												{%- assign menu_badge_block = menu_badge_blocks[menu_badge_index] -%}
+												<span class="menu-item-badge" style="--menu-badge-bg: {{ menu_badge_block.settings.color_bg }};--menu-badge-text: {{ menu_badge_block.settings.color_text }};">{{ menu_badge_block.settings.text }}</span>
+												{%- endif -%}
+												<span class="link-forward">{%- render 'svg-icons' with 'thb-mobile-menu-forward' -%}</span>
+											</summary>
+											<ul class="sub-menu" tabindex="-1">
+												<li class="parent-link-back">
+													<button class="parent-link-back--button"><span>{%- render 'svg-icons' with 'thb-mobile-menu-back' -%}</span> {{ l.title }}</button>
+												</li>
+												{%- for sub_link in l.links -%}
+													{%- liquid
+														assign has_sub_menu = false
+														if sub_link.links.size > 0
+															assign has_sub_menu = true
+														endif
+													-%}
+													<li>
+														<a href="{{ sub_link.url }}" title="{{ sub_link.title | escape }}" class="link-container" role="menuitem">{{ sub_link.title }} {% if has_sub_menu %}<span></span>{%- endif -%}</a>
+													</li>
+												{%- endfor -%}
+											</ul>
+										</details>
+										{%- else -%}
+										<a href="{{ l.url }}" title="{{ l.title | escape }}" class="link-container">{{ l.title }}</a>
+									  {%- endif -%}
+									</li>
+								{%- endfor -%}
+								{%- if has_mega_menu == true -%}
+									{%- if mega_menu_block -%}
+										{%- if mega_menu_block.settings.promo_1_image -%}
+										<li>
+											{% render 'header-full-menu-promotion', promotion_image: mega_menu_block.settings.promo_1_image, promotion_link: mega_menu_block.settings.promo_1_link, promotion_heading: mega_menu_block.settings.promo_1_heading, promotion_link_label: mega_menu_block.settings.promo_1_link_label %}
+										</li>
+										{%- endif -%}
+										{%- if mega_menu_block.settings.promo_2_image -%}
+										<li>
+											{% render 'header-full-menu-promotion', promotion_image: mega_menu_block.settings.promo_2_image, promotion_link: mega_menu_block.settings.promo_2_link, promotion_heading: mega_menu_block.settings.promo_2_heading, promotion_link_label: mega_menu_block.settings.promo_2_link_label %}
+										</li>
+										{%- endif -%}
+										{%- if mega_menu_block.settings.promo_3_image -%}
+										<li>
+											{% render 'header-full-menu-promotion', promotion_image: mega_menu_block.settings.promo_3_image, promotion_link: mega_menu_block.settings.promo_3_link, promotion_heading: mega_menu_block.settings.promo_3_heading, promotion_link_label: mega_menu_block.settings.promo_3_link_label %}
+										</li>
+										{%- endif -%}
+										{%- if mega_menu_block.settings.promo_4_image -%}
+										<li>
+											{% render 'header-full-menu-promotion', promotion_image: mega_menu_block.settings.promo_4_image, promotion_link: mega_menu_block.settings.promo_4_link, promotion_heading: mega_menu_block.settings.promo_4_heading, promotion_link_label: mega_menu_block.settings.promo_4_link_label %}
+										</li>
+										{%- endif -%}
+									{%- elsif mega_menu_block_promotions -%}
+										{%- if mega_menu_block_promotions.settings.promo_1_image -%}
+										<li>
+											{% render 'header-full-menu-promotion-vertical', promotion_image: mega_menu_block_promotions.settings.promo_1_image, promotion_link: mega_menu_block_promotions.settings.promo_1_link, promotion_link_label: mega_menu_block_promotions.settings.promo_1_link_label %}
+										</li>
+										{%- endif -%}
+										{%- if mega_menu_block_promotions.settings.promo_2_image -%}
+										<li>
+											{% render 'header-full-menu-promotion-vertical', promotion_image: mega_menu_block_promotions.settings.promo_2_image, promotion_link: mega_menu_block_promotions.settings.promo_2_link, promotion_link_label: mega_menu_block_promotions.settings.promo_2_link_label %}
+										</li>
+										{%- endif -%}
+										{%- if mega_menu_block_promotions.settings.promo_3_image -%}
+										<li>
+											{% render 'header-full-menu-promotion-vertical', promotion_image: mega_menu_block_promotions.settings.promo_3_image, promotion_link: mega_menu_block_promotions.settings.promo_3_link, promotion_link_label: mega_menu_block_promotions.settings.promo_3_link_label %}
+										</li>
+										{%- endif -%}
+										{%- if mega_menu_block_promotions.settings.promo_4_image -%}
+										<li>
+											{% render 'header-full-menu-promotion-vertical', promotion_image: mega_menu_block_promotions.settings.promo_4_image, promotion_link: mega_menu_block_promotions.settings.promo_4_link, promotion_link_label: mega_menu_block_promotions.settings.promo_4_link_label %}
+										</li>
+										{%- endif -%}
+									{%- endif -%}
+								{%- endif -%}
+					    </ul>
+						</details>
+					{%- else -%}
+					<a href="{{ link.url }}" title="{{ link.title | escape }}" class="link-container">{{ link.title }}{%- if has_menu_badge -%}
+						{%- assign menu_badge_block = menu_badge_blocks[menu_badge_index] -%}
+						<span class="menu-item-badge" style="--menu-badge-bg: {{ menu_badge_block.settings.color_bg }};--menu-badge-text: {{ menu_badge_block.settings.color_text }};">{{ menu_badge_block.settings.text }}</span>
+					{%- endif -%}</a>
+			    {%- endif -%}
+			  </li>
+		  {%- endfor -%}
+    </ul>
+		{%- endif -%}
+		{%- if header_settings.mobile_secondary_menu -%}
+		<ul class="mobile-secondary-menu">
+			{%- for link in header_settings.mobile_secondary_menu.links -%}
+			  <li class="{% if link.active %} active{% endif %}">
+			    <a href="{{ link.url }}" title="{{ link.title | escape }}">{{ link.title }}</a>
+			  </li>
+		  {%- endfor -%}
+    </ul>
+		{%- endif -%}
+		{%- if header_settings.mobile_promo_image -%}
+			<div class="mega-menu-promotion">
+				{%- if header_settings.mobile_promo_link -%}<a href="{{ header_settings.mobile_promo_link }}" target="_blank">{%- endif -%}
+					{%- render 'responsive-image', image: header_settings.mobile_promo_image, sizes: '670x0' -%}
+				{%- if header_settings.mobile_promo_link -%}</a>{%- endif -%}
+				<div class="mega-menu-promotion--cover">
+					{%- if header_settings.mobile_promo_heading -%}<p class="heading-font">{{ header_settings.mobile_promo_heading }}</p>{%- endif -%}
+					{%- if header_settings.mobile_promo_link_label -%}<a href="{{ header_settings.mobile_promo_link }}" target="_blank" class="text-button white">{{ header_settings.mobile_promo_link_label }}</a>{%- endif -%}
+				</div>
+			</div>
+		{%- endif -%}
+		<div class="thb-mobile-menu-footer">
+			{%- if shop.customer_accounts_enabled -%}
+				{%- if customer -%}
+				  {%- assign profile_link = routes.account_url -%}
+				  {%- capture profile_text -%}
+				    {{ 'sections.header.my_account' | t }}
+				  {%- endcapture -%}
+				{%- else -%}
+				  {%- assign profile_link = routes.account_login_url -%}
+				  {%- capture profile_text -%}
+				    {{ 'sections.header.login' | t }}
+				  {%- endcapture -%}
+				{%- endif -%}
+		    <a class="thb-mobile-account-link" href="{{ profile_link | escape }}" title="{{ profile_text | escape }}">{%- render 'svg-icons' with 'myaccount' %} {{ profile_text }}</a>
+		  {%- endif -%}
+			<div class="no-js-hidden">
+				{%- render 'localization', id: 'MobileMenuLocalization', show_language_switcher: header_settings.show_language_switcher, show_currency_switcher: header_settings.show_currency_switcher -%}
+			</div>
+		</div>
+	</div>
+</nav>
+<link rel="stylesheet" href="{{ 'mobile-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'mobile-menu.css' | asset_url | stylesheet_tag }}</noscript>

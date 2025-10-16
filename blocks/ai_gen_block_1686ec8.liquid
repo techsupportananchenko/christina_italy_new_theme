@@ -1,0 +1,639 @@
+{% doc %}
+  @prompt
+    create this exact section code with an option to link to pages or collections and add a heading and text 
+    {%- liquid
+    	assign full_width = section.settings.full_width
+    	assign aspect_ratio = section.settings.aspect_ratio
+    	assign custom_aspect_ratio = section.settings.custom_aspect_ratio
+    	assign show_dots = section.settings.show_dots
+    	assign controls_play_pause = section.settings.controls_play_pause
+    	assign controls_sound = section.settings.controls_sound
+    	assign show_quick_add_button = section.settings.show_quick_add_button
+    	assign color_text = section.settings.color_text
+    	assign overlay_gradient = section.settings.overlay_gradient
+    	assign disable_top_spacing = section.settings.disable_top_spacing
+    	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+    
+    	if aspect_ratio == 'custom'
+    		assign aspect_ratio = custom_aspect_ratio
+    	endif
+    -%}
+    <div class="row{% if full_width %} full-width-row-full{% endif %}">
+    	<div class="small-12 columns">
+    		<div class="shoppable-video-reels section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+    			<slide-show class="shoppable-video-reels--carousel carousel custom-dots" data-align="center" data-dots="{{ show_dots }}" style="--video-aspect-ratio: {{ aspect_ratio }};">
+    				{%- for block in section.blocks -%}
+    					{%- liquid
+    						assign product_handle = block.settings.product_handle
+    						assign video_hosted = block.settings.video_hosted
+    						assign index_c = forloop.index | default: 1 | modulo: 4 | plus: 1
+    						assign autoplay = false
+    						if forloop.index == 1
+    							assign autoplay = true
+    						endif
+    					-%}
+    					<div class="shoppable-video-reels--slide carousel__slide" {{ block.shopify_attributes }}>
+    						<div class="shoppable-video-reels--video">
+    							<div class="slideshow__slide-video-bg"{% if video_hosted %} data-provider="hosted"{% endif %}>
+    								{% if video_hosted %}
+    									{{ video_hosted | video_tag:, follow the exact code i added and add option to link to collection or page. the layout should look the same 
+    {%- liquid
+    	assign full_width = section.settings.full_width
+    	assign aspect_ratio = section.settings.aspect_ratio
+    	assign custom_aspect_ratio = section.settings.custom_aspect_ratio
+    	assign show_dots = section.settings.show_dots
+    	assign controls_play_pause = section.settings.controls_play_pause
+    	assign controls_sound = section.settings.controls_sound
+    	assign show_quick_add_button = section.settings.show_quick_add_button
+    	assign color_text = section.settings.color_text
+    	assign overlay_gradient = section.settings.overlay_gradient
+    	assign disable_top_spacing = section.settings.disable_top_spacing
+    	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+    
+    	if aspect_ratio == 'custom'
+    		assign aspect_ratio = custom_aspect_ratio
+    	endif
+    -%}
+    <div class="row{% if full_width %} full-width-row-full{% endif %}">
+    	<div class="small-12 columns">
+    		<div class="shoppable-video-reels section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+    			<slide-show class="shoppable-video-reels--carousel carousel custom-dots" data-align="center" data-dots="{{ show_dots }}" style="--video-aspect-ratio: {{ aspect_ratio }};">
+    				{%- for block in section.blocks -%}
+    					{%- liquid
+    						assign product_handle = block.settings.product_handle
+    						assign video_hosted = block.settings.video_hosted
+    						assign index_c = forloop.index | default: 1 | modulo: 4 | plus: 1
+    						assign autoplay = false
+    						if forloop.index == 1
+    							assign autoplay = true
+    						endif
+    					-%}
+    					<div class="shoppable-video-reels--slide carousel__slide" {{ block.shopify_attributes }}>
+    						<div class="shoppable-video-reels--video">
+    							<div class="slideshow__slide-video-bg"{% if video_hosted %} data-provider="hosted"{% endif %}>
+    								{% if video_hosted %}
+    									{{ video_hosted | video_t
+{% enddoc %}
+{%- liquid
+	assign full_width = block.settings.full_width
+	assign aspect_ratio = block.settings.aspect_ratio
+	assign custom_aspect_ratio = block.settings.custom_aspect_ratio
+	assign show_dots = block.settings.show_dots
+	assign controls_play_pause = block.settings.controls_play_pause
+	assign controls_sound = block.settings.controls_sound
+	assign show_quick_add_button = block.settings.show_quick_add_button
+	assign color_text = block.settings.color_text
+	assign overlay_gradient = block.settings.overlay_gradient
+	assign disable_top_spacing = block.settings.disable_top_spacing
+	assign disable_bottom_spacing = block.settings.disable_bottom_spacing
+
+	if aspect_ratio == 'custom'
+		assign aspect_ratio = custom_aspect_ratio
+	endif
+-%}
+
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+.ai-shoppable-video-reels-{{ ai_gen_id }} .row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .row.full-width-row-full {
+	max-width: 100%;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .small-12 {
+	width: 100%;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .columns {
+	padding: 0 15px;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .shoppable-video-reels {
+	position: relative;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .section-spacing {
+	padding-top: {{ settings.section_spacing_desktop | default: 100 }}px;
+	padding-bottom: {{ settings.section_spacing_desktop | default: 100 }}px;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .section-spacing--disable-top {
+	padding-top: 0;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .section-spacing--disable-bottom {
+	padding-bottom: 0;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .shoppable-video-reels--carousel {
+	position: relative;
+	overflow: hidden;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .carousel {
+	display: flex;
+	transition: transform 0.3s ease;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .custom-dots {
+	position: relative;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .shoppable-video-reels--slide {
+	flex: 0 0 100%;
+	position: relative;
+	aspect-ratio: var(--video-aspect-ratio);
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .carousel__slide {
+	position: relative;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .shoppable-video-reels--video {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .slideshow__slide-video-bg {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #000;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .slideshow__slide-video-bg video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.ai-shoppable-video-reels-{{ ai_gen_id }} .slide-link-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 749px) {
+	.ai-shoppable-video-reels-{{ ai_gen_id }} .section-spacing {
+		padding-top: {{ settings.section_spacing_mobile | default: 50 }}px;
+		padding-bottom: {{ settings.section_spacing_mobile | default: 50 }}px;
+	}
+}
+{% endstyle %}
+
+<div class="ai-shoppable-video-reels-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+	<div class="row{% if full_width %} full-width-row-full{% endif %}">
+		<div class="small-12 columns">
+			<div class="shoppable-video-reels section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+				<slide-show-{{ ai_gen_id }} class="shoppable-video-reels--carousel carousel custom-dots" data-align="center" data-dots="{{ show_dots }}" style="--video-aspect-ratio: {{ aspect_ratio }};">
+					{%- for i in (1..3) -%}
+						{%- liquid
+							assign video_key = 'video_hosted_' | append: i
+							assign product_key = 'product_handle_' | append: i
+							assign link_type_key = 'link_type_' | append: i
+							assign page_key = 'link_page_' | append: i
+							assign collection_key = 'link_collection_' | append: i
+
+							assign video_hosted = block.settings[video_key]
+							assign product_handle = block.settings[product_key]
+							assign link_type = block.settings[link_type_key]
+							assign link_page = block.settings[page_key]
+							assign link_collection = block.settings[collection_key]
+
+							assign index_c = forloop.index | default: 1 | modulo: 4 | plus: 1
+							assign autoplay = false
+							if forloop.index == 1
+								assign autoplay = true
+							endif
+
+							case link_type
+								when 'page'
+									assign slide_link = link_page.url
+								when 'collection'
+									assign slide_link = link_collection.url
+								else
+									assign slide_link = ''
+							endcase
+						-%}
+
+						{% if video_hosted != blank %}
+							<div class="shoppable-video-reels--slide carousel__slide" data-slide-index="{{ forloop.index0 }}">
+								{% if slide_link != blank %}
+									<a href="{{ slide_link }}" class="slide-link-overlay"></a>
+								{% endif %}
+								<div class="shoppable-video-reels--video">
+									<div class="slideshow__slide-video-bg"{% if video_hosted %} data-provider="hosted"{% endif %}>
+										{% if video_hosted %}
+											{{ video_hosted | video_tag:
+												autoplay: autoplay,
+												loop: true,
+												controls: false,
+												muted: true,
+												playsinline: true,
+												preload: 'metadata'
+											}}
+										{% endif %}
+									</div>
+								</div>
+							</div>
+						{% endif %}
+					{%- endfor -%}
+				</slide-show-{{ ai_gen_id }}>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+(function() {
+	class SlideShow{{ ai_gen_id }} extends HTMLElement {
+		constructor() {
+			super();
+			this.currentSlide = 0;
+			this.totalSlides = 0;
+		}
+
+		connectedCallback() {
+			this.slides = this.querySelectorAll('.shoppable-video-reels--slide');
+			this.totalSlides = this.slides.length;
+			this.showDots = this.dataset.dots === 'true';
+			
+			if (this.totalSlides > 1) {
+				this.createDots();
+				this.setupEventListeners();
+				this.startAutoplay();
+			}
+		}
+
+		createDots() {
+			if (!this.showDots) return;
+			
+			const dotsContainer = document.createElement('div');
+			dotsContainer.className = 'carousel-dots';
+			dotsContainer.style.cssText = `
+				display: flex;
+				justify-content: center;
+				gap: 8px;
+				margin-top: 20px;
+			`;
+
+			for (let i = 0; i < this.totalSlides; i++) {
+				const dot = document.createElement('button');
+				dot.className = 'carousel-dot';
+				dot.dataset.slide = i;
+				dot.style.cssText = `
+					width: 12px;
+					height: 12px;
+					border-radius: 50%;
+					background: ${i === 0 ? '#333' : '#ccc'};
+					border: none;
+					cursor: pointer;
+					transition: all 0.3s ease;
+				`;
+				dotsContainer.appendChild(dot);
+			}
+
+			this.appendChild(dotsContainer);
+			this.dots = this.querySelectorAll('.carousel-dot');
+		}
+
+		setupEventListeners() {
+			if (this.dots) {
+				this.dots.forEach((dot, index) => {
+					dot.addEventListener('click', () => this.goToSlide(index));
+				});
+			}
+
+			let startX = 0;
+			let currentX = 0;
+			let isDragging = false;
+
+			this.addEventListener('touchstart', (e) => {
+				startX = e.touches[0].clientX;
+				isDragging = true;
+			});
+
+			this.addEventListener('touchmove', (e) => {
+				if (!isDragging) return;
+				currentX = e.touches[0].clientX;
+			});
+
+			this.addEventListener('touchend', () => {
+				if (!isDragging) return;
+				isDragging = false;
+				
+				const diff = startX - currentX;
+				if (Math.abs(diff) > 50) {
+					if (diff > 0) {
+						this.nextSlide();
+					} else {
+						this.prevSlide();
+					}
+				}
+			});
+		}
+
+		goToSlide(index) {
+			this.currentSlide = index;
+			this.updateSlidePosition();
+			this.updateDots();
+			this.updateVideos();
+		}
+
+		nextSlide() {
+			this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+			this.goToSlide(this.currentSlide);
+		}
+
+		prevSlide() {
+			this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+			this.goToSlide(this.currentSlide);
+		}
+
+		updateSlidePosition() {
+			const translateX = -this.currentSlide * 100;
+			this.style.transform = `translateX(${translateX}%)`;
+		}
+
+		updateDots() {
+			if (this.dots) {
+				this.dots.forEach((dot, index) => {
+					dot.style.background = index === this.currentSlide ? '#333' : '#ccc';
+				});
+			}
+		}
+
+		updateVideos() {
+			this.slides.forEach((slide, index) => {
+				const video = slide.querySelector('video');
+				if (video) {
+					if (index === this.currentSlide) {
+						video.play();
+					} else {
+						video.pause();
+					}
+				}
+			});
+		}
+
+		startAutoplay() {
+			this.autoplayInterval = setInterval(() => {
+				this.nextSlide();
+			}, 5000);
+		}
+
+		disconnectedCallback() {
+			if (this.autoplayInterval) {
+				clearInterval(this.autoplayInterval);
+			}
+		}
+	}
+
+	customElements.define('slide-show-{{ ai_gen_id }}', SlideShow{{ ai_gen_id }});
+})();
+</script>
+
+{% schema %}
+{
+	"name": "Shoppable video reels",
+	"tag": null,
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "full_width",
+			"label": "Full width",
+			"default": false
+		},
+		{
+			"type": "select",
+			"id": "aspect_ratio",
+			"label": "Video aspect ratio",
+			"options": [
+				{
+					"value": "16/9",
+					"label": "16:9"
+				},
+				{
+					"value": "4/3",
+					"label": "4:3"
+				},
+				{
+					"value": "1/1",
+					"label": "1:1"
+				},
+				{
+					"value": "9/16",
+					"label": "9:16"
+				},
+				{
+					"value": "custom",
+					"label": "Custom"
+				}
+			],
+			"default": "9/16"
+		},
+		{
+			"type": "text",
+			"id": "custom_aspect_ratio",
+			"label": "Custom aspect ratio",
+			"default": "9/16"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_dots",
+			"label": "Show navigation dots",
+			"default": true
+		},
+		{
+			"type": "checkbox",
+			"id": "controls_play_pause",
+			"label": "Show play/pause button",
+			"default": true
+		},
+		{
+			"type": "checkbox",
+			"id": "controls_sound",
+			"label": "Show sound button",
+			"default": true
+		},
+		{
+			"type": "checkbox",
+			"id": "show_quick_add_button",
+			"label": "Show quick add button",
+			"default": true
+		},
+		{
+			"type": "color",
+			"id": "color_text",
+			"label": "Text color",
+			"default": "#ffffff"
+		},
+		{
+			"type": "color_background",
+			"id": "overlay_gradient",
+			"label": "Overlay gradient"
+		},
+		{
+			"type": "checkbox",
+			"id": "disable_top_spacing",
+			"label": "Remove top spacing",
+			"default": false
+		},
+		{
+			"type": "checkbox",
+			"id": "disable_bottom_spacing",
+			"label": "Remove bottom spacing",
+			"default": false
+		},
+		{
+			"type": "header",
+			"content": "Video 1"
+		},
+		{
+			"type": "video",
+			"id": "video_hosted_1",
+			"label": "Video"
+		},
+		{
+			"type": "text",
+			"id": "product_handle_1",
+			"label": "Product handle"
+		},
+		{
+			"type": "select",
+			"id": "link_type_1",
+			"label": "Link type",
+			"options": [
+				{
+					"value": "none",
+					"label": "No link"
+				},
+				{
+					"value": "page",
+					"label": "Page"
+				},
+				{
+					"value": "collection",
+					"label": "Collection"
+				}
+			],
+			"default": "none"
+		},
+		{
+			"type": "page",
+			"id": "link_page_1",
+			"label": "Page"
+		},
+		{
+			"type": "collection",
+			"id": "link_collection_1",
+			"label": "Collection"
+		},
+		{
+			"type": "header",
+			"content": "Video 2"
+		},
+		{
+			"type": "video",
+			"id": "video_hosted_2",
+			"label": "Video"
+		},
+		{
+			"type": "text",
+			"id": "product_handle_2",
+			"label": "Product handle"
+		},
+		{
+			"type": "select",
+			"id": "link_type_2",
+			"label": "Link type",
+			"options": [
+				{
+					"value": "none",
+					"label": "No link"
+				},
+				{
+					"value": "page",
+					"label": "Page"
+				},
+				{
+					"value": "collection",
+					"label": "Collection"
+				}
+			],
+			"default": "none"
+		},
+		{
+			"type": "page",
+			"id": "link_page_2",
+			"label": "Page"
+		},
+		{
+			"type": "collection",
+			"id": "link_collection_2",
+			"label": "Collection"
+		},
+		{
+			"type": "header",
+			"content": "Video 3"
+		},
+		{
+			"type": "video",
+			"id": "video_hosted_3",
+			"label": "Video"
+		},
+		{
+			"type": "text",
+			"id": "product_handle_3",
+			"label": "Product handle"
+		},
+		{
+			"type": "select",
+			"id": "link_type_3",
+			"label": "Link type",
+			"options": [
+				{
+					"value": "none",
+					"label": "No link"
+				},
+				{
+					"value": "page",
+					"label": "Page"
+				},
+				{
+					"value": "collection",
+					"label": "Collection"
+				}
+			],
+			"default": "none"
+		},
+		{
+			"type": "page",
+			"id": "link_page_3",
+			"label": "Page"
+		},
+		{
+			"type": "collection",
+			"id": "link_collection_3",
+			"label": "Collection"
+		}
+	],
+	"presets": [
+		{
+			"name": "Shoppable video reels"
+		}
+	]
+}
+{% endschema %}

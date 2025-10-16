@@ -1,0 +1,151 @@
+{{- 'custom-multicolumn.css' | asset_url | stylesheet_tag -}}
+
+{% assign metaobject_id = section.settings.metaobject_id %}
+{% assign key_features = product.metafields.custom[metaobject_id].value %}
+
+{% if key_features != blank %}
+  <section class="custom-columns-section {% if section.settings.stack_content %}stack-content{% endif %}">
+    {% if section.settings.section_title != blank %}
+      <h2 class="h2 text-align-{{ section.settings.position }}">
+        {{ section.settings.section_title | escape }}
+      </h2>
+    {% endif %}
+
+    {% assign column_count = section.settings.column_count | default: 3 %}
+
+    <div class="swiper custom-columns-swiper">
+      <div class="columns-container columns-container--{{ column_count }} swiper-wrapper">
+        {% for feature in key_features %}
+          <div class="swiper-slide ">
+            {% assign key_image = feature.feature_image %}
+            {% assign key_title = feature.feature_title %}
+            {% assign key_description = feature.feature_description %}
+            {% assign key_button = feature.button_title %}
+            {% assign key_link = feature.button_link %}
+
+            <div class="column-item" {{ section.shopify_attributes }}>
+              {% if key_image %}
+                <div class="image-container">
+                  {{ key_image | image_url: width: 500 | image_tag: class: "column-image", alt: key_title }}
+                </div>
+              {% endif %}
+              <div class="text-wrapper">
+                {% if key_title != blank %}
+                  <h2 class="column-title heding-size-{{ section.settings.heading_size }}">{{ key_title | escape }}</h2>
+                {% endif %}
+                {% if key_description != blank %}
+                  <p class="column-description">{{ key_description | escape }}</p>
+                {% endif %}
+                {% if key_button != blank %}
+                  <a href="{{ key_link }}" class="button  outline">{{ key_button }}</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.innerWidth < 768) {
+      const swiper = new Swiper('.custom-columns-swiper', {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Custom Columns",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Our Features"
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Section Title Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Middle"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Card Title Size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "text",
+      "id": "metaobject_id",
+      "label": "Metafield ID",
+      "info": "Metafield ID - e.g. section_key_features"
+    },
+    {
+      "type": "select",
+      "id": "column_count",
+      "label": "Number of Columns",
+      "options": [
+        { "value": "1", "label": "1 Column" },
+        { "value": "2", "label": "2 Columns" },
+        { "value": "3", "label": "3 Columns" }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_content",
+      "label": "Stack content",
+      "default": false
+    },
+  ],
+  "presets": [
+    {
+      "name": "Custom Columns",
+    }
+  ]
+}
+{% endschema %}

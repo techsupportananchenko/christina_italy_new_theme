@@ -1,0 +1,579 @@
+{{- 'multicolumn.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign section_heading = section.settings.heading
+	assign section_heading_left = section.settings.heading_left
+	assign section_description = section.settings.description
+	assign full_width = section.settings.full_width
+	assign columns_desktop = section.settings.columns_desktop
+	assign heading_size = section.settings.heading_size
+	assign mobile_swipe = section.settings.mobile_swipe
+	assign image_ratio = section.settings.image_ratio
+	assign display_type = section.settings.display_type
+	assign text_alignment = section.settings.text_alignment
+	assign show_progress_bar = section.settings.show_progress_bar
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+	assign center_mobile = section.settings.center_mobile
+
+	case columns_desktop
+		when 2
+			assign columns_desktop_class = 'medium-6'
+		when 3
+			assign columns_desktop_class = 'medium-4'
+		when 4
+			assign columns_desktop_class = 'medium-3'
+		when 5
+			assign columns_desktop_class = 'medium-1/5 large-1/5'
+		when 6
+			assign columns_desktop_class = 'medium-4 large-2'
+	endcase
+
+	if display_type == 'carousel'
+		assign element = 'slide-show'
+	else
+		assign element = 'div'
+	endif
+-%}
+
+{%- assign use_metaobjects = section.settings.use_metaobjects -%}
+{%- assign features = collection.metafields.custom.key_features.value -%}
+
+<div class="multicolumn text-{{ text_alignment }}{% if mobile_swipe and display_type == 'grid' %} swipe-on-mobile{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+	<div class="row{% if full_width %} full-width-row{% endif %}">
+		<div class="small-12 columns">
+			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left %}
+			<div class="multicolumn__inner display-type--{{ display_type }}">
+				<{{ element }} class="row align-stretch no-padding {{ display_type }} {{ center_mobile }}">
+					{% if use_metaobjects %}
+						{% for feature in features %}
+							<div class="multicolumn__column multicolumn__column--metaobjects{% if mobile_swipe and display_type == 'grid' %} small-12 {% else %} small-6 {% endif %} {{ columns_desktop_class }} columns {% if display_type == 'carousel' %}carousel__slide{% endif %}">
+								{% if feature.feature_image != blank %}
+									{%- liquid
+										assign ratio = 1
+											assign max_width = feature.feature_image.value.image.width | divided_by: 1.5 | append: 'px'
+										if image_ratio == 'adapt'
+											assign ratio = feature.feature_image.value.image.aspect_ratio
+										endif
+									-%}
+
+									<figure class="multicolumn__image" style="width: {{ max_width }};">
+										<div class="multicolumn__image--inner aspect-ratio aspect-ratio--{{ image_ratio }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+										{%- render 'responsive-image', image: feature.feature_image.value, sizes: '407x0,814x0', retina: true -%}
+										</div>
+									</figure>
+								{% endif %}
+								<div class="multicolumn-content align--{{ section.settings.text_alignment }}">
+									{% if feature.feature_title != blank %}
+										<h4 class="{{ heading_size }}">{{ feature.feature_title }}</h4>
+									{% endif %}
+									{% if feature.feature_description != blank %}
+										<div class="rte">{{ feature.feature_description }}</div>
+									{% endif %}
+								</div>
+							</div>
+						{% endfor %}
+					{% else %}
+						{%- for block in section.blocks -%}
+							{% case block.type %}
+								{% when 'column' %}
+									<div class="multicolumn__column {% if mobile_swipe and display_type == 'grid' %} small-12 {% else %} small-6 {% endif %} {{ columns_desktop_class }} columns {% if display_type == 'carousel' %}carousel__slide{% endif %}">
+										{% if block.settings.image != blank %}
+											{%- liquid
+												assign ratio = 1
+												assign max_width = block.settings.image.width | append: 'px'
+												assign image_link = block.settings.image_link
+												if block.settings.retina
+													assign max_width = block.settings.image.width | divided_by: 2 | append: 'px'
+												endif
+												if image_ratio == 'adapt'
+													assign ratio = block.settings.image.aspect_ratio
+												endif
+												if block.settings.image_full_width
+													assign max_width = '100%'
+												endif
+											-%}
+											<figure class="multicolumn__image" style="width: {{ max_width }};">
+												<div class="multicolumn__image--inner aspect-ratio aspect-ratio--{{ image_ratio }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+													{% if image_link != blank %}
+														<a href="{{ image_link }}">
+													{% endif %}
+													{%- render 'responsive-image', image: block.settings.image, sizes: '407x0,814x0', retina: block.settings.retina -%}
+													{% if image_link != blank %}
+														</a>
+													{% endif %}
+												</div>
+											</figure>
+										{% endif %}
+										<div class="multicolumn-content align--{{ block.settings.alignment }}">
+											{% if block.settings.title != blank %}
+												<h4 class="{{ heading_size }}">{{ block.settings.title | newline_to_br }}</h4>
+											{% endif %}
+											{% if block.settings.text != blank %}
+												<div class="rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+											{% endif %}
+											{% if block.settings.link_label != blank %}
+												<a class="{{ block.settings.link_style }}" href="{{ block.settings.link }}"><span>{{ block.settings.link_label }}</span></a>
+											{% endif %}
+										</div>
+									</div>
+								{% when 'background_block' %}
+									<style>
+										:root .block--{{ block.id }} {
+											--section-height: {{block.settings.section_height}}px;
+										}
+									</style>
+									<div class="multicolumn__promo vertcal-align--{{ block.settings.vertical_align }} multicolumn-align--{{ block.settings.multicolumn_align }} block--{{ block.id }}" style="background-image: url({{ block.settings.background_image | image_url: width: 1200 }});">
+										<div class="background-block__content">
+											{% if block.settings.title != blank %}
+												<h4 class="{{ heading_size }}">{{ block.settings.title }}</h4>
+											{% endif %}
+											{% if block.settings.text != blank %}
+												<div class="rte">{{ block.settings.text }}</div>
+											{% endif %}
+											<div class="background-block__buttons">
+												{% if block.settings.button_1_label != blank and block.settings.button_1_link != blank %}
+													<a href="{{ block.settings.button_1_link }}" class="{{ block.settings.button_style }}">{{ block.settings.button_1_label }}</a>
+												{% endif %}
+												{% if block.settings.button_2_label != blank and block.settings.button_2_link != blank %}
+													<a href="{{ block.settings.button_2_link }}" class="{{ block.settings.button_style_2 }}">{{ block.settings.button_2_label }}</a>
+												{% endif %}
+											</div>
+										</div>
+									</div>
+								{% endcase %}
+						{%- endfor -%}
+					{% endif %}
+					{%- if display_type == 'carousel' -%}
+						{%- render 'slideshow-arrows' -%}
+					{%- endif -%}
+				</{{ element }}>
+				{%- if display_type == 'carousel' and show_progress_bar -%}
+				<div class="flickity-progress">
+					<div class="flickity-progress--bar"></div>
+				</div>
+				{%- endif -%}
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+  {
+    "name": "Multicolumn",
+		"class": "section-multicolumn",
+    "settings": [
+			{
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Multicolumn"
+      },
+			{
+				"type": "checkbox",
+				"id": "heading_left",
+				"default": false,
+				"label": "Left align heading"
+			},
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Add a short description for this section</p>"
+      },
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"label": "Make section full width",
+				"default": true
+			},
+			{
+				"type": "select",
+				"id": "display_type",
+				"options": [
+					{
+						"value": "grid",
+						"label": "Grid"
+					},
+					{
+						"value": "carousel",
+						"label": "Carousel"
+					}
+				],
+				"default": "grid",
+				"label": "Display type"
+			},
+			{
+	      "type": "select",
+	      "id": "image_ratio",
+	      "options": [
+	        {
+	          "value": "adapt",
+	          "label": "Adapt to image"
+	        },
+	        {
+	          "value": "portrait",
+	          "label": "Portrait"
+	        },
+	        {
+	          "value": "landscape",
+	          "label": "Landscape"
+	        },
+	        {
+	          "value": "square",
+	          "label": "Square"
+	        },
+	        {
+	          "value": "circle",
+	          "label": "Circle"
+	        }
+	      ],
+	      "default": "adapt",
+	      "label": "Image ratio"
+	    },
+			{
+	      "type": "range",
+	      "id": "columns_desktop",
+	      "min": 2,
+	      "max": 6,
+	      "step": 1,
+	      "default": 4,
+	      "label": "Number of columns on desktop"
+	    },
+			{
+	      "type": "select",
+	      "id": "text_alignment",
+	      "options": [
+	        {
+	          "value": "left",
+	          "label": "Left"
+	        },
+	        {
+	          "value": "center",
+	          "label": "Center"
+	        },
+	        {
+	          "value": "right",
+	          "label": "Right"
+	        }
+	      ],
+	      "default": "left",
+	      "label": "Content alignment"
+	    },
+			{
+				"type": "select",
+				"id": "heading_size",
+				"label": "Content heading size",
+				"options": [
+					{
+						"value": "h2",
+						"label": "Extra Large"
+					},
+					{
+						"value": "h4",
+						"label": "Large"
+					},
+					{
+						"value": "h5",
+						"label": "Medium"
+					},
+					{
+						"value": "h6",
+						"label": "Small"
+					}
+				],
+				"default": "h5"
+			},
+			{
+	      "type": "header",
+	      "content": "Grid"
+	    },
+			{
+	      "type": "checkbox",
+	      "id": "mobile_swipe",
+	      "default": false,
+	      "label": "Enable swipe on mobile"
+	    },
+			{
+	      "type": "header",
+	      "content": "Carousel"
+	    },
+			{
+				"type": "checkbox",
+				"id": "show_progress_bar",
+				"label": "Show progress bar",
+				"default": true
+			},
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			},
+			{
+				"type": "select",
+				"id": "center_mobile",
+				"label": "Mobile alignment",
+				"options": [
+					{
+						"value": "left",
+						"label": "Left"
+					},
+					{
+						"value": "middle",
+						"label": "Middle"
+					},
+					{
+						"value": "right",
+						"label": "Right"
+					}
+				],
+				"default": "left"
+			},
+			{
+				"type": "checkbox",
+				"id": "use_metaobjects",
+				"label": "Use collection metaobjects for columns",
+				"default": false
+			}
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image",
+						"info": "770 x 770 .jpg recommended."
+					},
+					{
+						"type": "checkbox",
+						"id": "image_full_width",
+						"label": "Fit image to column",
+						"default": false
+					},
+	        {
+	          "type": "url",
+	          "id": "image_link",
+	          "label": "Image link"
+	        },
+					{
+            "type": "checkbox",
+            "id": "retina",
+            "label": "Enable retina",
+            "default": true,
+            "info": "Image will be displayed at half the size, making it look crisp on retina screens."
+          },
+					{
+						"type": "text",
+						"id": "title",
+						"default": "Column",
+						"label": "Heading"
+					},
+					{
+						"type": "richtext",
+						"id": "text",
+						"default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+						"label": "Description"
+					},
+	        {
+	          "type": "text",
+	          "id": "link_label",
+	          "label": "Link label"
+	        },
+	        {
+	          "type": "url",
+	          "id": "link",
+	          "label": "Link"
+	        },
+					{
+						"type": "select",
+						"id": "link_style",
+						"label": "Link style",
+						"default": "text-button",
+						"options": [
+							{
+								"value": "text-button",
+								"label": "Link"
+							},
+							{
+								"value": "button",
+								"label": "Button"
+							},
+							{
+								"value": "button outline",
+								"label": "Button outline"
+							}
+						]
+					},
+					{
+						"type": "select",
+						"id": "alignment",
+						"options": [
+							{
+								"value": "left",
+								"label": "Left"
+							},
+							{
+								"value": "center",
+								"label": "Center"
+							},
+							{
+								"value": "right",
+								"label": "Right"
+							}
+						],
+						"default": "left",
+						"label": "Content alignment"
+					},
+        ]
+      },
+			{
+				"type": "background_block",
+				"name": "Promo Block",
+				"settings": [
+					{
+						"type": "image_picker",
+						"id": "background_image",
+						"label": "Background image"
+					},
+					{
+						"type": "range",
+						"id": "section_height",
+						"min": 200,
+						"max": 1000,
+						"step": 20,
+						"unit": "px",
+						"label": "Mobile Section Height",
+						"default": 400
+					},
+					{
+						"type": "text",
+						"id": "title",
+						"label": "Title"
+					},
+					{
+						"type": "textarea",
+						"id": "text",
+						"label": "Text"
+					},
+					{
+						"type": "text",
+						"id": "button_1_label",
+						"label": "Button 1 label"
+					},
+					{
+						"type": "url",
+						"id": "button_1_link",
+						"label": "Button 1 link"
+					},
+					{
+						"type": "text",
+						"id": "button_2_label",
+						"label": "Button 2 label"
+					},
+					{
+						"type": "url",
+						"id": "button_2_link",
+						"label": "Button 2 link"
+					},
+					{
+						"type": "select",
+						"id": "button_style",
+						"label": "Button 1 style",
+						"options": [
+							{ "value": "button", "label": "Primary" },
+							{ "value": "button outline", "label": "Outline" }
+						],
+						"default": "button"
+					},
+					{
+						"type": "select",
+						"id": "button_style_2",
+						"label": "Button 2 style",
+						"options": [
+							{ "value": "button", "label": "Primary" },
+							{ "value": "button outline", "label": "Outline" }
+						],
+						"default": "button"
+					},
+					{
+						"type": "select",
+						"id": "multicolumn_align",
+						"options": [
+							{
+								"value": "left",
+								"label": "Left"
+							},
+							{
+								"value": "center",
+								"label": "Center"
+							},
+							{
+								"value": "right",
+								"label": "Right"
+							}
+						],
+							"default": "left",
+							"label": "Content alignment"
+					},
+					{
+						"type": "select",
+						"id": "vertical_align",
+						"options": [
+							{
+								"value": "flex-start",
+								"label": "Top"
+							},
+							{
+								"value": "center",
+								"label": "Center"
+							},
+							{
+								"value": "flex-end",
+								"label": "Bottom"
+							}
+						],
+							"default": "center",
+							"label": "Vertical alignment"
+					},
+				]
+			}
+    ],
+    "presets": [
+      {
+        "name": "Multicolumn",
+				"blocks": [
+	        {
+	          "type": "column"
+	        },
+	        {
+	          "type": "column"
+	        },
+	        {
+	          "type": "column"
+	        },
+	        {
+	          "type": "column"
+	        }
+	      ]
+      }
+    ],
+		"enabled_on": {
+			"templates": ["*"],
+			"groups": [
+				"header", "footer"
+			]
+		}
+  }
+{% endschema %}

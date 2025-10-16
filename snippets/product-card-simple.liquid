@@ -1,0 +1,91 @@
+{%- if product_card_product and product_card_product != empty -%}
+{%- liquid
+	assign product_aspect_ratio = settings.product_aspect_ratio
+	if show_product_image
+		assign featured_media = product_card_product.featured_media
+		assign ratio = 1
+		assign sizes = '375x375,770x770'
+		assign is_video = false
+		assign use_video = settings.products_use_video
+
+		if featured_media.media_type != 'image'
+			if featured_media.media_type == 'video' and use_video
+				assign is_video = true
+				assign featured_media = featured_media
+			else
+				assign featured_media = featured_media.preview_image
+			endif
+		endif
+		if product_aspect_ratio == 'adapt'
+			if featured_media
+				assign ratio = featured_media.aspect_ratio
+			endif
+			assign sizes = '375x0,770x0'
+		elsif product_aspect_ratio == 'portrait'
+			assign ratio = 1 | divided_by: 1.25
+			assign sizes = '375x350,770x700'
+		elsif product_aspect_ratio == 'landscape'
+			assign ratio = 1 | divided_by: 0.75
+			assign sizes = '375x250,770x500'
+		endif
+	endif
+	assign product_content_alignment = settings.product_content_alignment
+
+	# Product card options
+	assign show_size_options = settings.show_size_options
+
+-%}
+<product-card class="product-card text-{{ product_content_alignment }}">
+	{%- if show_product_image -%}
+  <figure class="product-featured-image">
+    {% render 'product-card-badge', product_card_product: product_card_product %}
+    <a href="{{ product_card_product.url | within: collection }}" title="{{ product_card_product.title | escape }}" class="product-featured-image-link aspect-ratio aspect-ratio--{{ settings.product_aspect_ratio }}" style="--padding-bottom: {{ 1 | divided_by: ratio | times: 100 }}%;">
+			{%- if featured_media -%}
+      	{%- if is_video and use_video -%}
+					{{ featured_media | video_tag: controls: false, loading: 'lazy', loop: true, autoplay: true, image_size: '770x' }}
+				{%- else -%}
+      	{%- render 'responsive-image', class: 'product-primary-image', image: featured_media, sizes: sizes -%}
+				{%- endif -%}
+			{%- else -%}
+				<div class="thb-placeholder">
+					{{ 'product-1' | placeholder_svg_tag }}
+				</div>
+			{%- endif -%}
+    </a>
+		{%- if settings.enable_quick_view -%}
+		<quick-view class="product-card-quickview product-card-quickview--{%- unless show_size_options -%}button{%- else -%}icon{%- endunless -%}" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
+			<div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
+			<span>{%- unless show_size_options -%}{{ 'products.product.quick_view' | t }}{%- else -%}{% render 'svg-icons' with 'thb-quick-view' %}{%- endunless -%}</span>
+		</quick-view>
+		{%- endif -%}
+		{%- if show_size_options -%}
+			{%- render 'product-card-size-options', product_card_product: product_card_product -%}
+		{%- endif -%}
+  </figure>
+	{%- endif -%}
+	<div class="product-card-info">
+  	<a href="{{ product_card_product.url | within: collection }}" title="{{ product_card_product.title | escape }}" class="product-card-title">{{ product_card_product.title }}</a>
+    {% render 'product-price', product: product_card_product %}
+  </div>
+</product-card>
+{%- else -%}
+<product-card class="product-card">
+	{%- if show_product_image -%}
+	<figure class="product-featured-image {% if settings.products_hover_images %}thb-hover{% endif %}">
+		<a href="{{ product_card_product.url | within: collection }}" title="{{ product_card_product.title | escape }}" class="product-featured-image-link aspect-ratio aspect-ratio--{{ settings.product_aspect_ratio }}" style="--padding-bottom: {{ 1 | divided_by: 1 | times: 100 }}%;">
+			<div class="thb-placeholder">
+				{{ 'product-1' | placeholder_svg_tag }}
+			</div>
+			<button class="product-card-quickview  product-card-quickview--{%- unless show_size_options -%}button{%- else -%}icon{%- endunless -%}" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
+				<div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
+				<span>{{ 'products.product.quick_view' | t }}</span>
+			</button>
+		</a>
+	</figure>
+	{%- endif -%}
+	<div class="product-card-info">
+		<a href="#" title="{{ product_card_product.title | escape }}" class="product-card-title">{{ 'onboarding.product_title' | t }}</a>
+		{% render 'product-price', product: product_card_product %}
+	</div>
+</product-card>
+{%- endif -%}

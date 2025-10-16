@@ -1,0 +1,68 @@
+{
+  "type": "header",
+  "name": "Footer group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "social_4pQe8h": {
+          "type": "social",
+          "settings": {
+            "column_size": "small",
+            "title": "FOLLOW US"
+          }
+        },
+        "401e3886-6cb7-4742-8fda-45a0d97a26a3": {
+          "type": "menu",
+          "settings": {
+            "column_size": "small",
+            "title": "Christina French",
+            "menu": ""
+          }
+        },
+        "00a364e5-af4e-4073-871b-4d533bd4da06": {
+          "type": "menu",
+          "settings": {
+            "column_size": "small",
+            "title": "Customer Service",
+            "menu": ""
+          }
+        },
+        "a09a8a35-bedc-4119-aa04-3ce886faba9d": {
+          "type": "menu",
+          "settings": {
+            "column_size": "small",
+            "title": "Product Series",
+            "menu": ""
+          }
+        },
+        "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2": {
+          "type": "signup",
+          "settings": {
+            "column_size": "medium",
+            "title": "Sign up",
+            "text": "<p>For news, exclusive benefits and more<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "social_4pQe8h",
+        "401e3886-6cb7-4742-8fda-45a0d97a26a3",
+        "00a364e5-af4e-4073-871b-4d533bd4da06",
+        "a09a8a35-bedc-4119-aa04-3ce886faba9d",
+        "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2"
+      ],
+      "settings": {
+        "full_width": true,
+        "copyright_text": "",
+        "show_language_switcher": false,
+        "show_currency_switcher": false,
+        "show_payment_icons": true,
+        "enable_follow_on_shop": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

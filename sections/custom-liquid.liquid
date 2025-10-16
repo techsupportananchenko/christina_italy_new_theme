@@ -1,0 +1,54 @@
+{%- liquid
+	assign section_width = section.settings.section_width
+-%}
+<div class="row {{ section_width }}">
+	<div class="small-12 columns">
+    {{ section.settings.custom_liquid }}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Custom liquid",
+  "tag": "section",
+  "class": "section-custom-liquid",
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "Custom liquid",
+      "info": "Add app snippets or other Liquid code to create advanced customizations."
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "full-width-row",
+          "label": "Full width"
+        },
+        {
+          "value": "full-width-row-full",
+          "label": "Full width, no spacing"
+        }
+      ],
+      "default": "full-width-row",
+      "label": "Section width"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom liquid"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["*"],
+    "groups": [
+      "header", "footer"
+    ]
+  }
+}
+{% endschema %}

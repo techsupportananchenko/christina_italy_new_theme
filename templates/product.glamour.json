@@ -1,0 +1,530 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {}
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "style_vendor"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "uppercase": false,
+            "show_products_rating": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true,
+            "color_picker_size": "regular",
+            "color_picker_use_variants": false,
+            "variant_is_disabled": true,
+            "sizing_guide_variant": "Size",
+            "sizing_guide_text": "Sizing guide",
+            "sizing_guide_icon": "ruler",
+            "sizing_guide_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "outline_button": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "405a9ed0-786a-4f4d-ad46-566990341d8a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "open": true,
+            "content": "<p>Plastic, bold and colourful jewellery has captured the hearts of It Girls everywhere, integrating their holiday accessories into their everyday looks. Yala’s red beaded necklace pays homage to the cultural jewellery of the Maasai Mara ladies from the BMB Workshop and fits into this latest trend.<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "b16fcef7-3316-44a4-9f80-205682253cb5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to Use",
+            "open": false,
+            "content": "<p>These techniques can include hand engraving, hand forging, and hand casting, among others. By using these traditional techniques, artisans are able to create pieces that have a unique and authentic look and feel.<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "390def07-18af-4bb9-8bf4-c6bf80c6211d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingridients",
+            "open": false,
+            "content": "<p>Certified carbon-free products and companies offer several benefits. For one, they help to reduce the overall carbon footprint of society, which is crucial for mitigating the impacts of climate change.<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "collapsible_tab_7hBVFU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Good for---",
+            "open": false,
+            "content": "<p>Certified carbon-free products and companies offer several benefits. For one, they help to reduce the overall carbon footprint of society, which is crucial for mitigating the impacts of climate change.<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
+          "type": "side_panel",
+          "settings": {
+            "side_panel_1_label": "Materials",
+            "side_panel_1_icon": "leather",
+            "side_panel_1_content": "",
+            "side_panel_1_page": "",
+            "side_panel_2_label": "Shipping & Returns",
+            "side_panel_2_icon": "box",
+            "side_panel_2_content": "",
+            "side_panel_2_page": "",
+            "side_panel_3_label": "Care Guide",
+            "side_panel_3_icon": "washing",
+            "side_panel_3_content": "",
+            "side_panel_3_page": ""
+          }
+        },
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
+        "title",
+        "variant_picker",
+        "buy_buttons",
+        "405a9ed0-786a-4f4d-ad46-566990341d8a",
+        "b16fcef7-3316-44a4-9f80-205682253cb5",
+        "390def07-18af-4bb9-8bf4-c6bf80c6211d",
+        "collapsible_tab_7hBVFU",
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+      ],
+      "settings": {
+        "full_width": true,
+        "enable_sticky_info": true,
+        "enable_sticky_add_to_cart": true,
+        "show_taxes_included": true,
+        "media_layout": "grid",
+        "display_slider_pagination": true,
+        "media_aspect_ratio": "adapt",
+        "display_captions": true,
+        "hide_variants": false,
+        "lightbox": true,
+        "enable_video_looping": false
+      }
+    },
+    "16623877721f33fb14": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 35,
+        "spacer_desktop": 90,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "dde9ae02-7832-4b5d-82cb-dce4d766f427": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18432547127579__dde9ae02-7832-4b5d-82cb-dce4d766f427-1681377090c56acdec-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Something different"
+          }
+        },
+        "template--18432547127579__dde9ae02-7832-4b5d-82cb-dce4d766f427-1681377090c56acdec-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Because you deserve it",
+            "size": "h1"
+          }
+        },
+        "template--18432547127579__dde9ae02-7832-4b5d-82cb-dce4d766f427-1681377090c56acdec-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Rings are often used to symbolize love and commitment, with engagement rings and wedding bands being the most well-known examples. Religious and Spiritual Significance: Many cultures use jewelry in religious and spiritual rituals.<\/p>",
+            "custom_liquid": "",
+            "size": "text-size-large"
+          }
+        }
+      },
+      "block_order": [
+        "template--18432547127579__dde9ae02-7832-4b5d-82cb-dce4d766f427-1681377090c56acdec-0",
+        "template--18432547127579__dde9ae02-7832-4b5d-82cb-dce4d766f427-1681377090c56acdec-1",
+        "template--18432547127579__dde9ae02-7832-4b5d-82cb-dce4d766f427-1681377090c56acdec-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_width": "grid",
+        "text_width": "xlarge",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#384135",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "fe7eee22-4bc9-4bc0-8b4b-205df1a993f5": {
+      "type": "rich-text",
+      "blocks": {
+        "076a1b72-2e63-4936-8d6e-ebf8ae6397bb": {
+          "type": "image",
+          "settings": {
+            "retina": true
+          }
+        }
+      },
+      "block_order": [
+        "076a1b72-2e63-4936-8d6e-ebf8ae6397bb"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_width": "full-width-row",
+        "text_width": "grid",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "5927d23d-da00-4a9a-93f8-5644e7d23230": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RDM_1000x1000copy_2000x_copy.png",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "Nature",
+            "text": "<p>Recycled gold refers to gold that has been previously used and is now being reclaimed and reused in various industries. This process of recycling gold has become increasingly popular in recent years due to the rising demand for ethical products.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BRUSH-GIFT_MainBanner-mobile_5c2435ae-7523-4cb4-9847-ae40b7c08c62.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "Technology",
+            "text": "<p>These techniques can include hand engraving, hand forging, and hand casting, among others. By using these traditional techniques, artisans are able to create pieces that have a unique and authentic look and feel.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hadrahot_ILLUSRTRIOUS_TREAT_12432fe7-26f3-45d9-a623-e7a67989076e.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "Active Power",
+            "text": "<p>18k gold is also a popular choice for jewelry making because of its color. Yellow gold is the most traditional and classic choice, but white and rose gold have become increasingly popular in recent years.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foam_df188681-efaf-4cec-838a-a1c5a271a1a8.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "Proven Results",
+            "text": "<p>Certified carbon-free products and companies offer several benefits. For one, they help to reduce the overall carbon footprint of society, which is crucial for mitigating the impacts of climate change.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-0",
+        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-1",
+        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-2",
+        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-3"
+      ],
+      "settings": {
+        "heading": "What makes it Work?",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "display_type": "grid",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "text_alignment": "left",
+        "heading_size": "h5",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "bcb48e2d-c55f-4787-abf4-17b850e5bb8a": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--18432547127579__bcb48e2d-c55f-4787-abf4-17b850e5bb8a-16813710817e2ce3bd-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Inspire your style",
+            "heading_size": "h1"
+          }
+        },
+        "template--18432547127579__bcb48e2d-c55f-4787-abf4-17b850e5bb8a-16813710817e2ce3bd-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--18432547127579__bcb48e2d-c55f-4787-abf4-17b850e5bb8a-16813710817e2ce3bd-1",
+        "template--18432547127579__bcb48e2d-c55f-4787-abf4-17b850e5bb8a-16813710817e2ce3bd-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_width": "full-width-row",
+        "image_parallax": true,
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-450",
+        "content_width": "small",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "overlay_opacity": 4,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "4f2b51bb-7fb5-4ae6-98cc-b313c81bf63c": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 15,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "5c7cec52-f78f-4e08-8c51-0ff3f0135e45": {
+      "type": "rich-text",
+      "blocks": {
+        "9aee3b19-b258-4ad3-aea6-151a5da4971b": {
+          "type": "heading",
+          "settings": {
+            "text": "✾ ✾ ✾",
+            "size": "h4"
+          }
+        },
+        "template--18432547127579__5c7cec52-f78f-4e08-8c51-0ff3f0135e45-1681377090c56acdec-1": {
+          "type": "heading",
+          "settings": {
+            "text": "For women, jewelry is often seen as a way to express their personal style and add a touch of glamour to their outfit. Popular jewelry styles for women include delicate necklaces, statement earrings. 😍😍",
+            "size": "h3"
+          }
+        },
+        "32e10985-5358-4031-8606-f99271cd4f8d": {
+          "type": "text-button",
+          "settings": {
+            "link_label": "LEARN MORE",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "9aee3b19-b258-4ad3-aea6-151a5da4971b",
+        "template--18432547127579__5c7cec52-f78f-4e08-8c51-0ff3f0135e45-1681377090c56acdec-1",
+        "32e10985-5358-4031-8606-f99271cd4f8d"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_width": "full-width-row",
+        "text_width": "xlarge",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#fff5f2",
+        "color_text": "#c95137",
+        "color_links": "#c95137",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "8831dd81-b06c-44dc-aa95-9c370558f6ff": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 15,
+        "spacer_desktop": 0,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5": {
+      "type": "gallery",
+      "blocks": {
+        "template--18432547127579__b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5-1681373018c042b41e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BIOPHYTO_950x750_38e1cb50-7b06-4576-ac65-e5e752d77415.jpg",
+            "subheading": "",
+            "title": "BIOPHYTPO",
+            "text": "Dipped in 14K gold and featuring three star-studded, this bracelet is an everyday piece that still stands out.",
+            "link_label": "LEARN MORE",
+            "link": "",
+            "use_text_button": true,
+            "block_link": "",
+            "product_list": []
+          }
+        },
+        "image_DWG3xx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/picture6_c9c8147a-cdd6-411d-93a8-b3657d05134e.jpg",
+            "subheading": "",
+            "title": "CLEANSERS",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": true,
+            "block_link": "",
+            "product_list": []
+          }
+        }
+      },
+      "block_order": [
+        "template--18432547127579__b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5-1681373018c042b41e-0",
+        "image_DWG3xx"
+      ],
+      "settings": {
+        "columns_desktop": 2,
+        "section_width": "full-width-row",
+        "mobile_swipe": true,
+        "image_ratio": "adapt",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "column_spacing": "large",
+        "heading_size": "h2",
+        "overlay_color": "#4b4b4b",
+        "overlay_opacity": 10,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "collapsible_content_gp7cWR": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_tab_UHt4aQ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "האם ניתן להשתמש בהריון",
+            "open": false,
+            "content": "",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "collapsible_tab_gm6rGe": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "מה ההבדל בין קלינזר לטונר",
+            "open": false,
+            "content": "",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "collapsible_tab_nVVzm8": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "האם להשתמש על עור מגורה",
+            "open": false,
+            "content": "",
+            "page": "",
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_UHt4aQ",
+        "collapsible_tab_gm6rGe",
+        "collapsible_tab_nVVzm8"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "description": "<p>Add a short description for this section<\/p>",
+        "uppercase_heading": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16625458859c68803a": {
+      "type": "apps",
+      "settings": {}
+    },
+    "1662552569cce2536d": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 5,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "heading_left": true,
+        "description": "<p>Combine your style with these products<\/p>",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "16623877721f33fb14",
+    "dde9ae02-7832-4b5d-82cb-dce4d766f427",
+    "fe7eee22-4bc9-4bc0-8b4b-205df1a993f5",
+    "5927d23d-da00-4a9a-93f8-5644e7d23230",
+    "bcb48e2d-c55f-4787-abf4-17b850e5bb8a",
+    "4f2b51bb-7fb5-4ae6-98cc-b313c81bf63c",
+    "5c7cec52-f78f-4e08-8c51-0ff3f0135e45",
+    "8831dd81-b06c-44dc-aa95-9c370558f6ff",
+    "b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5",
+    "collapsible_content_gp7cWR",
+    "16625458859c68803a",
+    "1662552569cce2536d",
+    "product-recommendations"
+  ]
+}

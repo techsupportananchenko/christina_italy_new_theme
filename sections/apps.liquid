@@ -1,0 +1,75 @@
+{%- liquid
+	assign section_width = section.settings.section_width
+
+  assign disable_top_spacing = section.settings.disable_top_spacing
+  assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+-%}
+<div class="app-wrapper section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+  <div class="row {{ section_width }}">
+    <div class="small-12 columns">
+      {%- for block in section.blocks -%}
+        {% render block %}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "App wrapper",
+    "class": "section-app-wrapper",
+    "settings": [
+      {
+        "type": "select",
+        "id": "section_width",
+        "options": [
+          {
+            "value": "grid",
+            "label": "Grid"
+          },
+          {
+            "value": "full-width-row",
+            "label": "Full width"
+          },
+          {
+            "value": "full-width-row-full",
+            "label": "Full width, no spacing"
+          }
+        ],
+        "default": "full-width-row",
+        "label": "Section width"
+      },
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "type": "checkbox",
+        "id": "disable_top_spacing",
+        "default": false,
+        "label": "Remove top spacing"
+      },
+      {
+        "type": "checkbox",
+        "id": "disable_bottom_spacing",
+        "default": false,
+        "label": "Remove bottom spacing"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "@app"
+      }
+    ],
+    "presets": [
+      {
+        "name": "App wrapper"
+      }
+    ],
+    "disabled_on": {
+      "groups": [
+        "header", "custom.overlay", "footer"
+      ]
+    }
+  }
+{% endschema %}

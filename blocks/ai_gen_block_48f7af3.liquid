@@ -1,0 +1,658 @@
+{% doc %}
+  @prompt
+    shoppable vertical video carousal featuring the products with links
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-video-carousel-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-video-carousel__container-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: {{ block.settings.carousel_height }}px;
+    overflow: hidden;
+  }
+
+  .ai-video-carousel__track-{{ ai_gen_id }} {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+  }
+
+  .ai-video-carousel__slide-{{ ai_gen_id }} {
+    position: relative;
+    flex: 0 0 100%;
+    height: 100%;
+    background: #000;
+  }
+
+  .ai-video-carousel__video-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-video-carousel__overlay-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    padding: 30px 20px 20px;
+    color: white;
+  }
+
+  .ai-video-carousel__product-info-{{ ai_gen_id }} {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  .ai-video-carousel__product-image-{{ ai_gen_id }} {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .ai-video-carousel__product-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-video-carousel__product-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-video-carousel__product-image-placeholder-{{ ai_gen_id }} svg {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+
+  .ai-video-carousel__product-details-{{ ai_gen_id }} {
+    flex-grow: 1;
+  }
+
+  .ai-video-carousel__product-title-{{ ai_gen_id }} {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: white;
+  }
+
+  .ai-video-carousel__product-price-{{ ai_gen_id }} {
+    font-size: 14px;
+    margin: 0 0 10px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .ai-video-carousel__shop-button-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-video-carousel__shop-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+  }
+
+  .ai-video-carousel__controls-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+  }
+
+  .ai-video-carousel__control-button-{{ ai_gen_id }} {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-video-carousel__control-button-{{ ai_gen_id }}:hover {
+    background-color: white;
+  }
+
+  .ai-video-carousel__control-button-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    color: #333;
+  }
+
+  .ai-video-carousel__prev-{{ ai_gen_id }} {
+    left: 15px;
+  }
+
+  .ai-video-carousel__next-{{ ai_gen_id }} {
+    right: 15px;
+  }
+
+  .ai-video-carousel__indicators-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 2;
+  }
+
+  .ai-video-carousel__indicator-{{ ai_gen_id }} {
+    width: 4px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-video-carousel__indicator-{{ ai_gen_id }}.active {
+    background-color: white;
+  }
+
+  .ai-video-carousel__play-pause-{{ ai_gen_id }} {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    color: white;
+  }
+
+  .ai-video-carousel__play-pause-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-video-carousel__container-{{ ai_gen_id }} {
+      height: {{ block.settings.carousel_height_mobile }}px;
+    }
+
+    .ai-video-carousel__overlay-{{ ai_gen_id }} {
+      padding: 20px 15px 15px;
+    }
+
+    .ai-video-carousel__product-info-{{ ai_gen_id }} {
+      gap: 12px;
+    }
+
+    .ai-video-carousel__product-image-{{ ai_gen_id }} {
+      width: 50px;
+      height: 50px;
+    }
+
+    .ai-video-carousel__product-title-{{ ai_gen_id }} {
+      font-size: 14px;
+    }
+
+    .ai-video-carousel__product-price-{{ ai_gen_id }} {
+      font-size: 13px;
+    }
+
+    .ai-video-carousel__shop-button-{{ ai_gen_id }} {
+      padding: 8px 14px;
+      font-size: 13px;
+    }
+
+    .ai-video-carousel__indicators-{{ ai_gen_id }} {
+      bottom: 80px;
+      right: 15px;
+    }
+  }
+{% endstyle %}
+
+<video-carousel-{{ ai_gen_id }}
+  class="ai-video-carousel-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-video-carousel__container-{{ ai_gen_id }}">
+    <div class="ai-video-carousel__track-{{ ai_gen_id }}" data-track>
+      {% for i in (1..5) %}
+        {% liquid
+          assign video_key = 'video_' | append: i
+          assign product_key = 'product_' | append: i
+          assign video = block.settings[video_key]
+          assign product = block.settings[product_key]
+        %}
+
+        {% if video != blank %}
+          <div class="ai-video-carousel__slide-{{ ai_gen_id }}" data-slide="{{ forloop.index0 }}">
+            <video
+              class="ai-video-carousel__video-{{ ai_gen_id }}"
+              src="{{ video.sources[1].url }}"
+              muted
+              loop
+              playsinline
+              data-video
+            ></video>
+
+            {% if product != blank %}
+              <div class="ai-video-carousel__overlay-{{ ai_gen_id }}">
+                <div class="ai-video-carousel__product-info-{{ ai_gen_id }}">
+                  <div class="ai-video-carousel__product-image-{{ ai_gen_id }}">
+                    {% if product.featured_image %}
+                      <img
+                        src="{{ product.featured_image | image_url: width: 120 }}"
+                        alt="{{ product.featured_image.alt | escape }}"
+                        width="120"
+                        height="120"loading="lazy"
+                      >
+                    {% else %}
+                      <div class="ai-video-carousel__product-image-placeholder-{{ ai_gen_id }}">
+                        {{ 'product-1' | placeholder_svg_tag }}
+                      </div>
+                    {% endif %}
+                  </div>
+                  <div class="ai-video-carousel__product-details-{{ ai_gen_id }}">
+                    <h3 class="ai-video-carousel__product-title-{{ ai_gen_id }}">{{ product.title }}</h3>
+                    <div class="ai-video-carousel__product-price-{{ ai_gen_id }}">{{ product.price | money }}</div>
+                    <a
+                      href="{{ product.url }}"
+                      class="ai-video-carousel__shop-button-{{ ai_gen_id }}"
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                      </svg>
+                      Shop now</a>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <button
+      class="ai-video-carousel__play-pause-{{ ai_gen_id }}"
+      aria-label="Play/Pause video"
+      data-play-pause
+    >
+      <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="5,3 19,12 5,21"></polygon>
+      </svg>
+      <svg class="pause-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="6" y="4" width="4" height="16"></rect>
+        <rect x="14" y="4" width="4" height="16"></rect>
+      </svg>
+    </button>
+
+    <div class="ai-video-carousel__controls-{{ ai_gen_id }} ai-video-carousel__prev-{{ ai_gen_id }}">
+      <button
+        class="ai-video-carousel__control-button-{{ ai_gen_id }}"
+        aria-label="Previous video"
+        data-prev
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15,18 9,12 15,6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <div class="ai-video-carousel__controls-{{ ai_gen_id }} ai-video-carousel__next-{{ ai_gen_id }}">
+      <button
+        class="ai-video-carousel__control-button-{{ ai_gen_id }}"
+        aria-label="Next video"
+        data-next
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9,18 15,12 9,6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <div class="ai-video-carousel__indicators-{{ ai_gen_id }}" data-indicators></div>
+  </div>
+</video-carousel-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class VideoCarousel{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentSlide = 0;
+        this.isPlaying = false;
+        this.autoplayInterval = null;
+      }
+
+      connectedCallback() {
+        this.track = this.querySelector('[data-track]');
+        this.slides = this.querySelectorAll('[data-slide]');
+        this.videos = this.querySelectorAll('[data-video]');
+        this.prevButton = this.querySelector('[data-prev]');
+        this.nextButton = this.querySelector('[data-next]');
+        this.playPauseButton = this.querySelector('[data-play-pause]');
+        this.indicatorsContainer = this.querySelector('[data-indicators]');
+
+        this.setupIndicators();
+        this.setupEventListeners();
+        this.updateCarousel();
+        this.startAutoplay();
+      }
+
+      setupIndicators() {
+        this.slides.forEach((slide, index) => {
+          const indicator = document.createElement('div');
+          indicator.className = `ai-video-carousel__indicator-{{ ai_gen_id }}`;
+          indicator.addEventListener('click', () => this.goToSlide(index));
+          this.indicatorsContainer.appendChild(indicator);
+        });
+      }
+
+      setupEventListeners() {
+        this.prevButton.addEventListener('click', () => this.previousSlide());
+        this.nextButton.addEventListener('click', () => this.nextSlide());
+        this.playPauseButton.addEventListener('click', () => this.togglePlayPause());
+
+        this.videos.forEach((video, index) => {
+          video.addEventListener('click', () => {
+            if (index === this.currentSlide) {
+              this.togglePlayPause();
+            }
+          });
+        });
+
+        this.addEventListener('mouseenter', () => this.pauseAutoplay());
+        this.addEventListener('mouseleave', () => this.startAutoplay());
+      }
+
+      updateCarousel() {
+        const translateX = -this.currentSlide * 100;
+        this.track.style.transform = `translateX(${translateX}%)`;
+
+        this.videos.forEach((video, index) => {
+          if (index === this.currentSlide) {
+            if (this.isPlaying) {
+              video.play();
+            }
+          } else {
+            video.pause();
+          }
+        });
+
+        const indicators = this.querySelectorAll('.ai-video-carousel__indicator-{{ ai_gen_id }}');
+        indicators.forEach((indicator, index) => {
+          indicator.classList.toggle('active', index === this.currentSlide);
+        });
+
+        this.updatePlayPauseButton();
+      }
+
+      updatePlayPauseButton() {
+        const playIcon = this.playPauseButton.querySelector('.play-icon');
+        const pauseIcon = this.playPauseButton.querySelector('.pause-icon');
+
+        if (this.isPlaying) {
+          playIcon.style.display = 'none';
+          pauseIcon.style.display = 'block';
+        } else {
+          playIcon.style.display = 'block';
+          pauseIcon.style.display = 'none';
+        }
+      }
+
+      goToSlide(index) {
+        this.currentSlide = index;
+        this.updateCarousel();
+      }
+
+      nextSlide() {
+        this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+        this.updateCarousel();
+      }
+
+      previousSlide() {
+        this.currentSlide = this.currentSlide === 0 ? this.slides.length - 1 : this.currentSlide - 1;
+        this.updateCarousel();
+      }
+
+      togglePlayPause() {
+        this.isPlaying = !this.isPlaying;
+        this.updateCarousel();
+
+        if (this.isPlaying) {
+          this.startAutoplay();
+        } else {
+          this.pauseAutoplay();
+        }
+      }
+
+      startAutoplay() {
+        if (this.autoplayInterval) return;
+        
+        this.isPlaying = true;
+        this.updateCarousel();
+        
+        this.autoplayInterval = setInterval(() => {
+          this.nextSlide();
+        }, {{ block.settings.autoplay_duration | times: 1000 }});
+      }
+
+      pauseAutoplay() {
+        if (this.autoplayInterval) {
+          clearInterval(this.autoplayInterval);
+          this.autoplayInterval = null;
+        }
+      }
+
+      disconnectedCallback() {
+        this.pauseAutoplay();
+      }
+    }
+
+    customElements.define('video-carousel-{{ ai_gen_id }}', VideoCarousel{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Shoppable Video Carousel",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 300,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "carousel_height",
+      "min": 400,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "label": "Height on desktop",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "carousel_height_mobile",
+      "min": 300,
+      "max": 600,
+      "step": 50,
+      "unit": "px",
+      "label": "Height on mobile",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Autoplay"
+    },
+    {
+      "type": "range",
+      "id": "autoplay_duration",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Autoplay duration",
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Button style"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover background",
+      "default": "#f0f0f0"
+    },
+    {
+      "type": "header",
+      "content": "Video 1"
+    },
+    {
+      "type": "video",
+      "id": "video_1",
+      "label": "Video"
+    },
+    {
+      "type": "product",
+      "id": "product_1",
+      "label": "Product"
+    },
+    {
+      "type": "header",
+      "content": "Video 2"
+    },
+    {
+      "type": "video",
+      "id": "video_2",
+      "label": "Video"
+    },
+    {
+      "type": "product",
+      "id": "product_2",
+      "label": "Product"
+    },
+    {
+      "type": "header",
+      "content": "Video 3"
+    },
+    {
+      "type": "video",
+      "id": "video_3",
+      "label": "Video"
+    },
+    {
+      "type": "product",
+      "id": "product_3",
+      "label": "Product"
+    },
+    {
+      "type": "header",
+      "content": "Video 4"
+    },
+    {
+      "type": "video",
+      "id": "video_4",
+      "label": "Video"
+    },
+    {
+      "type": "product",
+      "id": "product_4",
+      "label": "Product"
+    },
+    {
+      "type": "header",
+      "content": "Video 5"
+    },
+    {
+      "type": "video",
+      "id": "video_5",
+      "label": "Video"
+    },
+    {
+      "type": "product",
+      "id": "product_5",
+      "label": "Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shoppable Video Carousel"
+    }
+  ]
+}
+{% endschema %}

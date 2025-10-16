@@ -1,0 +1,67 @@
+{
+  "sections": {
+    "main-product-quick-view": {
+      "type": "main-product-quick-view",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "uppercase": true,
+            "show_products_rating": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true,
+            "color_picker_size": "regular",
+            "color_picker_use_variants": false,
+            "variant_is_disabled": true
+          }
+        },
+        "description_WqY48K": {
+          "type": "description",
+          "settings": {
+            "seo_text_max_height": 1000,
+            "seo_text_read_more": "Read more",
+            "seo_text_read_less": "Read less"
+          }
+        },
+        "specifications_tab_DhGXLN": {
+          "type": "specifications_tab",
+          "settings": {
+            "heading": "Product specifications",
+            "open": true,
+            "content": "",
+            "empty_field_label": "N\/A"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "outline_button": false,
+            "show_dynamic_checkout": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "variant_picker",
+        "description_WqY48K",
+        "specifications_tab_DhGXLN",
+        "buy_buttons"
+      ],
+      "settings": {
+        "show_taxes_included": false,
+        "media_aspect_ratio": "adapt",
+        "hide_variants": false
+      }
+    }
+  },
+  "order": [
+    "main-product-quick-view"
+  ]
+}

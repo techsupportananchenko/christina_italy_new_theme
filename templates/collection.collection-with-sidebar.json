@@ -1,0 +1,57 @@
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_image": false,
+        "show_collection_description": true,
+        "show_subcollections": true,
+        "make_heading_uppercase": true,
+        "text_alignment": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "2eb8e6da-98ad-442c-b31e-fcc9bc0532b9": {
+          "type": "promotion",
+          "settings": {
+            "promotion_collection": "",
+            "promotion_position": 5,
+            "promotion_width": "2",
+            "title": "Don't Miss Out—Limited Time Savings!",
+            "text": "",
+            "link_label": "Shop collection",
+            "link": "",
+            "use_text_button": true,
+            "block_link": "",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "overlay_color": "#ee3b45",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "2eb8e6da-98ad-442c-b31e-fcc9bc0532b9"
+      ],
+      "settings": {
+        "full_width": true,
+        "products_per_page": 14,
+        "columns_desktop": 3,
+        "pagination_type": "paginated",
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "show_counts": false,
+        "filter_color_swatches": false,
+        "facets_desktop": "sidebar"
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "product-grid"
+  ]
+}

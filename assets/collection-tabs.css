@@ -1,0 +1,123 @@
+.collection-tabs__list-link,
+.collection-tabs__list-link:after {
+  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
+}
+
+
+.collection-tabs {
+  overflow: hidden;
+}
+
+.collection-tabs__list {
+  display: block;
+  overflow-x: scroll;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+  scrollbar-width: none;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .collection-tabs__list {
+    margin-top: 10px;
+  }
+}
+
+[dir="rtl"] .collection-tabs__list {
+  text-align: right;
+  justify-content: flex-start;
+}
+
+.collection-tabs__list::-webkit-scrollbar {
+  display: none;
+}
+
+.collection-tabs__list-link {
+  margin: 0;
+  color: var(--color-accent);
+  font-weight: var(--font-body-medium-weight, 500);
+  opacity: 0.4;
+  position: relative;
+  padding: 2px 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .collection-tabs__list-link {
+    font-size: 23px;
+  }
+}
+
+.collection-tabs__list-link:after {
+  /* content: ""; */
+  display: block;
+  position: absolute;
+  height: 1px;
+  top: 100%;
+  width: 100%;
+  transform: scale(0, 1);
+  transform-origin: center left;
+  background: var(--color-accent);
+}
+
+.collection-tabs__list-link:hover {
+  opacity: 1;
+}
+
+.collection-tabs__list-link.active {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.collection-tabs__list-link.active:after {
+  transform: scale(1, 1);
+}
+
+.collection-tabs__list-link:first-child:before {
+  content: none;
+}
+
+.section-collection-tabs .products.carousel .columns {
+  display: none;
+}
+
+.section-collection-tabs .products.carousel .columns.carousel__slide {
+  display: block;
+}
+
+.collection-tabs .rte {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-collection-tabs .products.carousel .carousel__slide {
+    width: calc(50vw - 15px);
+  }
+  .collection-tabs .h3 {
+    font-size: 23px;
+  }
+  .collection-tabs .rte {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .section-collection-tabs .section-header {
+    margin-bottom: 16px;
+  }
+}
+
+.section-collection-tabs .section-header--content .h2{
+  font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-collection-tabs .section-header--content .h2{
+    font-size: 28px;
+  }
+}

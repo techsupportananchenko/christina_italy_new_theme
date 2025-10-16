@@ -1,0 +1,94 @@
+
+
+.product-image-container.product-image-container--thumbnails .product-thumbnail-container .product-thumbnail:after {
+  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+
+
+.product-image-container.product-image-container--thumbnails {
+  position: relative;
+  margin: 0 0 30px;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .product-image-container.product-image-container--thumbnails {
+      padding-left: 90px; }
+      [dir="rtl"] .product-image-container.product-image-container--thumbnails {
+        padding: 0 90px 0 0; } }
+  @media only screen and (min-width: 1068px) {
+    .product-image-container.product-image-container--thumbnails {
+      margin-bottom: 0; } }
+  .product-image-container.product-image-container--thumbnails scroll-shadow {
+    margin: 2px 0 0;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .product-image-container.product-image-container--thumbnails scroll-shadow {
+        margin: 0;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 100%; } }
+    [dir="rtl"] .product-image-container.product-image-container--thumbnails scroll-shadow {
+      left: auto;
+      right: 0; }
+  .product-image-container.product-image-container--thumbnails .product-thumbnail-container {
+    display: grid;
+    gap: 2px;
+    z-index: 20;
+    align-content: start;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    grid-auto-rows: max-content;
+    align-items: start;
+    scrollbar-width: none; }
+    @media only screen and (min-width: 768px) {
+      .product-image-container.product-image-container--thumbnails .product-thumbnail-container {
+        gap: 10px;
+        grid-auto-flow: row;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100%; } }
+    .product-image-container.product-image-container--thumbnails .product-thumbnail-container::-webkit-scrollbar {
+      display: none; }
+    .product-image-container.product-image-container--thumbnails .product-thumbnail-container .product-thumbnail {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      width: 80px;
+      height: auto; }
+      .product-image-container.product-image-container--thumbnails .product-thumbnail-container .product-thumbnail img {
+        object-fit: contain; }
+      .product-image-container.product-image-container--thumbnails .product-thumbnail-container .product-thumbnail:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: inset 0 0 0 1px transparent; }
+      .product-image-container.product-image-container--thumbnails .product-thumbnail-container .product-thumbnail-icon {
+        width: 21px;
+        height: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg-body, #fff);
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        border-radius: 50%;
+        pointer-events: none; }
+        .product-image-container.product-image-container--thumbnails .product-thumbnail-container .product-thumbnail-icon svg {
+          opacity: 0.6;
+          width: 8px; }
+      .product-image-container.product-image-container--thumbnails .product-thumbnail-container .product-thumbnail:hover svg {
+        opacity: 1; }
+      .product-image-container.product-image-container--thumbnails .product-thumbnail-container .product-thumbnail.is-initial-selected:after {
+        box-shadow: inset 0 0 0 1px var(--color-body), inset 0 0 0 3px var(--bg-body, #fff); }
+    .product-image-container.product-image-container--thumbnails .product-thumbnail-container[data-hide-variants="true"] .product-thumbnail {
+      display: none; }
+      .product-image-container.product-image-container--thumbnails .product-thumbnail-container[data-hide-variants="true"] .product-thumbnail.is-active, .product-image-container.product-image-container--thumbnails .product-thumbnail-container[data-hide-variants="true"] .product-thumbnail.is-initial-selected {
+        display: block; }

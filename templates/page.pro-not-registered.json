@@ -1,0 +1,513 @@
+{
+  "sections": {
+    "16616191162185f622": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_7DaNT9": {
+          "type": "subheading",
+          "settings": {
+            "text": "IT JUST WORKS"
+          }
+        },
+        "1661619116558a03c6-1": {
+          "type": "heading",
+          "settings": {
+            "text": "שדרגי את הקליניקה שלך",
+            "size": "h1"
+          }
+        },
+        "text_HHYirB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>הצטרפי לעשרות אלפי קוסמטיקאיות מכל העולם שבוחרות בכריסטינה – המותג שמספק תוצאות נראות לעין ופתרונות מוכחים.<br\/><\/p>",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        },
+        "button_CYcgqx": {
+          "type": "button",
+          "settings": {
+            "link_label": "להרשמה",
+            "link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_7DaNT9",
+        "1661619116558a03c6-1",
+        "text_HHYirB",
+        "button_CYcgqx"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#535458",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_overlay_p8mzUT": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_64dj3r": {
+          "type": "subheading",
+          "settings": {
+            "text": "IT JUST WORKS"
+          }
+        },
+        "heading_iApLD4": {
+          "type": "heading",
+          "settings": {
+            "text": "שדרגי את הקליניקה שלך",
+            "heading_size": "h1-large"
+          }
+        },
+        "text_yTD9tb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>הצטרפי לעשרות אלפי קוסמטיקאיות מכל העולם שבוחרות בכריסטינה – המותג שמספק תוצאות נראות לעין ופתרונות מוכחים.<\/p>",
+            "description_size": "medium"
+          }
+        },
+        "button_xJzbLr": {
+          "type": "button",
+          "settings": {
+            "button_text": "להרשמה",
+            "button_link": "",
+            "button_outline": false
+          }
+        },
+        "button_7pnP7L": {
+          "type": "button",
+          "settings": {
+            "button_text": "להתחברות",
+            "button_link": "",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_64dj3r",
+        "heading_iApLD4",
+        "text_yTD9tb",
+        "button_xJzbLr",
+        "button_7pnP7L"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "shopify:\/\/shop_images\/Texture_-_Dryness_Dehydratation_1_04e913b5-d7cf-4fef-a2d8-e528c5e33d13.jpg",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-350",
+        "content_width": "medium",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "image_with_text_GRmWpG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_bTFHTB": {
+          "type": "heading",
+          "settings": {
+            "text": "הטבות בלעדיות ברכישה",
+            "heading_size": "h4"
+          }
+        },
+        "text_UTMAHK": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>הזמנה מהירה ופשוטה באתר של מוצרי מכון ובית<\/li><li>צבירה של 10% מסכום ההזמנה לרכישות עתידיות<\/li><li>מבצעים והטבות משתנים רק לנרשמות<\/li><li>דוגמיות מתנה בכל הזמנה<\/li><\/ul>",
+            "description_size": "small"
+          }
+        },
+        "heading_7YGVDJ": {
+          "type": "heading",
+          "settings": {
+            "text": "הדרכה וליווי מקצועי",
+            "heading_size": "h4"
+          }
+        },
+        "text_BwAtwB": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>גישה בלעדית למאגר ההדרכות של כריסטינה<\/li><li>קשר עם מדריכה מקצועית לייעוץ והכוונה<\/li><li>תכנים שבועיים מקצועים<\/li><li>כלים לאבחון נכון וגידול מכירות<\/li><\/ul>",
+            "description_size": "small"
+          }
+        },
+        "button_by8fjP": {
+          "type": "button",
+          "settings": {
+            "button_text": "להרשמה",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_bTFHTB",
+        "text_UTMAHK",
+        "heading_7YGVDJ",
+        "text_BwAtwB",
+        "button_by8fjP"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "enable_border": true,
+        "image": "shopify:\/\/shop_images\/rita_treat_hands_2_s.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-row-full",
+        "layout": "image_first",
+        "content_position": "text-right",
+        "color_bg": "#ffffff",
+        "color_text": "#535458",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "rich_text_FNCFPA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_R3UX37": {
+          "type": "heading",
+          "settings": {
+            "text": "הבית המקצועי שלך להצלחה",
+            "size": "h2"
+          }
+        },
+        "text_FgVz8W": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br\/>בכריסטינה אנחנו לא מסתפקים במוצרים מתקדמים – אנחנו מלווים אותך בהדרכות עומק, סדנאות פרקטיות ותמיכה מקצועית צמודה כדי שתוכלי להעניק ללקוחותייך את הטיפול הטוב ביותר.<br\/>עם נוכחות בלמעלה מ־60 מדינות, את חלק מקהילה גלובלית של קוסמטיקאיות מקצועיות שבוחרות בכריסטינה כמובילה בתחום.<br\/><br\/><\/p>",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "heading_R3UX37",
+        "text_FgVz8W"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#535458",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "media_grid_YwakPY": {
+      "type": "media-grid",
+      "blocks": {
+        "media_6tJVQ9": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_895fdede-1509-4f61-a78c-a0081326fee0.jpg",
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_gc9CbW": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": true,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_jKKqgB": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": true,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_W7fpGm": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": true,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_bFf7nP": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Copy_of_SUNDAY_2.jpg",
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_6tJVQ9",
+        "media_gc9CbW",
+        "media_jKKqgB",
+        "media_W7fpGm",
+        "media_bFf7nP"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "section_width": "full-width-row",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "column_spacing": "medium",
+        "mobile_swipe": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "multicolumn_x4PKnD": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YATHTL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UNSTRESS_6fdfdfdf-a719-4755-aa05-fbe2ae53414d.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "UNSTRESS",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/illustrious",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_wQKD36": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RDM_72c47d4b-e7d2-495a-ac6a-22b75520f455.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "ROSE DE MER",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/illustrious",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_EQfLKK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NUANCE.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "NUANCE",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/illustrious",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_yqyMea": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BIOPHTYO_8cc085bf-bab9-4e97-a76b-ec160f435e67.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "BIO PHYTO",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/illustrious",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_Bjkm3c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FY_4_36d385fc-345c-403f-859f-a479ca2f3174.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "FOREVER YOUNG",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/illustrious",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_YMw7Hp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Comodex_4_c0f7664b-a216-4f17-be0c-53ded0da2fc7.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "COMODEX",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/illustrious",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        },
+        "column_L9qb8T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ILLUSTRIOUS_4_57c1f94c-f40a-43d3-b133-54d4309b68e1.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "ILLUSTRIOUS",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/illustrious",
+            "link_style": "text-button",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "column_YATHTL",
+        "column_wQKD36",
+        "column_EQfLKK",
+        "column_yqyMea",
+        "column_Bjkm3c",
+        "column_YMw7Hp",
+        "column_L9qb8T"
+      ],
+      "name": "Multicolumn",
+      "settings": {
+        "heading": "גלי את סדרות הטיפול המקצועיות שלנו",
+        "heading_left": false,
+        "description": "<p>כל סדרה פותחה כמענה ממוקד למצבי עור שונים, החל מהחייאת מראה עור עייף וחסר חיוניות ועד ניקוי עמוק והתמודדות עם מצבים מורכבים במיוחד.<\/p>",
+        "full_width": true,
+        "display_type": "carousel",
+        "image_ratio": "portrait",
+        "columns_desktop": 5,
+        "text_alignment": "left",
+        "heading_size": "h6",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false,
+        "center_mobile": "left",
+        "use_metaobjects": false
+      }
+    }
+  },
+  "order": [
+    "16616191162185f622",
+    "image_with_text_overlay_p8mzUT",
+    "image_with_text_GRmWpG",
+    "rich_text_FNCFPA",
+    "media_grid_YwakPY",
+    "multicolumn_x4PKnD"
+  ]
+}

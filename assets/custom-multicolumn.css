@@ -1,0 +1,165 @@
+.custom-columns-section {
+  padding: 40px 15px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.custom-columns-section .h2 {
+  font-size: 30px;
+}
+
+.column-title {
+  margin: 0 0 5px 0;
+  font-size: 30px;
+  font-weight: bold;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.column-description {
+  margin: 0 0 15px 0;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .custom-columns-section .h2 {
+    font-size: 38px;
+  }
+
+  .column-title {
+    margin: 10px 0 5px 0;
+    font-size: 38px;
+  }
+
+  .column-description {
+    margin: 0 0 20px 0;
+  }
+}
+
+.custom-columns-section .button {
+  transition: all .25s cubic-bezier(.104,.204,.492,1);
+}
+
+.custom-columns-section .button:hover {
+  opacity: 0.55;
+}
+
+.columns-container {
+  display: grid;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .columns-container--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .columns-container--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .columns-container--1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .columns-container {
+    display: flex;
+    gap: 0;
+  }
+}
+
+.column-item {
+  text-align: start;
+  position: relative;
+}
+
+.column-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stack-content .text-wrapper {
+  position: absolute;
+  bottom: 0;
+  padding: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .stack-content .text-wrapper {
+    padding: 20px;
+  }
+
+  .stack-content .image-container {
+    padding-top: 90%;
+  }
+}
+
+.columns-container--2 .column-title {
+  font-size: 30px;
+}
+.columns-container--2 .column-description {
+  font-size: 18px;
+}
+
+.heding-size-small {
+  margin-top: 20px;
+  font-size: 23px;
+}
+
+.heding-size-medium {
+  font-size: 23px;
+}
+
+.heding-size-large {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .columns-container--2 .column-title {
+    font-size: 38px;
+  }
+
+  .columns-container--2 .column-description {
+    font-size: 20px;
+  }
+
+  .heding-size-small {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .heding-size-medium {
+    font-size: 28px;
+  }
+
+  .heding-size-large {
+    font-size: 38px;
+  }
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}

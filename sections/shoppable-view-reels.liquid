@@ -1,0 +1,226 @@
+{%- liquid
+	assign full_width = section.settings.full_width
+	assign aspect_ratio = section.settings.aspect_ratio
+	assign custom_aspect_ratio = section.settings.custom_aspect_ratio
+	assign show_dots = section.settings.show_dots
+	assign controls_play_pause = section.settings.controls_play_pause
+	assign controls_sound = section.settings.controls_sound
+	assign show_quick_add_button = section.settings.show_quick_add_button
+	assign color_text = section.settings.color_text
+	assign overlay_gradient = section.settings.overlay_gradient
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	if aspect_ratio == 'custom'
+		assign aspect_ratio = custom_aspect_ratio
+	endif
+-%}
+<div class="row{% if full_width %} full-width-row-full{% endif %}">
+	<div class="small-12 columns">
+		<div class="shoppable-video-reels section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+			<slide-show class="shoppable-video-reels--carousel carousel custom-dots" data-align="center" data-dots="{{ show_dots }}" style="--video-aspect-ratio: {{ aspect_ratio }};">
+				{%- for block in section.blocks -%}
+					{%- liquid
+						assign product_handle = block.settings.product_handle
+						assign video_hosted = block.settings.video_hosted
+						assign index_c = forloop.index | default: 1 | modulo: 4 | plus: 1
+						assign autoplay = false
+						if forloop.index == 1
+							assign autoplay = true
+						endif
+					-%}
+					<div class="shoppable-video-reels--slide carousel__slide" {{ block.shopify_attributes }}>
+						<div class="shoppable-video-reels--video">
+							<div class="slideshow__slide-video-bg"{% if video_hosted %} data-provider="hosted"{% endif %}>
+								{% if video_hosted %}
+									{{ video_hosted | video_tag: autoplay: autoplay, loop: true, controls: false, muted: true, image_size: '600x' }}
+								{% else %}
+									{{ 'product-apparel-' | append: index_c | placeholder_svg_tag: 'placeholder_svg_tag' }}
+								{% endif %}
+
+								{% if controls_play_pause or controls_sound %}
+									<video-controls class="shoppable-video-reels--video-controls">
+										{% if controls_play_pause %}
+											<button id="VideoPlayToggle-{{ section.id }}-{{ block.id }}" type="button" class="shoppable-video-reels--button shoppable-video-reels--button-play-pause video-controls--play-pause">
+												<span class="video-play">{% render 'svg-icons' with 'thb-video-play' %}</span>
+												<span class="video-pause">{% render 'svg-icons' with 'thb-video-pause' %}</span>
+											</button>
+										{% endif %}
+										{% if controls_sound %}
+											<button id="VideoSoundToggle-{{ section.id }}-{{ block.id }}" type="button" class="shoppable-video-reels--button shoppable-video-reels--button-sound video-controls--sound muted">
+												<span class="video-sound-on">{% render 'svg-icons' with 'thb-sound-on' %}</span>
+												<span class="video-sound-off">{% render 'svg-icons' with 'thb-sound-off' %}</span>
+											</button>
+										{% endif %}
+									</video-controls>
+								{% endif %}
+							</div>
+							{% if product_handle != blank %}
+							<div class="shoppable-video-reels--product" style="--color-body: {{ color_text }}; --color-body-rgb: {{ color_text.rgb | replace: ' ' , ',' }}; --color-price: {{ color_text }}; --color-accent: {{ color_text }}; --color-accent-rgb: {{ color_text.rgb | replace: ' ' , ',' }}; background: {{ overlay_gradient }}">
+								{%- render 'product-card-small', product_small: product_handle, quick_add: show_quick_add_button -%}
+							</div>
+							{% endif %}
+						</div>
+					</div>
+				{%- endfor -%}
+				{%- if section.blocks.size > 1 and show_dots -%}
+					<ol class="flickity-page-dots dot-style--dots">
+						{%- for block in section.blocks -%}
+						<li class="dot" aria-label="{{ forloop.index }}">
+							{%- render 'svg-icons' with 'thb-pagination-dot' -%}
+						</li>
+						{%- endfor -%}
+					</ol>
+				{%- endif -%}
+			</slide-show>
+		</div>
+	</div>
+</div>
+<script src="{{ 'video-controls.js' | asset_url }}" defer></script>
+{{- 'shoppable-video-reels.css' | asset_url | stylesheet_tag -}}
+{% schema %}
+  {
+    "name": "Shoppable video reels",
+		"class": "section-shoppable-video-reels",
+    "settings": [
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"label": "Make section full width",
+				"default": false
+			},
+			{
+				"type": "select",
+				"id": "aspect_ratio",
+				"options": [
+					{
+						"value": "0.5625",
+						"label": "9 / 16"
+					},
+					{
+						"value": "0.75",
+						"label": "3 / 4"
+					},
+					{
+						"value": "custom",
+						"label": "Custom"
+					}
+				],
+				"default": "custom",
+				"label": "Aspect ratio"
+			},
+			{
+				"type": "range",
+				"id": "custom_aspect_ratio",
+				"min": 0.2,
+				"max": 2,
+				"step": 0.1,
+				"unit": "x",
+				"label": "Custom aspect ratio",
+				"default": 0.5
+			},
+			{
+        "type": "checkbox",
+        "id": "show_dots",
+        "label": "Show dots",
+        "default": true
+      },
+			{
+        "type": "checkbox",
+        "id": "controls_play_pause",
+        "label": "Show play/pause buttons",
+        "default": true
+      },
+			{
+        "type": "checkbox",
+        "id": "controls_sound",
+        "label": "Show sound toggle buttons",
+        "default": true
+      },
+			{
+        "type": "checkbox",
+        "id": "show_quick_add_button",
+        "label": "Show quick add to cart button",
+        "default": true
+      },
+			{
+        "type": "header",
+        "content": "Colors"
+      },
+			{
+				"type": "color",
+				"id": "color_text",
+				"label": "Text",
+				"default": "#FFFFFF"
+			},
+			{
+				"type": "color_background",
+				"id": "overlay_gradient",
+				"label": "Overlay gradient",
+				"default": "linear-gradient(180deg, rgba(0,0,0,0), rgba(0, 0, 0, 1) 85%)"
+			},
+			{
+        "type": "header",
+        "content": "Spacing"
+      },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "blocks": [
+      {
+        "type": "video",
+        "name": "Video",
+        "settings": [
+					{
+						"type": "video",
+						"id": "video_hosted",
+						"label": "Shopify-hosted video"
+					},
+          {
+            "type": "product",
+            "id": "product_handle",
+            "label": "Product"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Shoppable video reels",
+				"blocks": [
+					{
+						"type": "video"
+					},
+					{
+						"type": "video"
+					},
+					{
+						"type": "video"
+					},
+					{
+						"type": "video"
+					},
+					{
+						"type": "video"
+					}
+				]
+      }
+    ],
+		"enabled_on": {
+			"templates": ["*"],
+			"groups": [
+				"header", "footer"
+			]
+		}
+  }
+{% endschema %}

@@ -1,0 +1,191 @@
+{{ 'product-grid.css' | asset_url | stylesheet_tag }}
+{{- 'product-slider.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+
+	assign section_width = section.settings.section_width
+	assign image = section.settings.image
+	assign image_mobile = section.settings.image_mobile
+	assign desktop_layout = section.settings.layout
+	assign subheading = section.settings.subheading
+	assign heading = section.settings.heading
+  assign product_list = section.settings.product_list
+
+  assign color_bg = section.settings.color_bg
+	assign color_text = section.settings.color_text
+
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+-%}
+<div class="row {{ section_width }}">
+	<div class="small-12 columns">
+    <div class="product-slider {{ desktop_layout }}" style="--color-accent: {{ color_text }}; --color-text: {{ color_text }}; --color-body: {{ color_text }}; --color-body-rgb: {{ color_text.rgb | replace: ' ' , ',' }}; --color-bg: {{ color_bg }}">
+      <div class="product-slider--image">
+        {% if image %}
+          {%- liquid
+            assign small_width = image.src.height | times: '375' | divided_by: image.src.width
+            assign master_width = image.src.width | append: 'x' | append: image.src.height
+            assign width = '375x' | append: small_width | append: ',' | append: master_width
+
+            if image_mobile
+              assign class = 'product-slider--desktop'
+            endif
+          -%}
+          {%- render 'responsive-image', image: image, sizes: width, class: class -%}
+        {% else %}
+          {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+        {% endif %}
+        {%- if image_mobile -%}
+          {%- liquid
+            assign master_width = image_mobile.src.width | append: 'x' | append: image_mobile.src.height
+            assign width = '375x0' | append: ',' | append: master_width
+
+            assign class = 'product-slider--mobile'
+            render 'responsive-image', image: image_mobile, sizes: width, class: class
+          -%}
+        {%- endif -%}
+      </div>
+      <div class="product-slider--slider">
+        <div class="product-slider--slider-inner">
+          {%- if subheading != blank -%}
+            <p class="subheading">{{ subheading }}</p>
+          {%- endif -%}
+          {%- if heading != blank -%}
+            <div class="h3 product-slider--heading">{{ heading | replace_first: '|', '<span class="body-font">' | replace: '|', '</span>' }}</div>
+          {%- endif -%}
+          <slide-show class="carousel products row" data-dots="true">
+            {%- if product_list.count > 0 -%}
+              {%- for item in product_list -%}
+                <div class="small-12 columns carousel__slide">
+                  {% render 'product-card', product_card_product: item %}
+                </div>
+              {%- endfor -%}
+            {%- else -%}
+              {%- for i in (1..3) -%}
+                <div class="small-12 columns carousel__slide">
+                  {% render 'product-card', product_card_product: nil %}
+                </div>
+              {%- endfor -%}
+            {%- endif -%}
+          </slide-show>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Product slider",
+		"class": "section-product-slider",
+    "settings": [
+      {
+				"type": "image_picker",
+				"id": "image",
+				"label": "Image",
+				"info": "1440 x 1440 .jpg recommended."
+			},
+			{
+				"type": "image_picker",
+				"id": "mobile_image",
+				"label": "Mobile image (optional)",
+				"info": "750x x 750 .jpg recommended."
+			},
+      {
+        "type": "select",
+        "id": "section_width",
+        "options": [
+          {
+            "value": "grid",
+            "label": "Grid"
+          },
+          {
+            "value": "full-width-row",
+            "label": "Full width"
+          },
+          {
+            "value": "full-width-row-full",
+            "label": "Full width, no spacing"
+          }
+        ],
+        "default": "full-width-row",
+        "label": "Section width"
+      },
+      {
+	      "type": "select",
+	      "id": "layout",
+	      "options": [
+	        {
+	          "value": "image_first",
+	          "label": "Image first"
+	        },
+	        {
+	          "value": "text_first",
+	          "label": "Image second"
+	        }
+	      ],
+	      "default": "image_first",
+	      "label": "Desktop image placement",
+	      "info": "Image first is the default mobile layout."
+	    },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "Add a tagline"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Product |slider|",
+        "label": "Heading"
+      },
+      {
+        "type": "product_list",
+        "id": "product_list",
+        "label": "Select products"
+      },
+      {
+	      "type": "header",
+	      "content": "Colors"
+	    },
+			{
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+			{
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#151515"
+      },
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "presets": [
+      {
+        "name": "Product slider"
+      }
+    ],
+		"enabled_on": {
+			"templates": ["*"],
+			"groups": [
+				"header", "footer"
+			]
+		}
+  }
+{% endschema %}

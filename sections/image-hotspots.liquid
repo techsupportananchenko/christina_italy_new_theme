@@ -1,0 +1,186 @@
+{{- 'image-hotspots.css' | asset_url | stylesheet_tag -}}
+<script src="{{ 'image-hotspots.js' | asset_url }}" defer="defer"></script>
+{%- liquid
+	assign full_width = section.settings.full_width
+
+	assign image = section.settings.image
+	assign image_mobile = section.settings.image_mobile
+
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+-%}
+<div class="row full-width-row{% if full_width %}-full{% endif %}">
+	<div class="small-12 columns">
+		<div class="image-hotspots section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+			<image-hotspots class="image-hotspots--container">
+				<div class="image-hotspots--image">
+					{%- if image -%}
+						{%- liquid
+							assign master_width = image.src.width | append: 'x' | append: image.src.height
+							assign class = nil
+
+							if image_mobile != blank
+								assign class = 'image-hotspots--desktop'
+							endif
+						 -%}
+						{%- render 'responsive-image', image: image, sizes: master_width, class: class -%}
+					{%- else -%}
+						<div class="thb-placeholder">
+							{{ 'hero-apparel-1'| placeholder_svg_tag: 'placeholder_svg_tag' }}
+						</div>
+					{%- endif -%}
+					{%- if image_mobile -%}
+						{%- liquid
+							assign master_width = image_mobile.src.width | append: 'x' | append: image_mobile.src.height
+						 -%}
+						{%- render 'responsive-image', image: image_mobile, sizes: master_width, class: 'image-hotspots--mobile' -%}
+					{%- endif -%}
+				</div>
+				{% for block in section.blocks %}
+          <div class="image-hotspots--pin" style="--mobile-left: {{- block.settings.x_position_mobile | append: '%' -}}; --mobile-top: {{- block.settings.y_position_mobile | append: '%' -}}; --desktop-left: {{- block.settings.x_position | append: '%' -}}; --desktop-top: {{- block.settings.y_position | append: '%' -}};">
+						<div class="image-hotspots--pin-button">{%- render 'svg-icons' with 'thb-hotspot' -%}</div>
+            <div class="image-hotspots--pin-bubble">
+							<div class="image-hotspots--pin-content">
+								{%- if block.settings.heading != blank -%}
+								<p class="h6 body-font">{{ block.settings.heading }}</p>
+								{%- endif -%}
+								{%- if block.settings.description != blank -%}
+								<p>{{ block.settings.description }}</p>
+								{%- endif -%}
+							</div>
+						</div>
+          </div>
+        {% endfor %}
+			</image-hotspots>
+		</div>
+	</div>
+</div>
+{% schema %}
+  {
+    "name": "Image hotspots",
+		"class": "section-image-hotspots",
+    "settings": [
+			{
+				"type": "image_picker",
+				"id": "image",
+				"label": "Image",
+				"info": "1340 x 650 .jpg recommended."
+			},
+			{
+				"type": "image_picker",
+				"id": "image_mobile",
+				"label": "Mobile image (optional)"
+			},
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"label": "Make section full width",
+				"default": true
+			},
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "blocks": [
+      {
+        "type": "hotspot",
+        "name": "Hotspot",
+        "settings": [
+					{
+						"type": "text",
+						"id": "heading",
+						"default": "Hotspot",
+						"label": "Heading"
+					},
+					{
+						"type": "textarea",
+						"id": "description",
+						"label": "Description",
+						"default": "Description text for this hotspot"
+					},
+					{
+						"type": "header",
+						"content": "Position"
+					},
+					{
+						"type": "range",
+						"id": "x_position",
+						"min": 0,
+						"max": 100,
+						"step": 1,
+						"unit": "%",
+						"label": "Horizontal",
+						"default": 20,
+						"info": "Horizontal position of the hot spot"
+					},
+					{
+						"type": "range",
+						"id": "y_position",
+						"min": 0,
+						"max": 100,
+						"step": 1,
+						"unit": "%",
+						"label": "Vertical",
+						"default": 20,
+						"info": "Vertical position of the hot spot"
+					},
+					{
+						"type": "header",
+						"content": "Mobile position"
+					},
+					{
+						"type": "range",
+						"id": "x_position_mobile",
+						"min": 0,
+						"max": 100,
+						"step": 1,
+						"unit": "%",
+						"label": "Horizontal",
+						"default": 20,
+						"info": "Horizontal position of the hot spot on mobile screens"
+					},
+					{
+						"type": "range",
+						"id": "y_position_mobile",
+						"min": 0,
+						"max": 100,
+						"step": 1,
+						"unit": "%",
+						"label": "Vertical",
+						"default": 20,
+						"info": "Vertical position of the hot spot on mobile screens"
+					}
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image hotspots",
+				"blocks": [
+					{
+						"type": "hotspot"
+					}
+				]
+      }
+    ],
+		"enabled_on": {
+			"templates": ["*"],
+			"groups": [
+				"header", "footer"
+			]
+		}
+  }
+{% endschema %}

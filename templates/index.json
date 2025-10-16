@@ -1,0 +1,1166 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1760261860d066fe53": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "slideshow_jxpytQ": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_49iLpE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/4_3.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "subheading": "",
+            "heading": "ILLUSTRIOUS",
+            "heading_size": "h2",
+            "content": "Blanchiment parfait de la peau",
+            "description_size": "medium",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Ajouter au panier",
+            "button_1_link": "",
+            "button_1_outline": false,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_49iLpE"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-450",
+        "full_width": true,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "fade",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "collection_list_j6DEic": {
+      "type": "collection-list",
+      "disabled": true,
+      "settings": {
+        "heading": "מענה לכל מצב עור",
+        "heading_left": true,
+        "description": "<p>מוצרים ייעודיים למאפיינים המשתנים של העור</p>",
+        "full_width": true,
+        "collection_list": [
+          "anti-aging-1",
+          "acne-blemishes",
+          "oiliness",
+          "fine-lines-wrinkles",
+          "uneven-skin-tone",
+          "sensitive-redness",
+          "dehydration-dryness",
+          "all"
+        ],
+        "image_ratio": "circle",
+        "layout": "carousel",
+        "style": "style1",
+        "columns_desktop": 6,
+        "columns_mobile": "2",
+        "show_progress_bar": true,
+        "mobile_swipe": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "collection_list_3rRehG": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "Acheter par préoccupation",
+        "heading_left": true,
+        "description": "<p>Découvrez des solutions ciblées conçues pour répondre aux besoins uniques de votre peau</p>",
+        "full_width": true,
+        "collection_list": [
+          "anti-aging",
+          "dehydration-dryness",
+          "peau-terne-et-fatiguee",
+          "uneven-skin-tone",
+          "sensitive-redness",
+          "acne-blemishes",
+          "peau-grasse"
+        ],
+        "image_ratio": "circle",
+        "layout": "carousel",
+        "style": "style1",
+        "columns_desktop": 6,
+        "columns_mobile": "2",
+        "show_progress_bar": true,
+        "mobile_swipe": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "gallery_maWqJC": {
+      "type": "gallery",
+      "blocks": {
+        "image_i98t6F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SERUMS_Landscape_2.jpg",
+            "subheading": "BEST-SELLER",
+            "title": "Hydra Theraskin+Ha",
+            "text": "Soin léger pour un teint frais et uniforme",
+            "link_label": "Acheter maintenant",
+            "link": "shopify://products/line-repair-hydra-theraskin-ha-30",
+            "use_text_button": false,
+            "block_link": "shopify://products/line-repair-hydra-theraskin-ha-30",
+            "product_list": []
+          }
+        },
+        "image_CzcEMT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ILLUSTR_MISCLL_WATER_3.jpg",
+            "subheading": "",
+            "title": "Nettoyants",
+            "text": "La première étape pour une peau fraîche et équilibrée",
+            "link_label": "Voir tous les nettoyants",
+            "link": "shopify://collections/cleansers",
+            "use_text_button": false,
+            "block_link": "shopify://collections/cleansers",
+            "product_list": []
+          }
+        }
+      },
+      "block_order": [
+        "image_i98t6F",
+        "image_CzcEMT"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "columns_desktop": 2,
+        "section_width": "full-width-row",
+        "mobile_swipe": false,
+        "image_ratio": "square",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "medium",
+        "heading_size": "h3",
+        "overlay_color": "#ffffff",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "featured_collection_yxi3rV": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "heading": "Nos coups de cœur",
+        "heading_left": true,
+        "description": "<p>Des formules fiables, conçues pour des résultats visibles</p>",
+        "full_width": true,
+        "collection": "best-sellers",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16614195534fb74bc3": {
+      "type": "collection-tabs",
+      "blocks": {
+        "collection_gbNTKV": {
+          "type": "collection",
+          "settings": {
+            "collection": "test",
+            "enable_promotion": false,
+            "title": "Promotion heading",
+            "text": "Advertise a promotion or a sale",
+            "link_label": "Explore",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "link": "",
+            "use_text_button": false,
+            "block_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70
+          }
+        },
+        "collection_wJYa33": {
+          "type": "collection",
+          "settings": {
+            "collection": "bio-phyto",
+            "enable_promotion": false,
+            "title": "איזה סרום מדויק לך?",
+            "text": "עני על כמה שאלות קצרות להתאמה נכונה",
+            "link_label": "בואו נתחיל",
+            "content_position": "bottom-left",
+            "text_alignment": "right",
+            "link": "",
+            "use_text_button": true,
+            "block_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "8695b758-8543-4e57-bb17-1249221a1269": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "anti-aging-1",
+            "enable_promotion": false,
+            "title": "Promotion heading",
+            "text": "Advertise a promotion or a sale",
+            "link_label": "Explore",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "link": "",
+            "use_text_button": false,
+            "block_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70
+          }
+        },
+        "9dc5629d-3c1a-4dcc-b25a-0aa3972a2cb7": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "bio-phyto",
+            "enable_promotion": false,
+            "title": "Not sure what is your skin condition?",
+            "text": "take the quiz",
+            "link_label": "start now",
+            "content_position": "top-right",
+            "text_alignment": "right",
+            "link": "",
+            "use_text_button": true,
+            "block_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_gbNTKV",
+        "collection_wJYa33",
+        "8695b758-8543-4e57-bb17-1249221a1269",
+        "9dc5629d-3c1a-4dcc-b25a-0aa3972a2cb7"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "NOS MEILLEURES VENTES",
+        "heading_left": true,
+        "description": "<p>les produits que nos clients achètent à nouveau</p>",
+        "full_width": true,
+        "product_limit": 16,
+        "columns_desktop": 4,
+        "show_view_all": false,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "promotional_banner_YGQ69p": {
+      "type": "promotional-banner",
+      "blocks": {
+        "subheading_Gk7ngr": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_GG8XFM": {
+          "type": "heading",
+          "settings": {
+            "text": "Quels sont les produits qui vous conviennent ?",
+            "heading_size": "h3"
+          }
+        },
+        "text_BDJfGh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>répondez à notre quiz ou planifiez un appel avec l'une de nos esthéticiennes expérimentées</p>"
+          }
+        },
+        "button_gxzJx9": {
+          "type": "button",
+          "settings": {
+            "button_text": "commencer le quiz",
+            "button_link": "",
+            "button_outline": true
+          }
+        },
+        "button_bWpggC": {
+          "type": "button",
+          "settings": {
+            "button_text": "une consultation",
+            "button_link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Gk7ngr",
+        "heading_GG8XFM",
+        "text_BDJfGh",
+        "button_gxzJx9",
+        "button_bWpggC"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "shopify://shop_images/MUSE_1.jpg",
+        "image_height": "adapt",
+        "image_width": "split",
+        "frame_border": true,
+        "content_position": "text-left",
+        "split_layout": "image_first",
+        "color_bg": "#ffffff",
+        "color_text": "#535458",
+        "overlay_color": "#ffffff",
+        "border_color": "#d7d8da",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "promotional_banner_hEfdDV": {
+      "type": "promotional-banner",
+      "blocks": {
+        "subheading_iVaV7d": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_7YM8Gw": {
+          "type": "heading",
+          "settings": {
+            "text": "La détox botanique essentielle pour votre peau",
+            "heading_size": "h3"
+          }
+        },
+        "text_ExF3rD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enrichi en actifs végétaux, Bio Phyto rafraîchit, apaise et revitalise pour un teint éclatant et en pleine santé</p>"
+          }
+        },
+        "button_krWmXe": {
+          "type": "button",
+          "settings": {
+            "button_text": "Acheter Bio Phyto",
+            "button_link": "shopify://collections/bio-phyto",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_iVaV7d",
+        "heading_7YM8Gw",
+        "text_ExF3rD",
+        "button_krWmXe"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "shopify://shop_images/LR_FIX_-_HA_Repair_Mask_2.jpg",
+        "image_height": "adapt",
+        "image_width": "split",
+        "frame_border": true,
+        "content_position": "text-left",
+        "split_layout": "image_first",
+        "color_bg": "#ffffff",
+        "color_text": "#698b38",
+        "overlay_color": "#ffffff",
+        "border_color": "#698b38",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "collection_list_6Gr9WY": {
+      "type": "collection-list",
+      "name": "Collection list",
+      "settings": {
+        "heading": "Explorez nos gammes emblématiques",
+        "heading_left": true,
+        "description": "<p>Des formules innovantes, des résultats prouvés et des solutions adaptées à chaque problématique de peau</p>",
+        "full_width": true,
+        "collection_list": [
+          "bio-phyto",
+          "biophyto-test",
+          "comodex",
+          "forever-young",
+          "illustrious",
+          "line-repair-fix",
+          "line-repair-nutrient",
+          "rose-de-mer"
+        ],
+        "image_ratio": "portrait",
+        "layout": "carousel",
+        "style": "style1",
+        "columns_desktop": 4,
+        "columns_mobile": "1",
+        "show_progress_bar": true,
+        "mobile_swipe": true,
+        "overlay_color": "#ffffff",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "collections_tab_n6g38F": {
+      "type": "collections-tab",
+      "blocks": {
+        "tab_GQ7gaV": {
+          "type": "tab",
+          "settings": {
+            "heading": "Gammes de produits",
+            "collection_list": [
+              "bio-phyto",
+              "comodex",
+              "illustrious",
+              "nuance",
+              "unstress",
+              "line-repair",
+              "muse"
+            ]
+          }
+        },
+        "tab_icwxrz": {
+          "type": "tab",
+          "settings": {
+            "heading": "Gamme de produits",
+            "collection_list": [
+              "cremes",
+              "cremes-spf",
+              "exfoliators-scrubs",
+              "masks",
+              "cleansers",
+              "peelings",
+              "serums"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "tab_GQ7gaV",
+        "tab_icwxrz"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Acheter par",
+        "subheading": "<p>Trouvez votre produit idéal par gamme ou par étape</p>",
+        "link": "Shop all",
+        "link_url": "shopify://collections",
+        "text_align": "left",
+        "tabs_align": "flex-start",
+        "link_align": "flex-end",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "multicolumn_wgpgPC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_bya7ky": {
+          "type": "column",
+          "settings": {
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "Line Repair Fix",
+            "text": "<p>חדשנות, מחקר ודיוק מקצועי. משלב הפיתוח ועד הקליניקה. Christina מלווה את העור שלך לאורך כל הדרך.</p>",
+            "link_label": "למוצרי הסדרה",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "right"
+          }
+        },
+        "column_f69Hqg": {
+          "type": "column",
+          "settings": {
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "Line Repair Fix",
+            "text": "<p>חדשנות, מחקר ודיוק מקצועי. משלב הפיתוח ועד הקליניקה. Christina מלווה את העור שלך לאורך כל הדרך.</p>",
+            "link_label": "למוצרי הסדרה",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "right"
+          }
+        },
+        "column_tdQxmB": {
+          "type": "column",
+          "settings": {
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "Line Repair Fix",
+            "text": "<p>חדשנות, מחקר ודיוק מקצועי. משלב הפיתוח ועד הקליניקה. Christina מלווה את העור שלך לאורך כל הדרך.</p>",
+            "link_label": "למוצרי הסדרה",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "right"
+          }
+        },
+        "column_hCRCdW": {
+          "type": "column",
+          "settings": {
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "Line Repair Fix",
+            "text": "<p>חדשנות, מחקר ודיוק מקצועי. משלב הפיתוח ועד הקליניקה. Christina מלווה את העור שלך לאורך כל הדרך.</p>",
+            "link_label": "למוצרי הסדרה",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "right"
+          }
+        },
+        "column_VVVVep": {
+          "type": "column",
+          "settings": {
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "Line Repair Fix",
+            "text": "<p>חדשנות, מחקר ודיוק מקצועי. משלב הפיתוח ועד הקליניקה. Christina מלווה את העור שלך לאורך כל הדרך.</p>",
+            "link_label": "למוצרי הסדרה",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "right"
+          }
+        },
+        "column_izVy43": {
+          "type": "column",
+          "settings": {
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "Line Repair Fix",
+            "text": "<p>חדשנות, מחקר ודיוק מקצועי. משלב הפיתוח ועד הקליניקה. Christina מלווה את העור שלך לאורך כל הדרך.</p>",
+            "link_label": "למוצרי הסדרה",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "right"
+          }
+        },
+        "column_knpGyD": {
+          "type": "column",
+          "settings": {
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "Line Repair Fix",
+            "text": "<p>חדשנות, מחקר ודיוק מקצועי. משלב הפיתוח ועד הקליניקה. Christina מלווה את העור שלך לאורך כל הדרך.</p>",
+            "link_label": "למוצרי הסדרה",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "right"
+          }
+        },
+        "column_G4p3wN": {
+          "type": "column",
+          "settings": {
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "בית כריסטינה TLV",
+            "text": "<p>מזמינים אותך לחווית הטיפול המתקדמת של כריסטינה ע\"י קוסמטיקאיות מקצועיות ברוטשילד 49 תל אביב</p>",
+            "link_label": "לתיאום טיפול",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "right"
+          }
+        },
+        "column_xjVKLd": {
+          "type": "column",
+          "settings": {
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "בית כריסטינה TLV",
+            "text": "<p>מזמינים אותך לחווית הטיפול המתקדמת של כריסטינה ע\"י קוסמטיקאיות מקצועיות ברוטשילד 49 תל אביב</p>",
+            "link_label": "לתיאום טיפול",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "right"
+          }
+        }
+      },
+      "block_order": [
+        "column_bya7ky",
+        "column_f69Hqg",
+        "column_tdQxmB",
+        "column_hCRCdW",
+        "column_VVVVep",
+        "column_izVy43",
+        "column_knpGyD",
+        "column_G4p3wN",
+        "column_xjVKLd"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "סדרות הטיפול של כריסטינה",
+        "heading_left": true,
+        "description": "<p>מבוססות על מחקרים מתקדמים ורכיבים טבעיים ופעילים כמענה לכל מצבי העור ולתוצאות נראות ומורגשות</p>",
+        "full_width": false,
+        "display_type": "carousel",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "text_alignment": "right",
+        "heading_size": "h2",
+        "mobile_swipe": true,
+        "show_progress_bar": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "center_mobile": "right",
+        "use_metaobjects": false
+      }
+    },
+    "image_with_text_RfhBkH": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_qhUTRJ": {
+          "type": "subheading",
+          "settings": {
+            "text": "📍Canne 📍Paris 📍Leon"
+          }
+        },
+        "heading_hwCW9U": {
+          "type": "heading",
+          "settings": {
+            "text": "CHRISTINA HOUSES",
+            "heading_size": "h2"
+          }
+        },
+        "text_j73jQ9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Des soins personnalisés par les esthéticiennes professionnelles de Christina. Une expérience de soin parfaite et une réponse adaptée aux besoins de votre peau.</p>",
+            "description_size": "medium"
+          }
+        },
+        "button_wDyhRP": {
+          "type": "button",
+          "settings": {
+            "button_text": "réserver un soin",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_qhUTRJ",
+        "heading_hwCW9U",
+        "text_j73jQ9",
+        "button_wDyhRP"
+      ],
+      "disabled": true,
+      "name": "Image with text",
+      "settings": {
+        "enable_border": true,
+        "use_video": true,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "small",
+        "desktop_image_width": "large",
+        "section_width": "full-width-row",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#535458",
+        "color_border": "#e9e9e9",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "shoppable_view_reels_9aiiwm": {
+      "type": "shoppable-view-reels",
+      "blocks": {
+        "video_EDUt8w": {
+          "type": "video",
+          "settings": {
+            "product_handle": ""
+          }
+        },
+        "video_W7idLX": {
+          "type": "video",
+          "settings": {
+            "product_handle": ""
+          }
+        },
+        "video_KbejQb": {
+          "type": "video",
+          "settings": {
+            "product_handle": ""
+          }
+        },
+        "video_WecDj8": {
+          "type": "video",
+          "settings": {
+            "product_handle": ""
+          }
+        },
+        "video_a6rfin": {
+          "type": "video",
+          "settings": {
+            "product_handle": ""
+          }
+        },
+        "video_fUb7C7": {
+          "type": "video",
+          "settings": {
+            "product_handle": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_EDUt8w",
+        "video_W7idLX",
+        "video_KbejQb",
+        "video_WecDj8",
+        "video_a6rfin",
+        "video_fUb7C7"
+      ],
+      "disabled": true,
+      "name": "Shoppable video reels",
+      "settings": {
+        "full_width": true,
+        "aspect_ratio": "0.5625",
+        "custom_aspect_ratio": 0.5,
+        "show_dots": true,
+        "controls_play_pause": true,
+        "controls_sound": true,
+        "show_quick_add_button": true,
+        "color_text": "#ffffff",
+        "overlay_gradient": "",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "map_gH3nQj": {
+      "type": "map",
+      "blocks": {
+        "pin_UPrnPG": {
+          "type": "pin",
+          "settings": {
+            "pin_image": "shopify://shop_images/Israel_New_Year_17.jpg",
+            "pin_retina": true,
+            "pin_lat": "33.9787261",
+            "pin_long": "-118.4197832",
+            "pin_title": "Christina House Paris",
+            "pin_desc": "bulevrar 34/57 ugfu9 nofuo"
+          }
+        }
+      },
+      "block_order": [
+        "pin_UPrnPG"
+      ],
+      "disabled": true,
+      "name": "Map",
+      "settings": {
+        "googlemaps_api_key": "",
+        "image": "shopify://shop_images/rita_mask_brash_1.jpg",
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-350",
+        "map_type": "roadmap",
+        "map_style_select": "default",
+        "map_zoom": 0,
+        "color_bg": "#ffffff",
+        "color_text": "#535458",
+        "color_border": "#d7d8da",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "rich_text_EVdb9g": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_zchzFj": {
+          "type": "subheading",
+          "settings": {
+            "text": "TANGIBLE, MEMORABLE"
+          }
+        },
+        "heading_VXbAep": {
+          "type": "heading",
+          "settings": {
+            "text": "Discover Christina Houses",
+            "size": "h3"
+          }
+        },
+        "subheading_RLYGKm": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "text_yLJrhB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Where science meets sensorial care, and every visit becomes a journey of beauty, learning, and well-being.<br/></p>",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        },
+        "button_dJTGkz": {
+          "type": "button",
+          "settings": {
+            "link_label": "Learn More",
+            "link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_zchzFj",
+        "heading_VXbAep",
+        "subheading_RLYGKm",
+        "text_yLJrhB",
+        "button_dJTGkz"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "section_width": "full-width-row",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#535458",
+        "color_links": "#535458",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "media_grid_fURL4c": {
+      "type": "media-grid",
+      "blocks": {
+        "media_FLtjD8": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": true,
+            "video_hosted": "shopify://files/videos/video-output-4BE43977-B6A0-43CA-A45A-141ADB29AF4A-2.MOV",
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_aj6wc4": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": true,
+            "video_hosted": "shopify://files/videos/v0f044gc0000cqrs08fog65l5ttdppj0.MP4",
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_rAgLqg": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/ChristinaFrance_Cannes-17_copy.jpg",
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_jTePGq": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1041.jpg",
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_wc9cVr": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_SUNDAY_1.jpg",
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_FLtjD8",
+        "media_aj6wc4",
+        "media_rAgLqg",
+        "media_jTePGq",
+        "media_wc9cVr"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "column_spacing": "medium",
+        "mobile_swipe": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "multicolumn_mVR3zF": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_8NjM4z": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/FY_-_Repairing_Night_Cream_2.jpg",
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "Approuvé par les professionnels. Adopté par vous",
+            "text": "<p>Forte de décennies d’expérience et de formules primées, Christina offre une peau plus saine et éclatante à travers le monde</p>",
+            "link_label": "À propos de nous”",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "left"
+          }
+        },
+        "column_FcWrED": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/LR_step_7_CREAM_DAY.jpg",
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "Votre allié expert pour les soins de la peau",
+            "text": "<p>Avec ses protocoles innovants, ses formules efficaces et sa formation continue, Christina aide les esthéticiennes à renforcer leurs compétences et à développer leur activité</p>",
+            "link_label": "Rejoignez-nous dès aujourd’hui",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "left"
+          }
+        },
+        "column_NUnNdy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/LR-ROUTINES_0008_LR_HYDRA_CLEANSING-ROUTINE_1.jpg",
+            "image_full_width": true,
+            "image_link": "",
+            "retina": true,
+            "title": "Consultez un expert Christina",
+            "text": "<p>Nos expertes beauté vous accompagnent lors de consultations individuelles pour sélectionner les soins et routines à domicile garantissant des résultats visibles</p>",
+            "link_label": "Contactez-nous sur WhatsApp",
+            "link": "#",
+            "link_style": "text-button",
+            "alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "column_8NjM4z",
+        "column_FcWrED",
+        "column_NUnNdy"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_left": true,
+        "description": "",
+        "full_width": true,
+        "display_type": "grid",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "text_alignment": "right",
+        "heading_size": "h4",
+        "mobile_swipe": true,
+        "show_progress_bar": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "center_mobile": "right",
+        "use_metaobjects": false
+      }
+    },
+    "text_with_icons_8m8zk8": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_9jhzp8": {
+          "type": "icon",
+          "settings": {
+            "icon": "heart",
+            "heading": "+20,000 cleintes satisfaites",
+            "text": ""
+          }
+        },
+        "icon_RcM78g": {
+          "type": "icon",
+          "settings": {
+            "icon": "truck",
+            "heading": "Livraison rapide ",
+            "text": ""
+          }
+        },
+        "icon_yBtfrf": {
+          "type": "icon",
+          "settings": {
+            "icon": "lock",
+            "heading": "Paiement sécurisé 100% crypté",
+            "text": ""
+          }
+        },
+        "icon_KMrfxp": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_mark",
+            "heading": "Approuvé dans 70+ pays",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_9jhzp8",
+        "icon_RcM78g",
+        "icon_yBtfrf",
+        "icon_KMrfxp"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "text_alignment": "center",
+        "icon_position": "top",
+        "icon_size": "large",
+        "heading_size": "large",
+        "mobile_swipe": true,
+        "color_bg": "#535458",
+        "color_heading": "#ffffff",
+        "color_text": "#ffffff",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    }
+  },
+  "order": [
+    "1760261860d066fe53",
+    "slideshow_jxpytQ",
+    "collection_list_j6DEic",
+    "collection_list_3rRehG",
+    "gallery_maWqJC",
+    "featured_collection_yxi3rV",
+    "16614195534fb74bc3",
+    "promotional_banner_YGQ69p",
+    "promotional_banner_hEfdDV",
+    "collection_list_6Gr9WY",
+    "collections_tab_n6g38F",
+    "multicolumn_wgpgPC",
+    "image_with_text_RfhBkH",
+    "shoppable_view_reels_9aiiwm",
+    "map_gH3nQj",
+    "rich_text_EVdb9g",
+    "media_grid_fURL4c",
+    "multicolumn_mVR3zF",
+    "text_with_icons_8m8zk8"
+  ]
+}

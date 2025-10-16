@@ -1,0 +1,218 @@
+{% if product.metafields.custom.video_section_entries != blank %}
+  {{- 'custom-product-video-text.css' | asset_url | stylesheet_tag -}}
+
+  {% for video_meta in product.metafields.custom.video_section_entries.value %}
+    {% assign video_source = video_meta.video.value %}
+    {% assign poster_image = video_meta.video_poster | image_url: width: 800 %}
+    {% assign pretitle_text = video_meta.pretitle %}
+    {% assign title_text = video_meta.title %}
+    {% assign description_text = video_meta.description %}
+  {% endfor %}
+
+  <div class="w-full">
+    <div class="video-text-section">
+      <div class="video-text-section__video">
+        <div class="video-container h-full">
+          {% if video_source %}
+            {{ video_source | video_tag: autoplay: false, loop: section.settings.loop, muted: section.settings.muted, id: "product-video", poster: poster_image }}
+
+            {% if section.settings.show_controls %}
+              <div class="video-controls">
+                <button
+                  class="play-pause-btn"
+                  data-btn-id="{{ section.id }}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+              </div>
+            {% endif %}
+          {% else %}
+            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+              <div class="text-center text-gray-500">
+                <i class="ph ph-video text-4xl mb-2"></i>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="video-text-section__text" style="background-color: {{ section.settings.content_bg_color }}">
+        <div class="video-text-container">
+
+          {% if pretitle_text != blank %}
+            <p class="text-sm uppercase tracking-wider mb-4" style="color: {{ section.settings.pretitle_color }}">
+              {{ pretitle_text }}
+            </p>
+          {% endif %}
+
+          {% if title_text != blank %}
+            <h2 class="h2" style="color: {{ section.settings.title_color }}">
+              {{ title_text }}
+            </h2>
+          {% endif %}
+
+          {% if description_text != blank %}
+            <div class="description-text" style="color: {{ section.settings.description_color }}">
+              {{ description_text }}
+            </div>
+          {% endif %}
+
+          {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+            <a href="{{ section.settings.button_link }}"
+              class="inline-block button"
+              style="background-color: {{ section.settings.button_bg_color }}; color: {{ section.settings.button_text_color }}; border: 1px solid {{ section.settings.button_border_color }}">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const sectionId = '{{ section.id }}';
+      const video = document.getElementById('product-video');
+      const button = document.querySelector(`[data-btn-id="${sectionId}"]`);
+
+      if (!video || !button) return;
+
+      const toggleButton = (show) => {
+        button.classList.toggle('hidden', !show);
+      };
+
+      const togglePlayback = () => {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      };
+
+      video.addEventListener('play', () => toggleButton(false));
+      video.addEventListener('pause', () => toggleButton(true));
+      video.addEventListener('click', togglePlayback);
+      button.addEventListener('click', togglePlayback);
+
+      toggleButton(video.paused);
+    })();
+  </script>
+{% endif %}
+{% schema %}
+{
+  "name": "Video Text Product Meta",
+  "class": "custom-video",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Product Metaobject"
+    },
+
+    {
+      "type": "header",
+      "content": "Video Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Loop video",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "muted",
+      "label": "Mute video",
+      "default": true,
+      "info": "Required for autoplay to work on most browsers"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_controls",
+      "label": "Show video controls",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Text Content"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "header",
+      "content": "Styling"
+    },
+    {
+      "type": "color",
+      "id": "content_bg_color",
+      "label": "Content Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "pretitle_color",
+      "label": "Pretitle Color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Button Border Color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Text Product Meta",
+      "settings": {
+        "button_text": "Shop Activewear",
+        "button_link": "/collections/activewear",
+        "content_bg_color": "#f8f9fa",
+        "pretitle_color": "#6c757d",
+        "title_color": "#212529",
+        "description_color": "#495057",
+        "button_bg_color": "#007bff",
+        "button_text_color": "#ffffff",
+        "button_border_color": "#007bff",
+        "loop": true,
+        "muted": true,
+        "show_controls": true
+      }
+    }
+  ]
+}
+{% endschema %}

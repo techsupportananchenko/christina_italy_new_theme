@@ -1,0 +1,434 @@
+{
+  "sections": {
+    "1755020662cb88d7f9": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "image_with_text_overlay_GFFdw4": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_8qgUBj": {
+          "type": "heading",
+          "settings": {
+            "text": "REPAIR LINE",
+            "heading_size": "h1-large"
+          }
+        },
+        "text_mG7jcz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>שגרת הטיפוח הממוקדת שלך לאנטי אייג'ינג מתחילה כאן<\/p>",
+            "description_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8qgUBj",
+        "text_mG7jcz"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "shopify:\/\/shop_images\/CHRISTINA-march2502493_2.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/CHRISTINA-march2502493_2_3e5b2003-1884-43fb-b34e-44873449e93d.jpg",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-400",
+        "content_width": "small",
+        "content_position": "bottom-right",
+        "text_alignment": "left",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "rich_text_d8pKKr": {
+      "type": "rich-text",
+      "blocks": {
+        "text_7XMATQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>סדרת LINE REPAIR מציעה מענה מתקדם וממוקד לכל שלב ולכל תסמין של עור בוגר – מיובש וחוסר חיוניות ועד קמטוטים, נפילה ומראה עייף. בחרי מבין ששת הטיפולים הייעודיים להתאמה מושלמת לצרכים המשתנים של עורך.<\/p>",
+            "custom_liquid": "",
+            "size": "text-size-large"
+          }
+        }
+      },
+      "block_order": [
+        "text_7XMATQ"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "image_with_text_cyTGXi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_6kJp6x": {
+          "type": "heading",
+          "settings": {
+            "text": "LINE REPAIR Hydra",
+            "heading_size": "h3"
+          }
+        },
+        "text_WnbhRm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>לחות אינטנסיבית לעור מיובש, מחוספס או מגורה<br\/><\/p>",
+            "description_size": "medium"
+          }
+        },
+        "collapsible_tab_WFWGTe": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "איך זה עובד?",
+            "open": true,
+            "content": "<p>הסדרה מחדירה לחות עמוקה, מרככת את היובש ומחדשת את הגמישות בעור.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_YnKYeL": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "פתרון ממוקד",
+            "open": true,
+            "content": "<p>למי שמתמודדת עם תחושת יובש, גוון אפרורי, מרקם מחוספס ואידיאלי לשימוש יומיומי או לאחר חשיפה לשמש.<br\/><\/p>",
+            "page": ""
+          }
+        },
+        "button_hBCka8": {
+          "type": "button",
+          "settings": {
+            "button_text": "לסדרת הידרה",
+            "button_link": "shopify:\/\/collections\/line-repair-hydra"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6kJp6x",
+        "text_WnbhRm",
+        "collapsible_tab_WFWGTe",
+        "collapsible_tab_YnKYeL",
+        "button_hBCka8"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "enable_border": false,
+        "image": "shopify:\/\/shop_images\/hydra_comp_1.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-right",
+        "color_bg": "#ffffff",
+        "color_text": "#5d666f",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_fHJraY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8KrPpX": {
+          "type": "heading",
+          "settings": {
+            "text": "LINE REPAIR Fix",
+            "heading_size": "h3"
+          }
+        },
+        "text_bc6yPr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>מענה ממוקד לשיפור מראה העור ולמניעת פגמים חדשים<\/p>",
+            "description_size": "medium"
+          }
+        },
+        "collapsible_tab_ALFEd8": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "איך זה עובד?",
+            "open": true,
+            "content": "<p>מוצרי הסדרה מבוססים על רטינול בטכנולוגיית שחרור מושהה, המסייעים בהחלקת קמטוטים, שיפור מרקם העור וטשטוש נראות סימני גיל.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_HHUhKY": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "פתרון ממוקד",
+            "open": true,
+            "content": "<p>לעור עם קמטוטים, מרקם לא אחיד או סימנים לאחר פגמי עור. אידיאלי לשיפור מתמשך של מראה העור.<\/p>",
+            "page": ""
+          }
+        },
+        "button_NGwpid": {
+          "type": "button",
+          "settings": {
+            "button_text": "למוצרי Fix",
+            "button_link": "shopify:\/\/collections\/line-repair-fix"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8KrPpX",
+        "text_bc6yPr",
+        "collapsible_tab_ALFEd8",
+        "collapsible_tab_HHUhKY",
+        "button_NGwpid"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "enable_border": false,
+        "image": "shopify:\/\/shop_images\/line_repair_fix_comp_2.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-right",
+        "color_bg": "#ffffff",
+        "color_text": "#5d666f",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_eAVWr9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jxt3ra": {
+          "type": "heading",
+          "settings": {
+            "text": "LINE REPAIR Nutrient",
+            "heading_size": "h3"
+          }
+        },
+        "text_DcaTzM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>מוצרי הסדרה מעניקים הזנה עמוקה בשילוב לחות מתקדמת, מסייעים להשיב לעור יבש או עייף תחושת נינוחות, רכות וזוהר טבעי.<\/p>",
+            "description_size": "medium"
+          }
+        },
+        "collapsible_tab_giitX9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "איך זה עובד?",
+            "open": true,
+            "content": "<p>הסדרה מבוססת על מזונות-על ופרוביוטיקה שמטעינים את העור באנרגיה מחודשת, מחזקים את מראהו ומעניקים לו זוהר וחיוניות.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_8rXKm7": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "פתרון ממוקד",
+            "open": true,
+            "content": "<p>לעור עדין, נוטה לאדמומיות ולתחושת רגישות – במיוחד לאחר טיפולים אינטנסיביים בפנים.<br\/><\/p>",
+            "page": ""
+          }
+        },
+        "button_NRVMUz": {
+          "type": "button",
+          "settings": {
+            "button_text": "למוצרי NUTRIENT",
+            "button_link": "shopify:\/\/collections\/line-repair-nutrient"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jxt3ra",
+        "text_DcaTzM",
+        "collapsible_tab_giitX9",
+        "collapsible_tab_8rXKm7",
+        "button_NRVMUz"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "enable_border": false,
+        "image": "shopify:\/\/shop_images\/line_repair_nutrient_comp_2.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-right",
+        "color_bg": "#ffffff",
+        "color_text": "#5d666f",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_RrzHUK": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_cy6zRV": {
+          "type": "heading",
+          "settings": {
+            "text": "LINE REPAIR Glow",
+            "heading_size": "h3"
+          }
+        },
+        "text_iTnLyU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>תוספת זוהר לעור עמום, עייף או בעל מראה לא אחיד<\/p>",
+            "description_size": "medium"
+          }
+        },
+        "collapsible_tab_UURz3W": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "איך זה עובד?",
+            "open": true,
+            "content": "<p>מוצרי הסדרה ממריצים ומאירים את העור בעזרת ויטמין C ורכיבי פירות יער פעילים<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_XL4eKH": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "פתרון ממוקד",
+            "open": true,
+            "content": "<p>לעור שנראה אפרפר, עייף או בעל גוון לא אחיד. מעולה לרענון עונתי או כתוספת זוהר מיידית.<\/p>",
+            "page": ""
+          }
+        },
+        "button_Mh8AnJ": {
+          "type": "button",
+          "settings": {
+            "button_text": "למוצרי GLOW",
+            "button_link": "shopify:\/\/collections\/line-repair-glow"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cy6zRV",
+        "text_iTnLyU",
+        "collapsible_tab_UURz3W",
+        "collapsible_tab_XL4eKH",
+        "button_Mh8AnJ"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "enable_border": false,
+        "image": "shopify:\/\/shop_images\/glow_comp_2.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-right",
+        "color_bg": "#ffffff",
+        "color_text": "#5d666f",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_C4jRwT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_NLMJ4r": {
+          "type": "heading",
+          "settings": {
+            "text": "LINE REPAIR Firm",
+            "heading_size": "h3"
+          }
+        },
+        "text_6HU8Pc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>מיצוק וחיזוק לעור עם ירידה בגמישות ובנפח<\/p>",
+            "description_size": "medium"
+          }
+        },
+        "collapsible_tab_Dgt3xg": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "איך זה עובד?",
+            "open": true,
+            "content": "<p>מוצרי הסדרה מסייעים בשיפור מראה המיצוק והחוזק של העור, ותורמים להשבת קווי מתאר מוצקים ומוגדרים יותר.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_gAe3wH": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "פתרון ממוקד",
+            "open": true,
+            "content": "<p>לעור בוגר עם סימני רפיון או אובדן קווי מתאר, במיוחד באזור הלחיים וקו הלסת.<\/p>",
+            "page": ""
+          }
+        },
+        "button_TAa3xf": {
+          "type": "button",
+          "settings": {
+            "button_text": "למוצרי FIRM",
+            "button_link": "shopify:\/\/collections\/line-repair-firm"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NLMJ4r",
+        "text_6HU8Pc",
+        "collapsible_tab_Dgt3xg",
+        "collapsible_tab_gAe3wH",
+        "button_TAa3xf"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "enable_border": false,
+        "image": "shopify:\/\/shop_images\/line_repair_comp_1.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-right",
+        "color_bg": "#ffffff",
+        "color_text": "#5d666f",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "1755020662cb88d7f9",
+    "image_with_text_overlay_GFFdw4",
+    "rich_text_d8pKKr",
+    "image_with_text_cyTGXi",
+    "image_with_text_fHJraY",
+    "image_with_text_eAVWr9",
+    "image_with_text_RrzHUK",
+    "image_with_text_C4jRwT"
+  ]
+}

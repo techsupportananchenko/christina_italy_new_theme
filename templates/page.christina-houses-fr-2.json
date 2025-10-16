@@ -1,0 +1,969 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "background_video_YWWktQ": {
+      "type": "background-video",
+      "disabled": true,
+      "name": "Background video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-400",
+        "full_width": true,
+        "subheading": "",
+        "heading": "CHRISTINA HOUSES",
+        "text": "Where science, beauty, and experience unite",
+        "lightbox_button": false,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1662373200967c613c": {
+      "type": "rich-text",
+      "blocks": {
+        "23c05a65-fd58-4945-b22a-3ebcf7903e48": {
+          "type": "heading",
+          "settings": {
+            "text": "Christina House - Le Concept",
+            "size": "h1"
+          }
+        },
+        "05722c02-ce4f-461f-a041-3e159cddb760": {
+          "type": "text",
+          "settings": {
+            "text": "<p>C’est bien plus qu’une destination beauté, c’est une maison.<br/>Un lieu où expertise, innovation et sensorialité s’unissent pour incarner la vision holistique de Christina du bien-être de la peau.</p><p>Du parfum délicat qui vous accueille à la douceur de la musique et au toucher expert, chaque détail incarne l’exigence de Christina en matière de précision, de soin et d’art de recevoir.</p>",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        },
+        "text_tqqrzg": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        },
+        "text_button_y8eL7w": {
+          "type": "text-button",
+          "settings": {
+            "link_label": "Réservez votre soin",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "23c05a65-fd58-4945-b22a-3ebcf7903e48",
+        "05722c02-ce4f-461f-a041-3e159cddb760",
+        "text_tqqrzg",
+        "text_button_y8eL7w"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#5d666f",
+        "color_links": "#535458",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "rich_text_jAcF4X": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kVC7LX": {
+          "type": "heading",
+          "settings": {
+            "text": "Ce que vous découvrirez dans nos Christina Houses",
+            "size": "h2"
+          }
+        },
+        "text_RmtapT": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>It’s more than a beauty destination, it’s a home.<br/><br/>A space where professional treatments, advanced training, and sensory experiences merge to reveal Christina’s holistic approach to skin well-being.</p><p>From the welcoming scent to the soft music and expert touch, every detail is carefully designed to reflect Christina’s standard of precision, care, and hospitality.</p>",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        },
+        "text_Ae4eqB": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        },
+        "text_button_WjWfBj": {
+          "type": "text-button",
+          "disabled": true,
+          "settings": {
+            "link_label": "Book a Treatment",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_kVC7LX",
+        "text_RmtapT",
+        "text_Ae4eqB",
+        "text_button_WjWfBj"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#5d666f",
+        "color_links": "#535458",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "media_grid_zMYdMU": {
+      "type": "media-grid",
+      "blocks": {
+        "media_JmjLz8": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": true,
+            "video_hosted": "shopify://files/videos/v0f044gc0000cqrs08fog65l5ttdppj0.MP4",
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "Traitements professionnels",
+            "heading_size": "h4",
+            "text": "Découvrez des soins axés sur les résultats, adaptés à chaque type de peau. Chaque traitement suit les protocoles uniques en plusieurs étapes pour une transformation visible.",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#939393",
+            "color_text": "#ffffff",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_bLMXCw": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": true,
+            "video_hosted": "shopify://files/videos/video-output-4BE43977-B6A0-43CA-A45A-141ADB29AF4A-2.MOV",
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "Skin Bar & Expérience Produits",
+            "heading_size": "h4",
+            "text": "Découvrez l’univers Christina à travers l’expérience unique de nos soins flash au Skin Bar et de consultations personnalisées.",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#939393",
+            "color_text": "#ffffff",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_NhAtte": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_SUNDAY_1.jpg",
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "Formation & Éducation",
+            "heading_size": "h4",
+            "text": "Les esthéticiennes bénéficient d’une formation pratique, de démonstrations en direct et d’un apprentissage continu, encadrés par les formateurs certifiés Christina.",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#939393",
+            "color_text": "#ffffff",
+            "color_bg": "#ffffff",
+            "color_bg_gradient": "",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0
+          }
+        },
+        "media_WXKL8d": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_SUNDAY_1.jpg",
+            "slide_link": "",
+            "use_video": true,
+            "video_hosted": "shopify://files/videos/IMG_5769 (1).MOV",
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "Communauté & Connexion",
+            "heading_size": "h4",
+            "text": "Événements saisonniers, ateliers et séminaires animés par des experts réunissent professionnels et clients dans une ambiance élégante et inspirante, où beauté rime avec savoir.",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#939393",
+            "color_text": "#ffffff",
+            "color_bg": "#ffffff",
+            "color_bg_gradient": "",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_JmjLz8",
+        "media_bLMXCw",
+        "media_NhAtte",
+        "media_WXKL8d"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "desktop_height": 400,
+        "mobile_height": 295,
+        "column_spacing": "medium",
+        "mobile_swipe": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "5bad47dd-05dc-464b-9171-7b1563b93a84": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Unlock your shine - be more attractive",
+            "heading_size": "h2"
+          }
+        },
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>People said making clothes inside out was not proper. I disagreed, because clothes that are inside out are as beautiful as a cathedral. Delete the negative; accentuate the positive! I am especially grateful that I have been able to keep my own style over the decades, in spite of the many changes that have taken place in the world of fashion and in its business.</p><p>✹ It's hard to balance everything.<br/>✹ They have expression, modesty, sex appeal, simplicity.<br/>✹ In order to be irreplaceable one must always be different.</p>",
+            "description_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-1",
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_border": false,
+        "use_video": false,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-row-full",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#fff5e9",
+        "color_text": "#1e4e1c",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "rich_text_yHELJh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mQJhNU": {
+          "type": "heading",
+          "settings": {
+            "text": "Les Christina Houses en France",
+            "size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mQJhNU"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#5d666f",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "vertical_slideshow_E7Kphj": {
+      "type": "vertical-slideshow",
+      "blocks": {
+        "slide_KDc6Dz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2023-08-20_at_12.04.52_2.jpg",
+            "slide_link": "",
+            "video_background": false,
+            "subheading": "",
+            "heading": "Christina House Paris",
+            "heading_size": "h1",
+            "content": "Au cœur de la mythique rue Saint-Honoré, à deux pas de la place vendôme, notre Christina House Paris représente l’alliance parfaite entre élégance et expertise. Parmi les maisons de couture et le charme historique, la Christina House Paris offre des soins performants, des masterclasses professionnelles et des espaces apaisants pour enrichir l’expérience Christina.",
+            "description_size": "small",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Book a Treatment",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "slide_KwKkmz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ChristinaFrance_Cannes-19.jpg",
+            "slide_link": "",
+            "video_background": false,
+            "subheading": "",
+            "heading": "Christina House Cannes",
+            "heading_size": "h1",
+            "content": "À quelques pas du Palais des Festivals, notre Christina House Cannes allie le glamour de la Riviera à la précision clinique de Christina. Clients et professionnels bénéficient ici de l’alliance idéale entre soins Skin Bar Flash et rituels beauté complets, dans une atmosphère apaisante et lumineuse.",
+            "description_size": "small",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Book a Treatment",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "slide_tC8gpm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ChristinaFrance_Monaco-35.jpg",
+            "slide_link": "",
+            "video_background": false,
+            "subheading": "",
+            "heading": "Christina House Monaco",
+            "heading_size": "h1",
+            "content": "Située sur l’avenue la plus prestigieuse de Monaco, notre Christina House propose des soins raffinés et une formation professionnelle privée dans une atmosphère de luxe discret. Grâce à des consultations personnalisées et des soins experts, c’est un havre pour ceux en quête d’exclusivité et de résultats visibles.",
+            "description_size": "small",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Book a Treatment",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "slide_863kgz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1037.jpg",
+            "slide_link": "",
+            "video_background": false,
+            "subheading": "",
+            "heading": "Christina House Lyon",
+            "heading_size": "h1",
+            "content": "Au cœur de la prestigieuse presqu’île de Lyon, notre Christina House Lyon propose deux salles de soins, un showroom et un espace de formation exclusif. Un lieu où beauté, science et sensorialité se conjuguent, à l’image du raffinement et de l’innovation lyonnais.",
+            "description_size": "small",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Book a Treatment",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "slide_dYQPyh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6749.heic",
+            "slide_link": "",
+            "video_background": false,
+            "subheading": "",
+            "heading": "Christina House Dijon",
+            "heading_size": "h1",
+            "content": "Situé au 5 Rue de Gray, cet espace élégant dispose de deux cabines de soins conçues pour le confort, le bien-être et l’expertise. Au cœur du centre culturel de Dijon, notre Christina House fait vivre l’expérience signature de Christina, en proposant des soins avancés et des formations professionnelles dans un cadre chaleureux et élégant.",
+            "description_size": "small",
+            "content_position": "bottom-left",
+            "text_alignment": "left",
+            "content_size": "medium",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "Book a Treatment",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_KDc6Dz",
+        "slide_KwKkmz",
+        "slide_tC8gpm",
+        "slide_863kgz",
+        "slide_dYQPyh"
+      ],
+      "name": "Vertical slideshow",
+      "settings": {
+        "dots": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "rich_text_Tbax6r": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Q66ykg": {
+          "type": "heading",
+          "settings": {
+            "text": "Nos Christina Houses dans le monde",
+            "size": "h1"
+          }
+        },
+        "text_3EpTBG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Du Japon à Rome et au-delà, les Christina Houses garantissent une expérience haut de gamme à travers le monde, tout en respectant les spécificités culturelles locales et l’ADN de la marque.<br/>Ensemble, elles forment un réseau international où l’expérience Christina se partage, se ressent et se vit, House après House.<br/><br/></p>",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Q66ykg",
+        "text_3EpTBG"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#5d666f",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "video_4xCaUG": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "section_width": "full-width-row-full",
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_hosted": "shopify://files/videos/CHRISTINA HOUSE (1).mp4",
+        "video_autoplay": true,
+        "aspect_ratio": "16-9",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "media_grid_3ebgm4": {
+      "type": "media-grid",
+      "blocks": {
+        "media_Q6B9EA": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "טיפול מלא",
+            "heading_size": "h4",
+            "text": "טיפולים מותאמים לכל מצבי העור כולל שימוש בחומרים פעילים",
+            "button_text": "תיאום טיפול מלא",
+            "button_link": "",
+            "content_position": "bottom-left",
+            "text_alignment": "right",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_n9Vgnn": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_ed7KwL": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_Q6B9EA",
+        "media_n9Vgnn",
+        "media_ed7KwL"
+      ],
+      "disabled": true,
+      "name": "Media grid",
+      "settings": {
+        "section_width": "full-width-row",
+        "desktop_height": 300,
+        "mobile_height": 210,
+        "column_spacing": "medium",
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "video_HxqTD4": {
+      "type": "video",
+      "disabled": true,
+      "name": "Video",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "section_width": "full-width-row-full",
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "aspect_ratio": "16-9",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "media_grid_b6U4Vg": {
+      "type": "media-grid",
+      "blocks": {
+        "media_kEUQkx": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_wz6wE7": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_9qUi89": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_QxTHeN": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_XQx8pD": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_TykVQ3": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_3CkpxJ": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
+            "color_text": "#252525",
+            "color_bg": "#f1f1f1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_kEUQkx",
+        "media_wz6wE7",
+        "media_9qUi89",
+        "media_QxTHeN",
+        "media_XQx8pD",
+        "media_TykVQ3",
+        "media_3CkpxJ"
+      ],
+      "disabled": true,
+      "name": "Media grid",
+      "settings": {
+        "section_width": "full-width-row",
+        "desktop_height": 300,
+        "mobile_height": 300,
+        "column_spacing": "small",
+        "mobile_swipe": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "scrolling_images_yW4KCk": {
+      "type": "scrolling-images",
+      "blocks": {
+        "image_XLYxd4": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "heading": "טוקיו, יפן",
+            "text": ""
+          }
+        },
+        "image_KHmTYQ": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "heading": "קאן, צרפת",
+            "text": ""
+          }
+        },
+        "image_MeeTPL": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "heading": "Heading",
+            "text": ""
+          }
+        },
+        "image_Hmjzw7": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "heading": "Heading",
+            "text": ""
+          }
+        },
+        "image_CXxfAe": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "heading": "פריז, צרפת",
+            "text": ""
+          }
+        },
+        "image_a6wAKM": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "heading": "אוסקה, יפן",
+            "text": "<p>Add description text here.</p>"
+          }
+        },
+        "image_W4AJeG": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "heading": "מונקו",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_XLYxd4",
+        "image_KHmTYQ",
+        "image_MeeTPL",
+        "image_Hmjzw7",
+        "image_CXxfAe",
+        "image_a6wAKM",
+        "image_W4AJeG"
+      ],
+      "disabled": true,
+      "name": "Scrolling images",
+      "settings": {
+        "image_ratio": "square",
+        "column_spacing": "small",
+        "image_alignment": "top",
+        "direction": "left",
+        "speed": "30s",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "map_axyJgr": {
+      "type": "map",
+      "blocks": {
+        "pin_iFhYQx": {
+          "type": "pin",
+          "settings": {
+            "pin_image": "shopify://shop_images/IMG_6749.heic",
+            "pin_retina": true,
+            "pin_lat": "33.9787261",
+            "pin_long": "-118.4197832",
+            "pin_title": "",
+            "pin_desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "pin_iFhYQx"
+      ],
+      "disabled": true,
+      "name": "Map",
+      "settings": {
+        "googlemaps_api_key": "",
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-350",
+        "map_type": "roadmap",
+        "map_style_select": "default",
+        "map_zoom": 0,
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_border": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "background_video_YWWktQ",
+    "1662373200967c613c",
+    "rich_text_jAcF4X",
+    "media_grid_zMYdMU",
+    "5bad47dd-05dc-464b-9171-7b1563b93a84",
+    "rich_text_yHELJh",
+    "vertical_slideshow_E7Kphj",
+    "rich_text_Tbax6r",
+    "video_4xCaUG",
+    "media_grid_3ebgm4",
+    "video_HxqTD4",
+    "media_grid_b6U4Vg",
+    "scrolling_images_yW4KCk",
+    "map_axyJgr"
+  ]
+}
