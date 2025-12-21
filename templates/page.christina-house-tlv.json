@@ -1,38 +1,30 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "background_video_YWWktQ": {
-      "type": "background-video",
-      "name": "Background video",
-      "settings": {
-        "desktop_height": "desktop-height-550",
-        "mobile_height": "mobile-height-400",
-        "full_width": true,
-        "subheading": "",
-        "heading": "CHRISTINA HOUSE TLV",
-        "text": "📍שדרות רוטשילד 49 תל אביב",
-        "lightbox_button": false,
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "overlay_opacity": 0,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "1662373200967c613c": {
       "type": "rich-text",
       "blocks": {
         "23c05a65-fd58-4945-b22a-3ebcf7903e48": {
           "type": "heading",
           "settings": {
-            "text": "כשמומחיות מקצועית פוגשת תוצאות מוכחות",
+            "text": "Il Concept di Christina House- È molto più di una destinazione beauty, è una casa.",
             "size": "h2"
           }
         },
         "05722c02-ce4f-461f-a041-3e159cddb760": {
           "type": "text",
           "settings": {
-            "text": "<p>בית כריסטינה TLV הוא היעד האולטימטיבי לטיפולי עור מבוססי תוצאה. <br\/>בהובלת קוסמטיקאיות מנוסות, כל טיפול מותאם אישית למצב העור שלך ומשלב ידע מקצועי עמוק עם רכיבים פעילים מתקדמים ושיטות העבודה המובילות בתעשייה.<\/p>",
+            "text": "<p>Uno spazio in cui trattamenti professionali, formazione avanzata ed esperienze sensoriali si fondono, rivelando l’approccio olistico di Christina al benessere della pelle.</p>",
             "custom_liquid": "",
-            "size": "text-size-regular"
+            "size": "text-size-large"
           }
         },
         "text_tqqrzg": {
@@ -46,8 +38,8 @@
         "text_button_y8eL7w": {
           "type": "text-button",
           "settings": {
-            "link_label": "לתיאום טיפול",
-            "link": ""
+            "link_label": "Prenota un trattamento",
+            "link": "https://api.whatsapp.com/send/?phone=393480606487&text&type=phone_number&app_absent=0"
           }
         }
       },
@@ -75,7 +67,6 @@
         "media_JmjLz8": {
           "type": "media",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_0157.jpg",
             "slide_link": "",
             "use_video": true,
             "video_autoplay": true,
@@ -101,7 +92,6 @@
         "media_bLMXCw": {
           "type": "media",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_9689_1_019fb469-0f6e-41b3-8e09-ba8b6ff855b4.jpg",
             "slide_link": "",
             "use_video": false,
             "video_autoplay": true,
@@ -127,7 +117,6 @@
         "media_NhAtte": {
           "type": "media",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_9692_2_4bed4248-3d8d-473c-a6e0-0200115eb457.jpg",
             "slide_link": "",
             "use_video": true,
             "video_autoplay": true,
@@ -156,6 +145,7 @@
         "media_bLMXCw",
         "media_NhAtte"
       ],
+      "disabled": true,
       "name": "Media grid",
       "settings": {
         "section_width": "full-width-row",
@@ -180,7 +170,7 @@
         "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-2": {
           "type": "text",
           "settings": {
-            "text": "<p>People said making clothes inside out was not proper. I disagreed, because clothes that are inside out are as beautiful as a cathedral. Delete the negative; accentuate the positive! I am especially grateful that I have been able to keep my own style over the decades, in spite of the many changes that have taken place in the world of fashion and in its business.<\/p><p>✹ It's hard to balance everything.<br\/>✹ They have expression, modesty, sex appeal, simplicity.<br\/>✹ In order to be irreplaceable one must always be different.<\/p>",
+            "text": "<p>People said making clothes inside out was not proper. I disagreed, because clothes that are inside out are as beautiful as a cathedral. Delete the negative; accentuate the positive! I am especially grateful that I have been able to keep my own style over the decades, in spite of the many changes that have taken place in the world of fashion and in its business.</p><p>✹ It's hard to balance everything.<br/>✹ They have expression, modesty, sex appeal, simplicity.<br/>✹ In order to be irreplaceable one must always be different.</p>",
             "description_size": "medium"
           }
         }
@@ -192,9 +182,8 @@
       "disabled": true,
       "settings": {
         "enable_border": false,
-        "image": "shopify:\/\/shop_images\/rita_mask_brash_1_dc925fcb-3c9b-4f22-8219-79e23f83210e.jpg",
         "use_video": false,
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
         "video_controls": true,
         "height": "adapt",
@@ -215,31 +204,13 @@
         "heading_mQJhNU": {
           "type": "heading",
           "settings": {
-            "text": "יעד בינלאומי לטיפוח העור",
-            "size": "h1"
-          }
-        },
-        "text_d3REh3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>בתי כריסטינה פועלים ברחבי העולם – מטוקיו ואוסקה ועד מונקו, קאן ותל אביב – כל אחד מהם מביא לידי ביטוי את המוניטין, המקצועיות והיוקרה של המותג הבינלאומי שלנו: טיפולים מתקדמים, מומחיות מקצועית ותוצאות ברורות לעין.<br\/>יחד, הם מגדירים את הסטנדרט הגלובלי החדש בטיפוח העור המקצועי.<\/p>",
-            "custom_liquid": "",
-            "size": "text-size-regular"
-          }
-        },
-        "text_rpWV4A": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "custom_liquid": "",
-            "size": "text-size-regular"
+            "text": "Cosa puoi scoprire nelle Christina Houses",
+            "size": "h2"
           }
         }
       },
       "block_order": [
-        "heading_mQJhNU",
-        "text_d3REh3",
-        "text_rpWV4A"
+        "heading_mQJhNU"
       ],
       "settings": {
         "section_width": "grid",
@@ -253,120 +224,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "media_grid_3ebgm4": {
-      "type": "media-grid",
-      "blocks": {
-        "media_Q6B9EA": {
-          "type": "media",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_0157.jpg",
-            "slide_link": "",
-            "use_video": false,
-            "video_autoplay": true,
-            "column": 2,
-            "row": 2,
-            "heading": "טיפול מלא",
-            "heading_size": "h4",
-            "text": "טיפולים מותאמים לכל מצבי העור כולל שימוש בחומרים פעילים",
-            "button_text": "תיאום טיפול מלא",
-            "button_link": "",
-            "content_position": "bottom-left",
-            "text_alignment": "right",
-            "badge_text": "",
-            "color_badge_text": "#ffffff",
-            "color_badge_bg": "#e32626",
-            "color_text": "#252525",
-            "color_bg": "#f1f1f1",
-            "color_bg_gradient": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "media_n9Vgnn": {
-          "type": "media",
-          "settings": {
-            "slide_link": "",
-            "use_video": false,
-            "video_autoplay": true,
-            "column": 2,
-            "row": 1,
-            "heading": "Heading",
-            "heading_size": "h4",
-            "text": "Block text",
-            "button_text": "",
-            "button_link": "",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "badge_text": "",
-            "color_badge_text": "#ffffff",
-            "color_badge_bg": "#e32626",
-            "color_text": "#252525",
-            "color_bg": "#f1f1f1",
-            "color_bg_gradient": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "media_ed7KwL": {
-          "type": "media",
-          "settings": {
-            "slide_link": "",
-            "use_video": false,
-            "video_autoplay": true,
-            "column": 2,
-            "row": 1,
-            "heading": "Heading",
-            "heading_size": "h4",
-            "text": "Block text",
-            "button_text": "",
-            "button_link": "",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "badge_text": "",
-            "color_badge_text": "#ffffff",
-            "color_badge_bg": "#e32626",
-            "color_text": "#252525",
-            "color_bg": "#f1f1f1",
-            "color_bg_gradient": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "media_Q6B9EA",
-        "media_n9Vgnn",
-        "media_ed7KwL"
-      ],
-      "disabled": true,
-      "name": "Media grid",
-      "settings": {
-        "section_width": "full-width-row",
-        "desktop_height": 300,
-        "mobile_height": 210,
-        "column_spacing": "medium",
-        "mobile_swipe": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
-    "background_video_tGpx4k": {
-      "type": "background-video",
-      "name": "Background video",
-      "settings": {
-        "desktop_height": "desktop-height-550",
-        "mobile_height": "mobile-height-400",
-        "full_width": true,
-        "subheading": "",
-        "heading": "",
-        "text": "",
-        "lightbox_button": false,
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "overlay_opacity": 0,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "video_HxqTD4": {
       "type": "video",
       "disabled": true,
@@ -376,7 +233,7 @@
         "heading_left": false,
         "description": "",
         "section_width": "full-width-row-full",
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
         "aspect_ratio": "16-9",
         "disable_top_spacing": true,
@@ -589,7 +446,6 @@
         "image_XLYxd4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CH_-_TOKYO.jpg",
             "link": "",
             "heading": "טוקיו, יפן",
             "text": ""
@@ -598,7 +454,6 @@
         "image_KHmTYQ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CH_-_Cannes.jpg",
             "link": "",
             "heading": "קאן, צרפת",
             "text": ""
@@ -607,7 +462,6 @@
         "image_MeeTPL": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Christina_Kassel_14.jpg",
             "link": "",
             "heading": "Heading",
             "text": ""
@@ -616,7 +470,6 @@
         "image_Hmjzw7": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSC_7899.jpg",
             "link": "",
             "heading": "Heading",
             "text": ""
@@ -625,7 +478,6 @@
         "image_CXxfAe": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CH_-_Paris.jpg",
             "link": "",
             "heading": "פריז, צרפת",
             "text": ""
@@ -634,16 +486,14 @@
         "image_a6wAKM": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CH_-_OSAKA.jpg",
             "link": "",
             "heading": "אוסקה, יפן",
-            "text": "<p>Add description text here.<\/p>"
+            "text": "<p>Add description text here.</p>"
           }
         },
         "image_W4AJeG": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CH_-_Monaco.jpg",
             "link": "",
             "heading": "מונקו",
             "text": ""
@@ -671,64 +521,116 @@
         "disable_bottom_spacing": false
       }
     },
-    "image_with_text_overlay_zcntJd": {
-      "type": "image-with-text-overlay",
+    "gallery_JzgiaQ": {
+      "type": "gallery",
       "blocks": {
-        "heading_7f3PUa": {
-          "type": "heading",
+        "image_fTVrRj": {
+          "type": "image",
           "settings": {
-            "text": "מחפשת מתנה מפנקת?",
-            "heading_size": "h1"
+            "image": "shopify://shop_images/DSC_7902.jpg",
+            "subheading": "",
+            "title": "Trattamenti professionali",
+            "text": "Esperienze orientate al risultato e personalizzate in base a ogni condizione della pelle. Ogni trattamento segue i protocolli multi-step esclusivi Christina, per una trasformazione visibile.",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": "",
+            "product_list": []
           }
         },
-        "text_TkFENN": {
-          "type": "text",
+        "image_eMFNtU": {
+          "type": "image",
           "settings": {
-            "text": "<p>מטיפול GLOW מרענן לטיפול מלא - הזמיני טיפול פנים מושלם למי שאת אוהבת<\/p>",
-            "description_size": "medium"
+            "image": "shopify://shop_images/2014_STEP_6-retouched_copy.jpg",
+            "subheading": "",
+            "title": "Skin Bar & esperienza prodotto",
+            "text": "Scopri l’universo Christina attraverso sessioni Skin Bar e consulenze personalizzate.",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": "",
+            "product_list": []
           }
         },
-        "button_nkANMF": {
-          "type": "button",
+        "image_dTDhtD": {
+          "type": "image",
           "settings": {
-            "button_text": "קני עכשיו",
-            "button_link": "shopify:\/\/products\/gift-card-christina",
-            "button_outline": false
+            "image": "shopify://shop_images/Texture_-_Dull_tired_skin_5.jpg",
+            "subheading": "",
+            "title": "Formazione e aggiornamento",
+            "text": "Le estetiste ricevono formazione pratica, dimostrazioni dal vivo e aggiornamento continuo, guidate dai formatori certificati Christina.",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": "",
+            "product_list": []
+          }
+        },
+        "image_mfRf73": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1041_1.jpg",
+            "subheading": "",
+            "title": "Comunità e connessione",
+            "text": "Eventi stagionali, workshop e seminari specialistici riuniscono professionisti e clienti in un ambiente elegante e ispirazionale, dove la bellezza incontra la conoscenza.",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": "",
+            "product_list": []
           }
         }
       },
       "block_order": [
-        "heading_7f3PUa",
-        "text_TkFENN",
-        "button_nkANMF"
+        "image_fTVrRj",
+        "image_eMFNtU",
+        "image_dTDhtD",
+        "image_mfRf73"
       ],
-      "name": "Image with text overlay",
+      "name": "Gallery",
       "settings": {
+        "columns_desktop": 2,
         "section_width": "grid",
-        "image": "shopify:\/\/shop_images\/Gift_Card.jpg",
-        "image_parallax": false,
-        "desktop_height": "desktop-height-550",
-        "mobile_height": "mobile-height-500",
-        "content_width": "small",
+        "mobile_swipe": false,
+        "image_ratio": "landscape",
         "content_position": "bottom-left",
-        "text_alignment": "right",
+        "text_alignment": "left",
+        "column_spacing": "large",
+        "heading_size": "h2",
+        "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "disable_top_spacing": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "background_video_YWWktQ": {
+      "type": "background-video",
+      "name": "Background video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-400",
+        "full_width": true,
+        "subheading": "",
+        "heading": "",
+        "text": "",
+        "lightbox_button": false,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_hosted": "shopify://files/videos/CHRISTINA HOUSES.mp4",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
         "disable_bottom_spacing": false
       }
     }
   },
   "order": [
-    "background_video_YWWktQ",
     "1662373200967c613c",
     "media_grid_zMYdMU",
     "5bad47dd-05dc-464b-9171-7b1563b93a84",
     "rich_text_yHELJh",
-    "media_grid_3ebgm4",
-    "background_video_tGpx4k",
     "video_HxqTD4",
     "media_grid_b6U4Vg",
     "scrolling_images_yW4KCk",
-    "image_with_text_overlay_zcntJd"
+    "gallery_JzgiaQ",
+    "background_video_YWWktQ"
   ]
 }
