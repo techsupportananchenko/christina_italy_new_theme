@@ -55,7 +55,7 @@
         "logo_height_range_mobile": 37,
         "style": "style4",
         "header_shadow": "header--shadow-small",
-        "menu": "",
+        "menu": "main-menu",
         "wholesale_menu": "",
         "transparent_header": false,
         "show_language_switcher": false,
