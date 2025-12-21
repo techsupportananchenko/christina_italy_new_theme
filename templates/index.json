@@ -136,9 +136,9 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "heading": "Nos coups de cœur",
+        "heading": "I nostri bestseller",
         "heading_left": true,
-        "description": "<p>Des formules fiables, conçues pour des résultats visibles</p>",
+        "description": "<p>Le formulazioni più affidabili e orientate ai risultati.</p>",
         "full_width": true,
         "collection": "best-sellers",
         "display_type": "grid",
