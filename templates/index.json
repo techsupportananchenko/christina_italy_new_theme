@@ -368,24 +368,26 @@
       "type": "collection-list",
       "name": "Collection list",
       "settings": {
-        "heading": "Explorez nos gammes emblématiques",
+        "heading": "Scopri le nostre linee più iconiche",
         "heading_left": true,
-        "description": "<p>Des formules innovantes, des résultats prouvés et des solutions adaptées à chaque problématique de peau</p>",
+        "description": "<p>Formulazioni innovative, risultati comprovati e soluzioni specifiche per ogni esigenza della pelle.</p>",
         "full_width": true,
         "collection_list": [
           "bio-phyto",
-          "biophyto-test",
           "comodex",
           "forever-young",
           "illustrious",
           "line-repair-fix",
           "line-repair-nutrient",
-          "rose-de-mer"
+          "rose-de-mer",
+          "line-repair-hydra",
+          "nuance",
+          "unstress"
         ],
         "image_ratio": "portrait",
         "layout": "carousel",
         "style": "style1",
-        "columns_desktop": 4,
+        "columns_desktop": 8,
         "columns_mobile": "1",
         "show_progress_bar": true,
         "mobile_swipe": true,
@@ -808,6 +810,7 @@
         "text_yLJrhB",
         "button_dJTGkz"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "section_width": "full-width-row",
@@ -959,6 +962,7 @@
         "media_jTePGq",
         "media_wc9cVr"
       ],
+      "disabled": true,
       "name": "Media grid",
       "settings": {
         "section_width": "full-width-row-full",
@@ -978,12 +982,12 @@
           "settings": {
             "image": "shopify://shop_images/FY_-_Repairing_Night_Cream_2.jpg",
             "image_full_width": true,
-            "image_link": "",
+            "image_link": "shopify://pages/about-us",
             "retina": true,
-            "title": "Approuvé par les professionnels. Adopté par vous",
-            "text": "<p>Forte de décennies d’expérience et de formules primées, Christina offre une peau plus saine et éclatante à travers le monde</p>",
-            "link_label": "À propos de nous”",
-            "link": "#",
+            "title": "Oltre 40 anni di esperienza",
+            "text": "<p>Innovazione professionale applicata alla cura quotidiana. Affidato dagli esperti skincare in oltre 60 Paesi e apprezzato da clienti in tutto il mondo.</p>",
+            "link_label": "Leggi di più",
+            "link": "shopify://pages/about-us",
             "link_style": "text-button",
             "alignment": "left"
           }
@@ -991,12 +995,13 @@
         "column_FcWrED": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/LR_step_7_CREAM_DAY_5.jpg",
             "image_full_width": true,
             "image_link": "",
             "retina": true,
-            "title": "Votre allié expert pour les soins de la peau",
-            "text": "<p>Avec ses protocoles innovants, ses formules efficaces et sa formation continue, Christina aide les esthéticiennes à renforcer leurs compétences et à développer leur activité</p>",
-            "link_label": "Rejoignez-nous dès aujourd’hui",
+            "title": "Il partner professionale per la cura della pelle",
+            "text": "<p>Protocolli avanzati, formule comprovate e aggiornamento continuo: Christina sostiene la crescita professionale e commerciale delle estetiste.</p>",
+            "link_label": "Unisciti ora",
             "link": "#",
             "link_style": "text-button",
             "alignment": "left"
@@ -1005,12 +1010,13 @@
         "column_NUnNdy": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/2014_STEP_6-retouched_copy.jpg",
             "image_full_width": true,
             "image_link": "",
             "retina": true,
-            "title": "Consultez un expert Christina",
-            "text": "<p>Nos expertes beauté vous accompagnent lors de consultations individuelles pour sélectionner les soins et routines à domicile garantissant des résultats visibles</p>",
-            "link_label": "Contactez-nous sur WhatsApp",
+            "title": "Entra nella Christina House",
+            "text": "<p>Le Christina Houses non sono semplici centri estetici: sono luoghi dedicati all’innovazione, alla competenza e alla trasformazione della pelle.</p>",
+            "link_label": "Scopri di più",
             "link": "#",
             "link_style": "text-button",
             "alignment": "left"
