@@ -9,24 +9,20 @@
  */
 {
   "sections": {
-    "1760261860d066fe53": {
-      "type": "_blocks",
-      "settings": {}
-    },
     "slideshow_jxpytQ": {
       "type": "slideshow",
       "blocks": {
         "slide_49iLpE": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/4_3.png",
-            "slide_link": "",
-            "video_background": false,
+            "slide_link": "shopify://collections/masks",
+            "video_background": true,
             "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_hosted": "shopify://files/videos/productsmodel_c_2500X1000 (1).mp4",
             "subheading": "",
-            "heading": "ILLUSTRIOUS",
+            "heading": "MASCHERE",
             "heading_size": "h2",
-            "content": "Blanchiment parfait de la peau",
+            "content": "La spinta al rinnovamento della tua pelle",
             "description_size": "medium",
             "content_position": "bottom-left",
             "text_alignment": "left",
@@ -34,8 +30,8 @@
             "overlay_color": "#ffffff",
             "overlay_opacity": 0,
             "overlay_gradient": "",
-            "button_1_text": "Ajouter au panier",
-            "button_1_link": "",
+            "button_1_text": "Trova la tua maschera",
+            "button_1_link": "shopify://collections/masks",
             "button_1_outline": false,
             "button_2_text": "",
             "button_2_link": "",
@@ -123,7 +119,6 @@
         "image_i98t6F": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SERUMS_Landscape_2.jpg",
             "subheading": "BEST-SELLER",
             "title": "Hydra Theraskin+Ha",
             "text": "Soin léger pour un teint frais et uniforme",
@@ -137,7 +132,6 @@
         "image_CzcEMT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ILLUSTR_MISCLL_WATER_3.jpg",
             "subheading": "",
             "title": "Nettoyants",
             "text": "La première étape pour une peau fraîche et équilibrée",
@@ -332,7 +326,6 @@
       "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
-        "image": "shopify://shop_images/MUSE_1.jpg",
         "image_height": "adapt",
         "image_width": "split",
         "frame_border": true,
@@ -773,7 +766,6 @@
         "pin_UPrnPG": {
           "type": "pin",
           "settings": {
-            "pin_image": "shopify://shop_images/Israel_New_Year_17.jpg",
             "pin_retina": true,
             "pin_lat": "33.9787261",
             "pin_long": "-118.4197832",
@@ -789,7 +781,6 @@
       "name": "Map",
       "settings": {
         "googlemaps_api_key": "",
-        "image": "shopify://shop_images/rita_mask_brash_1.jpg",
         "desktop_height": "desktop-height-450",
         "mobile_height": "mobile-height-350",
         "map_type": "roadmap",
@@ -919,7 +910,6 @@
         "media_rAgLqg": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/ChristinaFrance_Cannes-17_copy.jpg",
             "slide_link": "",
             "use_video": false,
             "video_autoplay": true,
@@ -945,7 +935,6 @@
         "media_jTePGq": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/IMG_1041.jpg",
             "slide_link": "",
             "use_video": false,
             "video_autoplay": true,
@@ -971,7 +960,6 @@
         "media_wc9cVr": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Copy_of_SUNDAY_1.jpg",
             "slide_link": "",
             "use_video": false,
             "video_autoplay": true,
@@ -1034,7 +1022,6 @@
         "column_FcWrED": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/LR_step_7_CREAM_DAY.jpg",
             "image_full_width": true,
             "image_link": "",
             "retina": true,
@@ -1049,7 +1036,6 @@
         "column_NUnNdy": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/LR-ROUTINES_0008_LR_HYDRA_CLEANSING-ROUTINE_1.jpg",
             "image_full_width": true,
             "image_link": "",
             "retina": true,
@@ -1143,7 +1129,6 @@
     }
   },
   "order": [
-    "1760261860d066fe53",
     "slideshow_jxpytQ",
     "collection_list_j6DEic",
     "collection_list_3rRehG",
