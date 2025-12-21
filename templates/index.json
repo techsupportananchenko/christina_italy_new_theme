@@ -141,10 +141,10 @@
         "description": "<p>Le formulazioni più affidabili e orientate ai risultati.</p>",
         "full_width": true,
         "collection": "best-sellers",
-        "display_type": "grid",
-        "product_limit": 4,
+        "display_type": "carousel",
+        "product_limit": 8,
         "columns_desktop": 4,
-        "show_view_all": true,
+        "show_view_all": false,
         "mobile_swipe": true,
         "show_progress_bar": true,
         "disable_top_spacing": false,
@@ -322,20 +322,20 @@
         "heading_7YM8Gw": {
           "type": "heading",
           "settings": {
-            "text": "La détox botanique essentielle pour votre peau",
+            "text": "La detossinazione botanica di cui la pelle ha bisogno",
             "heading_size": "h3"
           }
         },
         "text_ExF3rD": {
           "type": "text",
           "settings": {
-            "text": "<p>Enrichi en actifs végétaux, Bio Phyto rafraîchit, apaise et revitalise pour un teint éclatant et en pleine santé</p>"
+            "text": "<p>Arricchita con attivi vegetali, Bio Phyto rinfresca, calma e rivitalizza per una luminosità sana.</p>"
           }
         },
         "button_krWmXe": {
           "type": "button",
           "settings": {
-            "button_text": "Acheter Bio Phyto",
+            "button_text": "Acquista Bio Phyto",
             "button_link": "shopify://collections/bio-phyto",
             "button_outline": false
           }
