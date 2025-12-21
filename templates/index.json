@@ -43,7 +43,7 @@
         "slide_49iLpE"
       ],
       "settings": {
-        "desktop_height": "desktop-height-550",
+        "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-450",
         "full_width": true,
         "autoplay": false,
@@ -1088,6 +1088,7 @@
         "icon_yBtfrf",
         "icon_KMrfxp"
       ],
+      "disabled": true,
       "name": "Text with icons",
       "settings": {
         "text_alignment": "center",
