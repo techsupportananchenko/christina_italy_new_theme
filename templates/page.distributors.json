@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -17,7 +26,7 @@
           "settings": {
             "heading": "Australia",
             "open": false,
-            "content": "<p>SKIN FACTORS PTY LTD <br\/>11 JULLIAN CLOSE <br\/>BANKSMEADOW NSW 2019<br\/>Toll Free Within Australia: 1800 824 282<br\/>International: (+612) 9699 8530<br\/>International: (+612) 9699 8531<br\/>email: info@skinfactors.com.au<\/p>",
+            "content": "<p>SKIN FACTORS PTY LTD <br/>11 JULLIAN CLOSE <br/>BANKSMEADOW NSW 2019<br/>Toll Free Within Australia: 1800 824 282<br/>International: (+612) 9699 8530<br/>International: (+612) 9699 8531<br/>email: info@skinfactors.com.au</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -27,7 +36,7 @@
           "settings": {
             "heading": "Armenia",
             "open": false,
-            "content": "<h4>Premier Group<\/h4><p>Erevan\/Armenia<br\/>13 Buzanda str  <br\/>Tell: 011 200 000<br\/>Info@premiergroup.am<br\/>www.premiergroup.am<\/p>",
+            "content": "<h4>Premier Group</h4><p>Erevan/Armenia<br/>13 Buzanda str  <br/>Tell: 011 200 000<br/>Info@premiergroup.am<br/>www.premiergroup.am</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -37,7 +46,7 @@
           "settings": {
             "heading": "Azerbaijan",
             "open": false,
-            "content": "<h3>Azerbaijan<\/h3><h3><strong>Salon  Christina<\/strong><\/h3><p>Baku\/Azerbaijan<br\/>Adres çentra<br\/>Uliça Alesker Alekberov 19A, metro Elmler,<br\/>Tel: +994 55 525 97 58 Arzu<br\/>      +994 55 525 73 12 Elnura<br\/>Office@rgmedical.az<br\/>Instagram: christina_cosmetics_baku<\/p>",
+            "content": "<h3>Azerbaijan</h3><h3><strong>Salon  Christina</strong></h3><p>Baku/Azerbaijan<br/>Adres çentra<br/>Uliça Alesker Alekberov 19A, metro Elmler,<br/>Tel: +994 55 525 97 58 Arzu<br/>      +994 55 525 73 12 Elnura<br/>Office@rgmedical.az<br/>Instagram: christina_cosmetics_baku</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -47,7 +56,7 @@
           "settings": {
             "heading": "Belarus",
             "open": false,
-            "content": "<h4>\"COSMEDIA\" Private Trade Unitary Enterprise<\/h4><p>14 Starovilenskaya Str., room 1 220029<br\/>MINSK<br\/>Republic of Belarus<br\/>tel: +375 (17) 243-80-15, +375(29) 314-99-14<br\/>email: kosmedby@gmail.com<\/p>",
+            "content": "<h4>\"COSMEDIA\" Private Trade Unitary Enterprise</h4><p>14 Starovilenskaya Str., room 1 220029<br/>MINSK<br/>Republic of Belarus<br/>tel: +375 (17) 243-80-15, +375(29) 314-99-14<br/>email: kosmedby@gmail.com</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -57,7 +66,7 @@
           "settings": {
             "heading": "Belgium",
             "open": false,
-            "content": "<h4>Alphaderm<\/h4><p>Jezuietenplein 14<br\/>Oudenaarde<br\/>Belgium<br\/>tel: (+32) 325-538-6468<br\/>email: info@alphaderm.be<\/p>",
+            "content": "<h4>Alphaderm</h4><p>Jezuietenplein 14<br/>Oudenaarde<br/>Belgium<br/>tel: (+32) 325-538-6468<br/>email: info@alphaderm.be</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -67,7 +76,7 @@
           "settings": {
             "heading": "Brasil",
             "open": false,
-            "content": "<h4>Christina Brasil<\/h4><p>Avenida Getúlio Vargas 408<br\/>Joinville\/SC<br\/>Brasil<br\/>tel: (+55) 47 99182-3432<br\/>email: contato@christinabrasil.com.br<\/p>",
+            "content": "<h4>Christina Brasil</h4><p>Avenida Getúlio Vargas 408<br/>Joinville/SC<br/>Brasil<br/>tel: (+55) 47 99182-3432<br/>email: contato@christinabrasil.com.br</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -77,7 +86,7 @@
           "settings": {
             "heading": "Canada",
             "open": false,
-            "content": "<h4>Active Crystal Inc<\/h4><p>8888 Keele Street Unit #5<br\/>Concord, Ontario L4K 2N2<br\/>Canada<br\/>tel: (+1) 905-763-5811<br\/>email: activecrystal@bellnet.ca<\/p><h3><\/h3>",
+            "content": "<h4>Active Crystal Inc</h4><p>8888 Keele Street Unit #5<br/>Concord, Ontario L4K 2N2<br/>Canada<br/>tel: (+1) 905-763-5811<br/>email: activecrystal@bellnet.ca</p><h3></h3>",
             "page": "",
             "custom_liquid": ""
           }
@@ -87,7 +96,7 @@
           "settings": {
             "heading": "China",
             "open": false,
-            "content": "<h4>Annhyatt Beauty<\/h4><p>Room B-2805, 24 Floor, Third Property Building, No.1<br\/>Shuguang Xili, Chaoyang District.<br\/>Beijing<br\/>China<br\/>tel: (+86) 10-5822 0173<br\/>email: sales@annhyatt.cn<\/p>",
+            "content": "<h4>Annhyatt Beauty</h4><p>Room B-2805, 24 Floor, Third Property Building, No.1<br/>Shuguang Xili, Chaoyang District.<br/>Beijing<br/>China<br/>tel: (+86) 10-5822 0173<br/>email: sales@annhyatt.cn</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -97,7 +106,7 @@
           "settings": {
             "heading": "Czech Republic",
             "open": false,
-            "content": "<h4>Nikostas s.r.o.<\/h4><p>Melnicka 576\/1<br\/>Prague<br\/>Czech Republic<br\/>tel: (+420) 608-858-045<br\/>email: info@christina-kosmetika.cz<\/p>",
+            "content": "<h4>Nikostas s.r.o.</h4><p>Melnicka 576/1<br/>Prague<br/>Czech Republic<br/>tel: (+420) 608-858-045<br/>email: info@christina-kosmetika.cz</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -107,7 +116,7 @@
           "settings": {
             "heading": "Dubai, United Arab Emirates",
             "open": false,
-            "content": "<h4>ENIGMA BEAUTY GROUP<\/h4><p>Al Joud Center, Al Quoz<br\/>Dubai<br\/>United Arab Emirates<br\/>tel: (+971) 4-3284604<br\/>email: info@enigmabeauty.net<\/p>",
+            "content": "<h4>ENIGMA BEAUTY GROUP</h4><p>Al Joud Center, Al Quoz<br/>Dubai<br/>United Arab Emirates<br/>tel: (+971) 4-3284604<br/>email: info@enigmabeauty.net</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -117,7 +126,7 @@
           "settings": {
             "heading": "Estonia",
             "open": false,
-            "content": "<h4>AXIS PÄRNU OÜ<\/h4><p>Lastekodu 23<br\/>Tallinn<br\/>Estonia<br\/>tel: (+372) 554-1597<br\/>email: axisest@mail.ru<\/p>",
+            "content": "<h4>AXIS PÄRNU OÜ</h4><p>Lastekodu 23<br/>Tallinn<br/>Estonia<br/>tel: (+372) 554-1597<br/>email: axisest@mail.ru</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -127,7 +136,7 @@
           "settings": {
             "heading": "France",
             "open": false,
-            "content": "<h4>Christina France<\/h4><p>9 Place Cornut Gentille, 06400<br\/>Cannes<br\/>France<br\/>tel: +33638476076<br\/>Raphael Phillips: +33688610128<br\/>email: contact@christina-cosmeceuticals.fr<br\/>office Address: 9 Place Cornut Gentille, 06400, Cannes, France<\/p>",
+            "content": "<h4>Christina France</h4><p>9 Place Cornut Gentille, 06400<br/>Cannes<br/>France<br/>tel: +33638476076<br/>Raphael Phillips: +33688610128<br/>email: contact@christina-cosmeceuticals.fr<br/>office Address: 9 Place Cornut Gentille, 06400, Cannes, France</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -137,7 +146,7 @@
           "settings": {
             "heading": "Ghana",
             "open": false,
-            "content": "<h4>Esteem Day Spa<\/h4><p>Mrs. Mildred Abotsivia<br\/>mil_sen@yahoo.com<br\/>Tel: +233 24 444 7927<br\/><\/p><p><a href=\"https:\/\/christina.co.il\/pages\/corporate-offices-and-partners#top\"><br\/><br\/><\/a><\/p>",
+            "content": "<h4>Esteem Day Spa</h4><p>Mrs. Mildred Abotsivia<br/>mil_sen@yahoo.com<br/>Tel: +233 24 444 7927<br/></p><p><a href=\"https://christina.co.il/pages/corporate-offices-and-partners#top\"><br/><br/></a></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -147,7 +156,7 @@
           "settings": {
             "heading": "Georgia",
             "open": false,
-            "content": "<h4>Christina Georgia<\/h4><p>I.abashidze56 r1<br\/>Tbilisi<br\/>Georgia<br\/>tel: (+995) 599-263801<br\/>email: salus.christina@mail.ru<\/p><p><a href=\"https:\/\/christina.co.il\/pages\/corporate-offices-and-partners#top\"><br\/><br\/><\/a><\/p>",
+            "content": "<h4>Christina Georgia</h4><p>I.abashidze56 r1<br/>Tbilisi<br/>Georgia<br/>tel: (+995) 599-263801<br/>email: salus.christina@mail.ru</p><p><a href=\"https://christina.co.il/pages/corporate-offices-and-partners#top\"><br/><br/></a></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -157,7 +166,7 @@
           "settings": {
             "heading": "Germany",
             "open": false,
-            "content": "<h4>Christina Kosmetik<\/h4><p>Ständeplatz 15,<br\/>34117 Kassel<br\/>Germany<br\/>tel: (+49) 561 81682790<br\/>email: info@christinakosmetik.de<\/p>",
+            "content": "<h4>Christina Kosmetik</h4><p>Ständeplatz 15,<br/>34117 Kassel<br/>Germany<br/>tel: (+49) 561 81682790<br/>email: info@christinakosmetik.de</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -167,7 +176,7 @@
           "settings": {
             "heading": "HongKong China",
             "open": false,
-            "content": "<h4>Ally Cosmetics International (Hong Kong) Limited<\/h4><p>Room1616, 16\/F, Nam Fung Commercial Centre<br\/>No.19 Lam Lok Street<br\/>Kowloon Bay , Hong Kong<br\/>tel: (+852) 2111-0392<br\/>email: may@christina-hk.com<br\/>WhatsApp: +852- 540359133<br\/><\/p>",
+            "content": "<h4>Ally Cosmetics International (Hong Kong) Limited</h4><p>Room1616, 16/F, Nam Fung Commercial Centre<br/>No.19 Lam Lok Street<br/>Kowloon Bay , Hong Kong<br/>tel: (+852) 2111-0392<br/>email: may@christina-hk.com<br/>WhatsApp: +852- 540359133<br/></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -177,7 +186,7 @@
           "settings": {
             "heading": "Italy",
             "open": false,
-            "content": "<h4>Christina Italy<\/h4><p>Via Federigo Verdinois, 6<br\/>00159 Rome, Italy<br\/>tel:+33441855501<br\/>email: info@christina-cosmeceuticals.it<br\/><\/p>",
+            "content": "<h4>Christina Italy</h4><p>Via Federigo Verdinois, 6<br/>00159 Rome, Italy<br/>tel:+33441855501<br/>email: info@christina-cosmeceuticals.it<br/></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -187,7 +196,7 @@
           "settings": {
             "heading": "Japan",
             "open": false,
-            "content": "<h4>HAAB<\/h4><p>Tokyo-to, Minato-ku, Minami Aoyama 2-22-19<br\/>Sanwa Aoyama Bldg. 12F 107-0062<br\/>Tokyo<br\/>Japan<br\/>tel: (+81) 03-3479-0775<br\/>email: info@haab.co.jp<\/p><p><a href=\"https:\/\/christina.co.il\/pages\/corporate-offices-and-partners#top\"><br\/><br\/><\/a><\/p>",
+            "content": "<h4>HAAB</h4><p>Tokyo-to, Minato-ku, Minami Aoyama 2-22-19<br/>Sanwa Aoyama Bldg. 12F 107-0062<br/>Tokyo<br/>Japan<br/>tel: (+81) 03-3479-0775<br/>email: info@haab.co.jp</p><p><a href=\"https://christina.co.il/pages/corporate-offices-and-partners#top\"><br/><br/></a></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -197,7 +206,7 @@
           "settings": {
             "heading": "Kazakhstan",
             "open": false,
-            "content": "<h4>NickOl<\/h4><p>Micro disctict Keremet, 6<br\/>Almaty<br\/>Kazakhstan<br\/>tel: (+7) 727-3131-888<br\/>email: intl@nickol.kz<\/p>",
+            "content": "<h4>NickOl</h4><p>Micro disctict Keremet, 6<br/>Almaty<br/>Kazakhstan<br/>tel: (+7) 727-3131-888<br/>email: intl@nickol.kz</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -207,7 +216,7 @@
           "settings": {
             "heading": "Kyrgyzstan",
             "open": false,
-            "content": "<h4>FOPRO<\/h4><p>Toktogul, str. 147<br\/>Bishkek<br\/>Kyrgyzstan<br\/>tel: (+996) 555-986548<br\/>email: 4probishkek@gmail.com<\/p><p><a href=\"https:\/\/christina.co.il\/pages\/corporate-offices-and-partners#top\"><br\/><br\/><\/a><\/p>",
+            "content": "<h4>FOPRO</h4><p>Toktogul, str. 147<br/>Bishkek<br/>Kyrgyzstan<br/>tel: (+996) 555-986548<br/>email: 4probishkek@gmail.com</p><p><a href=\"https://christina.co.il/pages/corporate-offices-and-partners#top\"><br/><br/></a></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -217,7 +226,7 @@
           "settings": {
             "heading": "Latvia",
             "open": false,
-            "content": "<h4>Top Cosmetics<\/h4><p>Dzirnavu iela 3a<br\/>Riga<br\/>Latvia<br\/>tel: (+370) 685-43903 (director Lina)<br\/>email: lina@kosmedija.lt<\/p>",
+            "content": "<h4>Top Cosmetics</h4><p>Dzirnavu iela 3a<br/>Riga<br/>Latvia<br/>tel: (+370) 685-43903 (director Lina)<br/>email: lina@kosmedija.lt</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -227,7 +236,7 @@
           "settings": {
             "heading": "Lithuania",
             "open": false,
-            "content": "<h4>UAB \"Kosmedija\"<\/h4><p>Pamėnkalnio g. 34B<br\/>Vilnius<br\/>Lithuania<br\/>tel: (+370) 5 213-1334 (Kosmedija)<br\/>email: info@kosmedija.lt<\/p>",
+            "content": "<h4>UAB \"Kosmedija\"</h4><p>Pamėnkalnio g. 34B<br/>Vilnius<br/>Lithuania<br/>tel: (+370) 5 213-1334 (Kosmedija)<br/>email: info@kosmedija.lt</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -237,7 +246,7 @@
           "settings": {
             "heading": "Moldova",
             "open": false,
-            "content": "<h4>Valore-Med SRL<\/h4><p>54\/1, str. Vasile Alecsandri<br\/>Chisinau<br\/>Moldova<br\/>tel: (+373) 60 222-640<br\/>email: valoremed.moldova@gmail.com<\/p><p> <\/p><p><a href=\"https:\/\/christina.co.il\/pages\/corporate-offices-and-partners#top\"><br\/><br\/><\/a><\/p>",
+            "content": "<h4>Valore-Med SRL</h4><p>54/1, str. Vasile Alecsandri<br/>Chisinau<br/>Moldova<br/>tel: (+373) 60 222-640<br/>email: valoremed.moldova@gmail.com</p><p> </p><p><a href=\"https://christina.co.il/pages/corporate-offices-and-partners#top\"><br/><br/></a></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -247,7 +256,7 @@
           "settings": {
             "heading": "Mongolia",
             "open": false,
-            "content": "<h4>Ulemj Grease LLC<\/h4><p>Shangrila Center<br\/>Olympic Street, 1st khoroo<br\/>Sukhbaatar district<br\/>Ulaanbaatar, Mongolia<br\/>tel: (+976) 77779595<br\/>email: admin@ulemj.mn<\/p><p><a href=\"https:\/\/christina.co.il\/pages\/corporate-offices-and-partners#top\"><br\/><br\/><\/a><\/p>",
+            "content": "<h4>Ulemj Grease LLC</h4><p>Shangrila Center<br/>Olympic Street, 1st khoroo<br/>Sukhbaatar district<br/>Ulaanbaatar, Mongolia<br/>tel: (+976) 77779595<br/>email: admin@ulemj.mn</p><p><a href=\"https://christina.co.il/pages/corporate-offices-and-partners#top\"><br/><br/></a></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -257,7 +266,7 @@
           "settings": {
             "heading": "Poland",
             "open": false,
-            "content": "<h4>Top Cosmetics<br\/>Warsaw<br\/><\/h4><p>www.instagram.com\/christinacosmetics.pl<br\/>tel: +48517445582<br\/>\u2028email: info@topcosmetics.com.pl<\/p><p><a href=\"https:\/\/christina.co.il\/pages\/corporate-offices-and-partners#top\"><br\/><br\/><\/a><\/p>",
+            "content": "<h4>Top Cosmetics<br/>Warsaw<br/></h4><p>www.instagram.com/christinacosmetics.pl<br/>tel: +48517445582<br/> email: info@topcosmetics.com.pl</p><p><a href=\"https://christina.co.il/pages/corporate-offices-and-partners#top\"><br/><br/></a></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -267,7 +276,7 @@
           "settings": {
             "heading": "Russian Federation",
             "open": false,
-            "content": "<h4>NickOl<\/h4><p>Bolshaya Filevskaya, 16<br\/>Moscow<br\/>Russian Federation<br\/>tel: (+7) 495 748-5991<br\/>email: info@nickol.ru<\/p><p><a href=\"https:\/\/christina.co.il\/pages\/corporate-offices-and-partners#top\"><br\/><br\/><\/a><\/p>",
+            "content": "<h4>NickOl</h4><p>Bolshaya Filevskaya, 16<br/>Moscow<br/>Russian Federation<br/>tel: (+7) 495 748-5991<br/>email: info@nickol.ru</p><p><a href=\"https://christina.co.il/pages/corporate-offices-and-partners#top\"><br/><br/></a></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -277,7 +286,7 @@
           "settings": {
             "heading": "Israel",
             "open": false,
-            "content": "<p>58, Haamal st,<br\/>Petach Tiqva<br\/>Israel<br\/>tel: (+972) 3 752-4488<br\/>email: Marketing@Christina.co.il<\/p><p><a href=\"https:\/\/christina.co.il\/pages\/corporate-offices-and-partners#top\"><br\/><br\/><\/a><\/p>",
+            "content": "<p>58, Haamal st,<br/>Petach Tiqva<br/>Israel<br/>tel: (+972) 3 752-4488<br/>email: Marketing@Christina.co.il</p><p><a href=\"https://christina.co.il/pages/corporate-offices-and-partners#top\"><br/><br/></a></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -287,7 +296,7 @@
           "settings": {
             "heading": "South Korea",
             "open": false,
-            "content": "<h4>SyscoBD<\/h4><p>29-10, Achiul-gil,<br\/>Guri-si \/ Gyeonggi-do<br\/>South Korea<br\/>tel: (+82) 2 525-8275<br\/>email: info@syscobd.co.kr<\/p>",
+            "content": "<h4>SyscoBD</h4><p>29-10, Achiul-gil,<br/>Guri-si / Gyeonggi-do<br/>South Korea<br/>tel: (+82) 2 525-8275<br/>email: info@syscobd.co.kr</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -297,7 +306,7 @@
           "settings": {
             "heading": "Spain",
             "open": false,
-            "content": "<h4>Christina Europe S.L. <\/h4><p>Sector Descubridores Nº 47, locales (10-11)<br\/>Madrid<br\/>Spain<br\/>tel: (+34) 915-12-4249<br\/>email: info@christinacosmetics.es<\/p><h3><\/h3><p><a href=\"https:\/\/christina.co.il\/pages\/corporate-offices-and-partners#top\"><br\/><br\/><\/a><\/p>",
+            "content": "<h4>Christina Europe S.L. </h4><p>Sector Descubridores Nº 47, locales (10-11)<br/>Madrid<br/>Spain<br/>tel: (+34) 915-12-4249<br/>email: info@christinacosmetics.es</p><h3></h3><p><a href=\"https://christina.co.il/pages/corporate-offices-and-partners#top\"><br/><br/></a></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -307,7 +316,7 @@
           "settings": {
             "heading": "The Netherlands",
             "open": false,
-            "content": "<h4>Alphaderm<\/h4><p>Jezuietenplein 14<br\/>Oudenaarde<br\/>The Netherlands<br\/>tel: (+325) 538-6468<br\/>email: info@alphaderm.be<\/p>",
+            "content": "<h4>Alphaderm</h4><p>Jezuietenplein 14<br/>Oudenaarde<br/>The Netherlands<br/>tel: (+325) 538-6468<br/>email: info@alphaderm.be</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -317,7 +326,7 @@
           "settings": {
             "heading": "Turkey",
             "open": false,
-            "content": "<h4>Christina Turkey<\/h4><p>+90440706<br\/>+905332469407<br\/>www.christinaturkey.com<\/p>",
+            "content": "<h4>Christina Turkey</h4><p>+90440706<br/>+905332469407<br/>www.christinaturkey.com</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -327,7 +336,7 @@
           "settings": {
             "heading": "Turkmenistan",
             "open": false,
-            "content": "<h4>Elvira Timurkhanova<\/h4><p>64\/1 Andaliba 24<br\/>Ashkhabad<br\/>Turkmenistan<br\/>tel: (+99) 365-56-8012<br\/>email: timurhan2405@mail.ru<\/p>",
+            "content": "<h4>Elvira Timurkhanova</h4><p>64/1 Andaliba 24<br/>Ashkhabad<br/>Turkmenistan<br/>tel: (+99) 365-56-8012<br/>email: timurhan2405@mail.ru</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -337,7 +346,7 @@
           "settings": {
             "heading": "Ukraine",
             "open": false,
-            "content": "<h4>TOP Cosmetics<br\/><\/h4><p>Kiev<br\/>Ukraine<br\/>tel: (+38) 800 500-275<br\/>email: info@topcosmetics.ua<\/p>",
+            "content": "<h4>TOP Cosmetics<br/></h4><p>Kiev<br/>Ukraine<br/>tel: (+38) 800 500-275<br/>email: info@topcosmetics.ua</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -347,7 +356,7 @@
           "settings": {
             "heading": "USA",
             "open": false,
-            "content": "<h4>Christina-USA LLC<\/h4><p>4101 Ravenswood Rd Ste 224-226<br\/>Davie FL 33312<br\/>USA<br\/>tel: (+1) 888-604-6268<br\/>email: customerservice@christina-usa.com<\/p>",
+            "content": "<h4>Christina-USA LLC</h4><p>4101 Ravenswood Rd Ste 224-226<br/>Davie FL 33312<br/>USA<br/>tel: (+1) 888-604-6268<br/>email: customerservice@christina-usa.com</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -357,7 +366,7 @@
           "settings": {
             "heading": "Uzbekistan",
             "open": false,
-            "content": "<h4>Vilena Inform<\/h4><p>79,Sadik Azimov<br\/>Tashkent<br\/>Uzbekistan<br\/>tel: (+998) 90 788-7963<br\/>email: info@vilena.uz<\/p>",
+            "content": "<h4>Vilena Inform</h4><p>79,Sadik Azimov<br/>Tashkent<br/>Uzbekistan<br/>tel: (+998) 90 788-7963<br/>email: info@vilena.uz</p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -367,7 +376,7 @@
           "settings": {
             "heading": "Vietnam",
             "open": false,
-            "content": "<h4>NNT Vietnam Ltd<\/h4><p>No 390 Nguyen Van Cu str<br\/>Hanoi<br\/>Vietnam<br\/>tel: (+84) 941 905-885<br\/>email: nguyenthuhuyen.vhn@gmail.com<\/p><p><a href=\"https:\/\/christina.co.il\/pages\/corporate-offices-and-partners#top\"><br\/><br\/><\/a><\/p>",
+            "content": "<h4>NNT Vietnam Ltd</h4><p>No 390 Nguyen Van Cu str<br/>Hanoi<br/>Vietnam<br/>tel: (+84) 941 905-885<br/>email: nguyenthuhuyen.vhn@gmail.com</p><p><a href=\"https://christina.co.il/pages/corporate-offices-and-partners#top\"><br/><br/></a></p>",
             "page": "",
             "custom_liquid": ""
           }
@@ -413,8 +422,8 @@
       ],
       "name": "Collapsible content",
       "settings": {
-        "heading": "מפיצים מורשים",
-        "description": "",
+        "heading": "Sedi Aziendali e Partner",
+        "description": "<p>Con una presenza in oltre 60 paesi, Christina è un fenomeno mondiale per ciò che riguarda le migliori soluzioni per la cura della pelle. Utilizzate il modulo sottostante per trovare il distributore Christina più vicino a voi.</p>",
         "uppercase_heading": true,
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
