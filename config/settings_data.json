@@ -55,7 +55,7 @@
     "products_hover_images_count": 2,
     "products_hover_dots": false,
     "enable_quick_add": true,
-    "product_card_quick_add_style": "primary",
+    "product_card_quick_add_style": "outline",
     "enable_quick_view": true,
     "show_products_vendor": false,
     "show_products_rating": true,

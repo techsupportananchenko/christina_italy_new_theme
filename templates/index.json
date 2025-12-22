@@ -388,7 +388,7 @@
         "image_ratio": "portrait",
         "layout": "carousel",
         "style": "style1",
-        "columns_desktop": 8,
+        "columns_desktop": 6,
         "columns_mobile": "1",
         "show_progress_bar": true,
         "mobile_swipe": true,
