@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "Footer group",
@@ -16,7 +25,7 @@
           "type": "menu",
           "settings": {
             "column_size": "small",
-            "title": "Christina French",
+            "title": "Christina Cosmeceuticals",
             "menu": ""
           }
         },
@@ -32,7 +41,7 @@
           "type": "menu",
           "settings": {
             "column_size": "small",
-            "title": "Product Series",
+            "title": "Le Nostre Collezioni",
             "menu": ""
           }
         },
@@ -41,7 +50,7 @@
           "settings": {
             "column_size": "medium",
             "title": "Sign up",
-            "text": "<p>For news, exclusive benefits and more<\/p>"
+            "text": "<p>For news, exclusive benefits and more</p>"
           }
         }
       },
