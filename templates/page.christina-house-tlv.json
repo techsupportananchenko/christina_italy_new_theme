@@ -620,6 +620,138 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": false
       }
+    },
+    "text_with_icons_riiX64": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_te8TcM": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "heading": "Heading",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+        },
+        "icon_66nq8d": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "heading": "Heading",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+        },
+        "icon_JKBH46": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "heading": "Heading",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_te8TcM",
+        "icon_66nq8d",
+        "icon_JKBH46"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "text_alignment": "left",
+        "icon_position": "left",
+        "icon_size": "large",
+        "heading_size": "large",
+        "mobile_swipe": true,
+        "color_bg": "transparent",
+        "color_heading": "#151515",
+        "color_text": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "multicolumn_RxxeKY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_w8YYtL": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "Skin Bar & esperienza prodotto",
+            "text": "<p>Scopri l’universo Christina attraverso sessioni Skin Bar e consulenze personalizzate.</p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "left"
+          }
+        },
+        "column_mgN48y": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "Trattamenti professionali",
+            "text": "<p>Esperienze orientate al risultato e personalizzate in base a ogni condizione della pelle. Ogni trattamento segue i protocolli multi-step esclusivi Christina, per una trasformazione visibile.</p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "left"
+          }
+        },
+        "column_pRRbeM": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "Comunità e connessione",
+            "text": "<p>Eventi stagionali, workshop e seminari specialistici riuniscono professionisti e clienti in un ambiente elegante e ispirazionale, dove la bellezza incontra la conoscenza.</p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "left"
+          }
+        },
+        "column_nRKwDn": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "Formazione e aggiornamento",
+            "text": "<p>Le estetiste ricevono formazione pratica, dimostrazioni dal vivo e aggiornamento continuo, guidate dai formatori certificati Christina.</p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "column_w8YYtL",
+        "column_mgN48y",
+        "column_pRRbeM",
+        "column_nRKwDn"
+      ],
+      "name": "Multicolumn",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "<p>Add a short description for this section</p>",
+        "full_width": true,
+        "display_type": "grid",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "text_alignment": "left",
+        "heading_size": "h5",
+        "mobile_swipe": false,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "center_mobile": "left",
+        "use_metaobjects": false
+      }
     }
   },
   "order": [
@@ -631,6 +763,8 @@
     "media_grid_b6U4Vg",
     "scrolling_images_yW4KCk",
     "gallery_JzgiaQ",
-    "background_video_YWWktQ"
+    "background_video_YWWktQ",
+    "text_with_icons_riiX64",
+    "multicolumn_RxxeKY"
   ]
 }
