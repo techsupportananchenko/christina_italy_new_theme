@@ -671,23 +671,10 @@
     "multicolumn_RxxeKY": {
       "type": "multicolumn",
       "blocks": {
-        "column_w8YYtL": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "Skin Bar & esperienza prodotto",
-            "text": "<p>Scopri l’universo Christina attraverso sessioni Skin Bar e consulenze personalizzate.</p>",
-            "link_label": "",
-            "link": "",
-            "link_style": "text-button",
-            "alignment": "left"
-          }
-        },
         "column_mgN48y": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/DSC_7902.jpg",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -699,9 +686,25 @@
             "alignment": "left"
           }
         },
+        "column_w8YYtL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2014_STEP_6-retouched_copy.jpg",
+            "image_full_width": false,
+            "image_link": "",
+            "retina": true,
+            "title": "Skin Bar & esperienza prodotto",
+            "text": "<p>Scopri l’universo Christina attraverso sessioni Skin Bar e consulenze personalizzate.</p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "text-button",
+            "alignment": "left"
+          }
+        },
         "column_pRRbeM": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/IMG_1041_1.jpg",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -716,6 +719,7 @@
         "column_nRKwDn": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/IMG_1043.jpg",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -729,16 +733,16 @@
         }
       },
       "block_order": [
-        "column_w8YYtL",
         "column_mgN48y",
+        "column_w8YYtL",
         "column_pRRbeM",
         "column_nRKwDn"
       ],
       "name": "Multicolumn",
       "settings": {
-        "heading": "",
+        "heading": "Cosa puoi scoprire nelle Christina Houses",
         "heading_left": false,
-        "description": "<p>Add a short description for this section</p>",
+        "description": "",
         "full_width": true,
         "display_type": "grid",
         "image_ratio": "adapt",
