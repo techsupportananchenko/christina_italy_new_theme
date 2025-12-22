@@ -65,12 +65,13 @@
           "dehydration-dryness",
           "uneven-skin-tone",
           "sensitive-redness",
-          "acne-blemishes"
+          "acne-blemishes",
+          "fine-lines-wrinkles"
         ],
         "image_ratio": "circle",
         "layout": "carousel",
         "style": "style1",
-        "columns_desktop": 7,
+        "columns_desktop": 6,
         "columns_mobile": "2",
         "show_progress_bar": true,
         "mobile_swipe": true,
