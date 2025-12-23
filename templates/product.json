@@ -88,9 +88,9 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Solution For",
-            "open": true,
+            "open": false,
             "content": "{{ product.metafields.custom.accordion_solution_for | metafield_tag }}",
-            "white_spaces": true,
+            "white_spaces": false,
             "page": "",
             "custom_liquid": ""
           }
