@@ -16,26 +16,15 @@
       "blocks": {
         "5b1ab378-833d-4a94-a02e-8325ec1551d0": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "text": "Apprezzate dai professionisti, scelte dai clienti.",
             "link": ""
           }
-        },
-        "text_r3RNtj": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "icon": "none",
-            "text": "15% הנחה על ערכות",
-            "link": "shopify://collections/christina-kits"
-          }
         }
       },
       "block_order": [
-        "5b1ab378-833d-4a94-a02e-8325ec1551d0",
-        "text_r3RNtj"
+        "5b1ab378-833d-4a94-a02e-8325ec1551d0"
       ],
       "settings": {
         "announcement_bar": true,
