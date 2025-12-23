@@ -58,8 +58,8 @@
           "type": "description",
           "settings": {
             "seo_text_max_height": 50,
-            "seo_text_read_more": "קרא עוד",
-            "seo_text_read_less": "קרא פחות"
+            "seo_text_read_more": "",
+            "seo_text_read_less": ""
           }
         },
         "key_features_g3dEqi": {
@@ -122,6 +122,7 @@
         },
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
           "type": "side_panel",
+          "disabled": true,
           "settings": {
             "side_panel_1_label": "Materials",
             "side_panel_1_icon": "leather",
