@@ -90,7 +90,7 @@
         "collapsible_tab_bQt7XL": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "איך להשתמש",
+            "heading": "Modo d’uso",
             "open": false,
             "content": "{{ product.metafields.custom.accordion_how_to_use | metafield_tag }}",
             "white_spaces": false,
@@ -112,7 +112,7 @@
         "collapsible_tab_Ph9tMa": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "הטבות",
+            "heading": "Azione e Risultati",
             "open": false,
             "content": "{{ product.metafields.custom.accordion_benefits | metafield_tag }}",
             "white_spaces": false,
