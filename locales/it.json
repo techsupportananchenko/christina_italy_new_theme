@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "continue_shopping": "Continua a fare acquisti",
@@ -207,7 +216,7 @@
     },
     "404": {
       "not_found": "Pagina non trovata",
-      "not_found_description": "La pagina che stavi cercando non esiste. Potresti aver digitato in modo errato l'indirizzo o la pagina potrebbe essere stata spostata.",
+      "not_found_description": "Stiamo lavorando a una nuova ed entusiasmante esperienza sul nostro sito web. Torna a trovarci presto.",
       "continue_shopping": "Continua a fare acquisti"
     },
     "cart": {
