@@ -130,6 +130,7 @@
         },
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
           "type": "side_panel",
+          "disabled": true,
           "settings": {
             "side_panel_1_label": "Shipping and Returns",
             "side_panel_1_icon": "box",
