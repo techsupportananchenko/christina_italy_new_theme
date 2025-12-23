@@ -239,6 +239,11 @@
         "type": "shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
         "disabled": false,
         "settings": {}
+      },
+      "2783554875815837874": {
+        "type": "shopify://apps/sea-accessibility-ada-wcag/blocks/app-embed/0ab9368b-426b-42b4-93ea-63d9c8e88707",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
