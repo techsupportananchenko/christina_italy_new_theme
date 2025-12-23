@@ -66,9 +66,9 @@
         "0b3e272b-c86a-4dba-946c-c6912251371c": {
           "type": "description",
           "settings": {
-            "seo_text_max_height": 100,
-            "seo_text_read_more": "read more",
-            "seo_text_read_less": "read less"
+            "seo_text_max_height": 200,
+            "seo_text_read_more": "Leggi di più",
+            "seo_text_read_less": "Leggi di meno"
           }
         },
         "key_features_g3dEqi": {
