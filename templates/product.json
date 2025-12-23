@@ -447,7 +447,7 @@
       "type": "recently-viewed-products",
       "name": "Recently viewed products",
       "settings": {
-        "heading": "Recently viewed products",
+        "heading": "Visualizzati di recente",
         "heading_left": true,
         "description": "",
         "full_width": false,
