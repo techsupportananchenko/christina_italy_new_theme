@@ -433,9 +433,9 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "More products to love",
+        "heading": "Potrebbe piacerti anche",
         "heading_left": true,
-        "description": "<p>complete your routine with</p>",
+        "description": "<p>Altri prodotti che potrebbero essere perfetti per la tua pelle</p>",
         "full_width": false,
         "mobile_swipe": true,
         "disable_top_spacing": false,
