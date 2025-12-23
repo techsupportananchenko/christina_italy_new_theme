@@ -1,0 +1,250 @@
+{% comment %}
+	GEMPAGES BUILDER (https://apps.shopify.com/gempages)
+
+	You SHOULD NOT modify source code in this file because
+	It is automatically generated from GEMPAGES BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1699307077940').children('.module');
+  var videoUrl = jQuery.trim($module.attr('data-url'));
+  var autoPause = $module.attr('data-autopause');
+  var autoPlay = $module.attr('data-autoplay');
+  var videoloop = $module.attr('data-videoloop');
+  var videoMute = $module.attr('data-videomute');
+  var byline = $module.attr('data-byline');
+  var showtitle = $module.attr('data-showtitle');
+  var showportrait = $module.attr('data-showportrait');
+
+  setTimeout(function() {
+    var videoWrapper = $module.children('.vimeo_video');
+    videoWrapper.empty().append('<div id="vimeo-wrapper-1699307077940"></div>');
+
+    var options = {
+      url: videoUrl,
+      loop: videoloop,
+      autoplay: autoPlay,
+      autopause: autoPause,
+      byline: byline,
+      title: showtitle,
+      muted: videoMute,
+      portrait: showportrait
+    };
+    var player = new Vimeo.Player("vimeo-wrapper-1699307077940", options);
+
+    player.on('loaded', function() {	
+      var $playerFrame = $module.find('iframe');	
+      var width = parseInt($playerFrame.attr('width'));	
+      var height = parseInt($playerFrame.attr('height'));	
+      if (width != NaN && height != NaN) {	
+        $module.find('.videoFullScreen').css('padding-bottom', (height / width * 100) + '%');	
+      }	
+    });	
+    
+    $module.on('pausevideo', function() {	
+      player.pause();	
+    });
+  }, 100);
+})( window.GemQuery || jQuery );
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+(function( jQuery ){
+  try {
+    var $module = jQuery('#m-1699292522479').children('.module');
+    var single = $module.attr('data-single');
+    var openDefault = $module.attr('data-openDefault');
+    var openTab = $module.attr('data-openTab');
+    var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+
+    if(openDefault == 0 || openDefault == '0') {
+      openTab = '0';
+    }
+
+    $module.gfAccordion({
+      single: single,
+      openTab: openTab,
+      mode: mode,
+      onChanged: function() {	
+        // Fix (P) Desc read more bug	
+        $module.find('.module-wrap[data-label="(P) Description"]').each(function(index, el) {	
+          if (jQuery(el).children('.module').data('gfv3productdesc') != undefined) {	
+            jQuery(el).children(".module").data("gfv3productdesc").initReadMore();	
+          }	
+        })	
+      }
+    });
+
+    var borderColor = $module.attr('data-borderColor');
+    var borderSize = $module.attr('data-borderSize');
+
+    $module.children('[data-accordion]').children('[data-control]').css('border-bottom', borderSize + ' solid ' + borderColor);
+    $module.children('[data-accordion]').children('[data-content]').children().css('border-bottom', borderSize + ' solid ' + borderColor);
+  } catch(err) {}
+})( window.GemQuery || jQuery );
+    
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+  
+    
+(function( jQuery ){
+  try {
+    var $module = jQuery('#m-1699310478835').children('.module');
+    var single = $module.attr('data-single');
+    var openDefault = $module.attr('data-openDefault');
+    var openTab = $module.attr('data-openTab');
+    var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+
+    if(openDefault == 0 || openDefault == '0') {
+      openTab = '0';
+    }
+
+    $module.gfAccordion({
+      single: single,
+      openTab: openTab,
+      mode: mode,
+      onChanged: function() {	
+        // Fix (P) Desc read more bug	
+        $module.find('.module-wrap[data-label="(P) Description"]').each(function(index, el) {	
+          if (jQuery(el).children('.module').data('gfv3productdesc') != undefined) {	
+            jQuery(el).children(".module").data("gfv3productdesc").initReadMore();	
+          }	
+        })	
+      }
+    });
+
+    var borderColor = $module.attr('data-borderColor');
+    var borderSize = $module.attr('data-borderSize');
+
+    $module.children('[data-accordion]').children('[data-control]').css('border-bottom', borderSize + ' solid ' + borderColor);
+    $module.children('[data-accordion]').children('[data-content]').children().css('border-bottom', borderSize + ' solid ' + borderColor);
+  } catch(err) {}
+})( window.GemQuery || jQuery );
+    
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+    (function( jQuery ){
+  // var $module = jQuery('#m-1718011070760').children('.module');
+  // You can add custom Javascript code right here.
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1699292522494').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
