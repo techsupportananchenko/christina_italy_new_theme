@@ -1,3 +1,10 @@
+{% comment %}
+	GEMPAGES BUILDER (https://apps.shopify.com/gempages)
+
+	You SHOULD NOT modify source code in this file because
+	It is automatically generated from GEMPAGES BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
 <!doctype html>
 {%- capture dir -%}
 	{%- case request.locale.iso_code -%}
@@ -95,88 +102,10 @@
 {% render 'gem-app-header-scripts' %}
 <!--End_Gem_Page_Header_Script-->
 </head>
-<body class="animations-{{ settings.animations }} button-uppercase-{{ settings.button_uppercase }} navigation-uppercase-{{ settings.navigation_uppercase }} product-title-uppercase-{{ settings.product_title_uppercase }}{% if customer %} customer-logged-in{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template-{{ template | replace: '.', '-' | handle }}">
-	{% if settings.redirect_use %}
-		{% render 'redirect-message' %}
-		{{ 'redirect.css' | asset_url | stylesheet_tag }}
-		<script src="{{ 'redirect.js' | asset_url }}" defer="defer"></script>
-		{% render 'script-inline-theme-6' %}
-	{% endif %}
-	<a class="screen-reader-shortcut" href="#main-content">{{ 'accessibility.skip_to_text' | t }}</a>
-	<div id="wrapper">
-		{%- sections 'header-group' -%}
-		{%- sections 'overlay-group' -%}
-		<div role="main" id="main-content">
-			{{ content_for_layout }}
-		</div>
-		{% sections 'footer-group' %}
-		{% render 'cart-drawer' %}
-		{% render 'product-drawer' %}
-		{% render 'search-drawer' %}
-		<div class="click-capture"></div>
-	</div>
-
-	{% if template.name == 'index' and customer and customer.tags contains settings.b2b_tag %}
-		{% assign redirect_page = settings.b2b_redirect %}
-		<script>
-			window.location.href = "{{redirect_page}}";
-		</script>
-	{% endif %}
-
-
-	{{ 'vendor.min.js' | asset_url | script_tag }}
-	{% if settings.animations %}
-		{{ 'animations.min.js' | asset_url | script_tag }}
-		<script>
-			gsap.defaults({
-				ease: Power4.easeOut
-			});
-			gsap.config({
-		    nullTargetWarn: false
-		  });
-			gsap.registerPlugin(ScrollTrigger);
-		</script>
-	{% endif %}
-	{{ 'slideshow.js' | asset_url | script_tag }}
-	{{ 'app.js' | asset_url | script_tag }}
-	{%- liquid
-		assign add_product_js = false
-		if settings.enable_quick_view or settings.enable_quick_add
-			assign add_product_js = true
-		endif
-
-		if cart != empty and settings.cart_recommendations
-			assign add_product_js = true
-		endif
-	-%}
-	{% if add_product_js %}
-		<script src="{{ 'product.js' | asset_url }}" defer="defer"></script>
-	{% endif %}
-	<script type="module" src="{{ 'scroll-shadow.js' | asset_url }}" defer="defer"></script>
-	<script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
-	{%- if request.design_mode -%}
-		{{ 'theme-editor.js' | asset_url | script_tag }}
-		{% render 'customer-data' %}
-	{%- endif -%}
-	{%- if settings.free_shipping -%}
-		{{ 'free-shipping.js' | asset_url | script_tag }}
-		{{ 'free-shipping.css' | asset_url | stylesheet_tag }}
-	{%- endif -%}
-	{%- if settings.cart_recommendations -%}
-	<script src="{{ 'product-recommendations.js' | asset_url }}" defer="defer"></script>
-	{%- endif -%}
-	{%- if settings.cart_terms_conditions_enable -%}
-		<script src="{{ 'terms-checkbox.js' | asset_url }}" defer="defer"></script>
-	{%- endif -%}
-	{% render 'back-to-top' %}
-
-	{%- if settings.preload_links -%}
-		{%- unless request.design_mode -%}
-		<script type="module" src="{{ 'instant-page.js' | asset_url }}" defer="defer"></script>
-		{%- endunless -%}
-	{%- endif -%}
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!--Gem_Page_Footer_Script-->
+<body>
+<div class="gem-container">
+	{{ content_for_layout }}
+</div><!-- end .gem-container --><!--Gem_Page_Footer_Script-->
   {%- liquid
     assign gpTemplateSuffix = template.suffix
     assign arrSplitSuffix = gpTemplateSuffix | split: '-'
@@ -203,5 +132,6 @@
     {% render 'gem-app-footer-scripts', GEM_FOOTER_SCRIPT: GEM_FOOTER_SCRIPT %}
   {% endif %}
 <!--End_Gem_Page_Footer_Script-->
+
 </body>
 </html>
