@@ -1018,7 +1018,7 @@
             "title": "Entra nella Christina House",
             "text": "<p>Le Christina Houses non sono semplici centri estetici: sono luoghi dedicati all’innovazione, alla competenza e alla trasformazione della pelle.</p>",
             "link_label": "Scopri di più",
-            "link": "#",
+            "link": "shopify://pages/christina-house-torino",
             "link_style": "text-button",
             "alignment": "left"
           }
