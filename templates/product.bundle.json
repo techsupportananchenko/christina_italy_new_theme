@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "breadcrumbs": {
@@ -68,6 +77,7 @@
         },
         "collapsible_tab_qGYnWB": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "פתרון עבור",
             "open": true,
@@ -91,7 +101,7 @@
         "collapsible_tab_x4mm6t": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "מרכיבים",
+            "heading": "Il kit contiene",
             "open": false,
             "content": "{{ product.metafields.custom.accordion_ingredients | metafield_tag }}",
             "white_spaces": false,
@@ -210,7 +220,7 @@
       "settings": {
         "heading": "YOU MAY ALSO LIKE",
         "heading_left": true,
-        "description": "<p>Combine your style with these products<\/p>",
+        "description": "<p>Combine your style with these products</p>",
         "full_width": true,
         "mobile_swipe": true,
         "disable_top_spacing": false,
