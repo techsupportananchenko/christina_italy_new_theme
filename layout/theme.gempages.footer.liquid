@@ -94,15 +94,15 @@
 <div id='popper_app'>{% include 'popper_app.liquid' %}</div></head>
 <body class="animations-{{ settings.animations }} button-uppercase-{{ settings.button_uppercase }} navigation-uppercase-{{ settings.navigation_uppercase }} product-title-uppercase-{{ settings.product_title_uppercase }}{% if customer %} customer-logged-in{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template-{{ template | replace: '.', '-' | handle }}">
 	{% if settings.redirect_use %}
-		{% render 'redirect-message' %}
+		<div style="display:none"> {% render 'redirect-message' %} </div>
 		{{ 'redirect.css' | asset_url | stylesheet_tag }}
 		<script src="{{ 'redirect.js' | asset_url }}" defer="defer"></script>
-		{% render 'script-inline-theme-6' %}
+		<div style="display:none"> {% render 'script-inline-theme-6' %} </div>
 	{% endif %}
 	<a class="screen-reader-shortcut" href="#main-content">{{ 'accessibility.skip_to_text' | t }}</a>
 	<div id="wrapper">
-		{%- sections 'header-group' -%}
-		{%- sections 'overlay-group' -%}
+		<div style="display:none"> {%- sections 'header-group' -%} </div>
+		<div style="display:none"> {%- sections 'overlay-group' -%} </div>
 		<div role="main" id="main-content">
 			{{ content_for_layout }}
 		</div>

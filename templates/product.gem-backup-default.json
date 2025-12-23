@@ -1,0 +1,482 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {}
+    },
+    "1754209672b59ac74b": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "section_width": "full-width-row",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "uppercase": true,
+            "show_products_rating": false,
+            "show_custom_badges": true
+          }
+        },
+        "price_U8QYMA": {
+          "type": "price",
+          "settings": {}
+        },
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "text_style": "style_body"
+          }
+        },
+        "per_100gram_N4Twdx": {
+          "type": "per_100gram",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": false,
+            "color_picker_size": "regular",
+            "color_picker_use_variants": false,
+            "variant_is_disabled": false,
+            "sizing_guide_variant": "Size",
+            "sizing_guide_text": "",
+            "sizing_guide_icon": "none",
+            "sizing_guide_page": ""
+          }
+        },
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
+          "settings": {
+            "seo_text_max_height": 100,
+            "seo_text_read_more": "read more",
+            "seo_text_read_less": "read less"
+          }
+        },
+        "key_features_g3dEqi": {
+          "type": "key_features",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "outline_button": false,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "collapsible_tab_qGYnWB": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Solution For",
+            "open": true,
+            "content": "{{ product.metafields.custom.accordion_solution_for | metafield_tag }}",
+            "white_spaces": true,
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "collapsible_tab_bQt7XL": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to Apply",
+            "open": false,
+            "content": "{{ product.metafields.custom.accordion_how_to_use | metafield_tag }}",
+            "white_spaces": false,
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "collapsible_tab_x4mm6t": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingridients",
+            "open": false,
+            "content": "{{ product.metafields.custom.accordion_ingredients | metafield_tag }}",
+            "white_spaces": false,
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "collapsible_tab_Ph9tMa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Action and Results",
+            "open": false,
+            "content": "{{ product.metafields.custom.accordion_benefits | metafield_tag }}",
+            "white_spaces": false,
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
+          "type": "side_panel",
+          "settings": {
+            "side_panel_1_label": "Shipping and Returns",
+            "side_panel_1_icon": "box",
+            "side_panel_1_content": "",
+            "side_panel_1_page": "",
+            "side_panel_2_label": "Consult with a Beautician",
+            "side_panel_2_icon": "chat_bubble",
+            "side_panel_2_content": "",
+            "side_panel_2_page": "",
+            "side_panel_3_label": "",
+            "side_panel_3_icon": "washing",
+            "side_panel_3_content": "",
+            "side_panel_3_page": ""
+          }
+        },
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+          "type": "share",
+          "settings": {}
+        },
+        "complementary_X8LtVx": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "block_heading": "מוצרים משלימים",
+            "product_list_limit": 3
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price_U8QYMA",
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
+        "per_100gram_N4Twdx",
+        "variant_picker",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
+        "key_features_g3dEqi",
+        "buy_buttons",
+        "collapsible_tab_qGYnWB",
+        "collapsible_tab_bQt7XL",
+        "collapsible_tab_x4mm6t",
+        "collapsible_tab_Ph9tMa",
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b",
+        "complementary_X8LtVx"
+      ],
+      "settings": {
+        "full_width": false,
+        "max_width": 1280,
+        "enable_sticky_info": true,
+        "enable_sticky_add_to_cart": true,
+        "show_taxes_included": false,
+        "media_layout": "collage",
+        "display_slider_pagination": true,
+        "media_aspect_ratio": "adapt",
+        "display_captions": false,
+        "hide_variants": false,
+        "lightbox": true,
+        "enable_video_looping": true
+      }
+    },
+    "16623877721f33fb14": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 35,
+        "spacer_desktop": 90,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "custom_multicolumn_ktiU88": {
+      "type": "custom-multicolumn",
+      "name": "Section Key Features",
+      "settings": {
+        "section_title": "{{ product.metafields.custom.section_key_features_title.value }}",
+        "position": "left",
+        "heading_size": "small",
+        "metaobject_id": "section_key_features",
+        "column_count": "3",
+        "stack_content": false
+      }
+    },
+    "custom_product_video_text_nXBm4n": {
+      "type": "custom-product-video-text",
+      "disabled": true,
+      "settings": {
+        "loop": true,
+        "muted": true,
+        "show_controls": true,
+        "button_text": "",
+        "button_link": "\/collections\/activewear",
+        "content_bg_color": "#ffffff",
+        "pretitle_color": "#5d666f",
+        "title_color": "#5d666f",
+        "description_color": "#5d666f",
+        "button_bg_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "button_border_color": "#5d666f"
+      }
+    },
+    "image_with_text_z3zB9X": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_WEN9jt": {
+          "type": "subheading",
+          "settings": {
+            "text": "{{ product.metafields.custom.video_section_pretitle.value }}"
+          }
+        },
+        "heading_gABmWN": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ product.metafields.custom.video_section_title.value }}",
+            "heading_size": "h4"
+          }
+        },
+        "text_FMNtCW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.video_section_description.value }}<\/p>",
+            "description_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_WEN9jt",
+        "heading_gABmWN",
+        "text_FMNtCW"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "enable_border": true,
+        "use_video": true,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_hosted": "{{ product.metafields.custom.video_section_video.value }}",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#535458",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "custom_multicolumn_PCBEEF": {
+      "type": "custom-multicolumn",
+      "name": "Section 2 Columns Info",
+      "settings": {
+        "section_title": "{{ product.metafields.custom.section_2_columns_title.value }}",
+        "position": "left",
+        "heading_size": "medium",
+        "metaobject_id": "section_2_column_info",
+        "column_count": "2",
+        "stack_content": true
+      }
+    },
+    "1663667029efc274af": {
+      "type": "collapsible-content",
+      "blocks": {
+        "1663667029f86d6497-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What payment methods can I use?",
+            "open": false,
+            "content": "<p>We offer 35 different payment methods including major providers like Mastercard, Visa, PayPal, American Express and Diners as well as many different local payment methods including Klarna, iDEAL, AliPay, Sofort, giropay, and many more.<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "1663667029f86d6497-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Can I purchase items with another currency?",
+            "open": false,
+            "content": "<p>Yes, you may select a currency based on your personal preference. When you select your country in the country selector on the upper right of the website or are taken directly to your country’s version of the website, you will see prices listed in the regional currency.<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "1663667029f86d6497-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Can I make changes to my order after it’s been placed?",
+            "open": false,
+            "content": "<p>We do everything we can to fulfill orders quickly and unfortunately cannot make updates after an order has been placed. These changes include removing or adding products and\/or changing the delivery address. If a mistake has been made with your order information, it’s quickest to create a new order with the correct information and then let our Customer Service.<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "1663667029f86d6497-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Do you offer e-gift cards for international customers?",
+            "open": false,
+            "content": "<p>E-gift cards are only available to customers shipping within the U.S.<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "68288bd2-3db2-455d-a841-5aa19d752abb": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How Do I Set Up A Subscription Order?",
+            "open": false,
+            "content": "<p>We will deliver products to you as soon as reasonably possible. Orders are usually dispatched between 1-3 days from the date of the order being placed. Please contact us our customer service team if your delivery has not been received within the dates described.<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "de9966d6-0cd0-4b0f-9810-aa062aff88ce": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How To Return My Items?",
+            "open": false,
+            "content": "<p>We do not currently offer free returns to overseas customers. You will therefore need to cover all costs of returning any items to us yourself. We advise that you mark your package ‘returned goods’ to avoid further duties. Remember: We strongly recommend that you return any items via a registered trackable service and obtain and retain proof of posting as we do not accept responsibility for items that fail to arrive with us.<\/p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "1663667029f86d6497-0",
+        "1663667029f86d6497-1",
+        "1663667029f86d6497-2",
+        "1663667029f86d6497-3",
+        "68288bd2-3db2-455d-a841-5aa19d752abb",
+        "de9966d6-0cd0-4b0f-9810-aa062aff88ce"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "F.A.Q.",
+        "description": "<p>They appreciate cut and details, things that aren't so obvious. <\/p>",
+        "uppercase_heading": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "166366868377cd57e4": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "b9349bb5-2620-4155-ac69-dea56c8ebbe1": {
+          "type": "subheading",
+          "settings": {
+            "text": "SUBHEADING"
+          }
+        },
+        "16636686835e8f94d4-1": {
+          "type": "heading",
+          "settings": {
+            "text": "IMAGE WITH TEXT OVERLAY",
+            "heading_size": "h1"
+          }
+        },
+        "83c3ef40-7ca5-4f79-8e21-16fcbebbc991": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_size": "medium"
+          }
+        },
+        "c6ec8484-f95c-4682-a344-ab918c10cab4": {
+          "type": "space",
+          "settings": {
+            "height": 17
+          }
+        },
+        "16636686835e8f94d4-3": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "b9349bb5-2620-4155-ac69-dea56c8ebbe1",
+        "16636686835e8f94d4-1",
+        "83c3ef40-7ca5-4f79-8e21-16fcbebbc991",
+        "c6ec8484-f95c-4682-a344-ab918c10cab4",
+        "16636686835e8f94d4-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_width": "grid",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "overlay_opacity": 10,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Potrebbe piacerti anche",
+        "heading_left": true,
+        "description": "<p>Altri prodotti che potrebbero essere perfetti per la tua pelle<\/p>",
+        "full_width": false,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "recently_viewed_products_XHrAAX": {
+      "type": "recently-viewed-products",
+      "name": "Recently viewed products",
+      "settings": {
+        "heading": "Recently viewed products",
+        "heading_left": true,
+        "description": "",
+        "full_width": false,
+        "mobile_swipe": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1749648228d0a20365": {
+      "type": "apps",
+      "settings": {
+        "section_width": "full-width-row",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "1754209672b59ac74b",
+    "main-product",
+    "16623877721f33fb14",
+    "custom_multicolumn_ktiU88",
+    "custom_product_video_text_nXBm4n",
+    "image_with_text_z3zB9X",
+    "custom_multicolumn_PCBEEF",
+    "1663667029efc274af",
+    "166366868377cd57e4",
+    "product-recommendations",
+    "recently_viewed_products_XHrAAX",
+    "1749648228d0a20365"
+  ]
+}

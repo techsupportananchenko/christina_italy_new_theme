@@ -106,10 +106,10 @@
 		<div role="main" id="main-content">
 			{{ content_for_layout }}
 		</div>
-		{% sections 'footer-group' %}
-		{% render 'cart-drawer' %}
-		{% render 'product-drawer' %}
-		{% render 'search-drawer' %}
+		
+		
+		
+		
 		<div class="click-capture"></div>
 	</div>
 
@@ -153,7 +153,7 @@
 	<script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
 	{%- if request.design_mode -%}
 		{{ 'theme-editor.js' | asset_url | script_tag }}
-		{% render 'customer-data' %}
+		
 	{%- endif -%}
 	{%- if settings.free_shipping -%}
 		{{ 'free-shipping.js' | asset_url | script_tag }}
@@ -165,7 +165,7 @@
 	{%- if settings.cart_terms_conditions_enable -%}
 		<script src="{{ 'terms-checkbox.js' | asset_url }}" defer="defer"></script>
 	{%- endif -%}
-	{% render 'back-to-top' %}
+	
 
 	{%- if settings.preload_links -%}
 		{%- unless request.design_mode -%}

@@ -1,0 +1,153 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "order": [
+    "main-collection-banner",
+    "product-grid",
+    "166367231494317262",
+    "166366972953e881f5",
+    "16636704759cbf64c5",
+    "166367228131c52c01"
+  ],
+  "sections": {
+    "166366972953e881f5": {
+      "disabled": true,
+      "settings": {
+        "collection_list": [
+          "clothing",
+          "denim",
+          "dresses",
+          "knitwear",
+          "long",
+          "pants"
+        ],
+        "columns_desktop": 6,
+        "columns_mobile": "1",
+        "description": "",
+        "disable_bottom_spacing": true,
+        "disable_top_spacing": true,
+        "full_width": true,
+        "heading": "",
+        "heading_left": false,
+        "image_ratio": "square",
+        "layout": "grid",
+        "mobile_swipe": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "show_progress_bar": true,
+        "style": "style1"
+      },
+      "type": "collection-list"
+    },
+    "16636704759cbf64c5": {
+      "settings": {
+        "border_separator": true,
+        "border_separator_full": true,
+        "spacer_desktop": 125,
+        "spacer_mobile": 50
+      },
+      "type": "spacer"
+    },
+    "166367228131c52c01": {
+      "settings": {
+        "border_separator": false,
+        "border_separator_full": false,
+        "spacer_desktop": 40,
+        "spacer_mobile": 35
+      },
+      "type": "spacer"
+    },
+    "166367231494317262": {
+      "block_order": [
+        "1fc06b12-e359-41a2-b694-099a6a7d4133",
+        "16636723131a14a571-2"
+      ],
+      "blocks": {
+        "16636723131a14a571-2": {
+          "settings": {
+            "custom_liquid": "",
+            "size": "text-size-small",
+            "text": "<p>{{ collection.metafields.custom.richtext_paragraph.value }}</p>"
+          },
+          "type": "text"
+        },
+        "1fc06b12-e359-41a2-b694-099a6a7d4133": {
+          "settings": {
+            "size": "h4",
+            "text": "{{ collection.metafields.custom.richtext_title.value }}"
+          },
+          "type": "heading"
+        }
+      },
+      "settings": {
+        "color_bg": "rgba(0,0,0,0)",
+        "color_links": "#151515",
+        "color_text": "#151515",
+        "disable_bottom_spacing": true,
+        "disable_top_spacing": true,
+        "section_width": "full-width-row-full",
+        "text_alignment": "center",
+        "text_position": "center",
+        "text_width": "xlarge"
+      },
+      "type": "rich-text"
+    },
+    "main-collection-banner": {
+      "settings": {
+        "image": "shopify://shop_images/8941-retouched_67243733-eb70-499b-a2fa-818fab437584.jpg",
+        "make_heading_uppercase": false,
+        "overlay_color": "#ffffff",
+        "overlay_opacity": 0,
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "show_subcollections": false,
+        "text_alignment": "center"
+      },
+      "type": "main-collection-banner"
+    },
+    "product-grid": {
+      "block_order": [
+        "2eb8e6da-98ad-442c-b31e-fcc9bc0532b9"
+      ],
+      "blocks": {
+        "2eb8e6da-98ad-442c-b31e-fcc9bc0532b9": {
+          "settings": {
+            "block_link": "",
+            "content_position": "middle-center",
+            "link": "",
+            "link_label": "Explore",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "promotion_collection": "",
+            "promotion_position": 5,
+            "promotion_width": "1",
+            "text": "Add your description text for promotion banner here.",
+            "text_alignment": "center",
+            "title": "PROMOTION BANNER",
+            "use_text_button": true
+          },
+          "type": "promotion"
+        }
+      },
+      "settings": {
+        "columns_desktop": 4,
+        "enable_filtering": false,
+        "enable_sorting": true,
+        "facets_desktop": "drawer",
+        "filter_color_swatches": false,
+        "full_width": false,
+        "pagination_type": "infinite",
+        "products_per_page": 11,
+        "show_counts": false
+      },
+      "type": "main-collection-product-grid"
+    }
+  }
+}
