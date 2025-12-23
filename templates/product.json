@@ -87,7 +87,7 @@
         "collapsible_tab_qGYnWB": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Solution For",
+            "heading": "Soluzione per",
             "open": false,
             "content": "{{ product.metafields.custom.accordion_solution_for | metafield_tag }}",
             "white_spaces": false,
@@ -98,7 +98,7 @@
         "collapsible_tab_bQt7XL": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "How to Apply",
+            "heading": "Modo d’uso",
             "open": false,
             "content": "{{ product.metafields.custom.accordion_how_to_use | metafield_tag }}",
             "white_spaces": false,
@@ -109,7 +109,7 @@
         "collapsible_tab_x4mm6t": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Ingridients",
+            "heading": "Ingredienti",
             "open": false,
             "content": "{{ product.metafields.custom.accordion_ingredients | metafield_tag }}",
             "white_spaces": false,
@@ -120,7 +120,7 @@
         "collapsible_tab_Ph9tMa": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Action and Results",
+            "heading": "Azione e Risultati",
             "open": false,
             "content": "{{ product.metafields.custom.accordion_benefits | metafield_tag }}",
             "white_spaces": false,
