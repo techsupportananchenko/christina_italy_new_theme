@@ -5,7 +5,12 @@
 	It is automatically generated from GEMPAGES BUILDER
 	Try to edit page with the live editor.
 {% endcomment %}
-(function( jQuery ){
-  // var $module = jQuery('#m-1767974523127').children('.module');
-  // You can add custom Javascript code right here.
-})( window.GemQuery || jQuery );
+<div id="form-container"></div>
+
+<script>
+fetch("https://formchristina.es-consulting.online")
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById("form-container").innerHTML = html;
+  });
+</script>
