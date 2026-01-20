@@ -16,6 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/BANNIERE_DESKTOP_2.jpg",
+            "mobile_image": "shopify://shop_images/BANNIERE_MOBILE.jpg",
             "slide_link": "shopify://collections/bio-phyto",
             "video_background": false,
             "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
