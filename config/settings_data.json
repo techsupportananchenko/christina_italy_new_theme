@@ -244,6 +244,13 @@
         "type": "shopify://apps/sea-accessibility-ada-wcag/blocks/app-embed/0ab9368b-426b-42b4-93ea-63d9c8e88707",
         "disabled": false,
         "settings": {}
+      },
+      "2538754702463810051": {
+        "type": "shopify://apps/wi-flash-sales/blocks/wizz_sale/cb67c40d-1985-4671-a8ba-9fcd0d4ad990",
+        "disabled": false,
+        "settings": {
+          "collection_page_size": 50
+        }
       }
     }
   },
